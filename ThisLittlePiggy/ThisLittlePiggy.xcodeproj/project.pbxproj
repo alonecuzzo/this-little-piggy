@@ -14,8 +14,6 @@
 		8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
 		8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
 		8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
-		8ED7EDA91823E29700533439 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA81823E29700533439 /* TLPMyScene.m */; };
-		8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA81823E29700533439 /* TLPMyScene.m */; };
 		8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
 		8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
 		8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */; };
@@ -53,8 +51,6 @@
 		8E8C148A182352CD00B07048 /* TLPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPlayer.m; path = scenes/TLPPlayer.m; sourceTree = "<group>"; };
 		8ED7EDA31823E23100533439 /* TLPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPViewController.h; path = controllers/TLPViewController.h; sourceTree = "<group>"; };
 		8ED7EDA41823E23100533439 /* TLPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPViewController.m; path = controllers/TLPViewController.m; sourceTree = "<group>"; };
-		8ED7EDA71823E29700533439 /* TLPMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMyScene.h; path = scenes/TLPMyScene.h; sourceTree = "<group>"; };
-		8ED7EDA81823E29700533439 /* TLPMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMyScene.m; path = scenes/TLPMyScene.m; sourceTree = "<group>"; };
 		8ED7EDAB1823E2FE00533439 /* TLPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAppDelegate.h; path = delegates/TLPAppDelegate.h; sourceTree = "<group>"; };
 		8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAppDelegate.m; path = delegates/TLPAppDelegate.m; sourceTree = "<group>"; };
 		8ED7EDB11823F11300533439 /* TLPMockBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMockBaseLevelScene.h; path = mocks/scenes/TLPMockBaseLevelScene.h; sourceTree = "<group>"; };
@@ -239,8 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				8E8C147F18234BFD00B07048 /* levels */,
-				8ED7EDA71823E29700533439 /* TLPMyScene.h */,
-				8ED7EDA81823E29700533439 /* TLPMyScene.m */,
 				8E8C1489182352CD00B07048 /* TLPPlayer.h */,
 				8E8C148A182352CD00B07048 /* TLPPlayer.m */,
 			);
@@ -368,7 +362,6 @@
 				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
-				8ED7EDA91823E29700533439 /* TLPMyScene.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
 				8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
 			);
@@ -382,7 +375,6 @@
 				8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
-				8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */,
 				8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
 				8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */,
 			);

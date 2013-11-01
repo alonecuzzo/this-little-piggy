@@ -23,6 +23,9 @@
 {
     self = [super initWithSize:size];
     if (self) {
+        
+        self.backgroundColor = [SKColor redColor];
+        
         _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];
         [(NSMutableArray*)_players addObject:_defaultPlayer];
