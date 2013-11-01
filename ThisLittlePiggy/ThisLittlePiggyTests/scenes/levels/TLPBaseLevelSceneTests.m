@@ -85,7 +85,7 @@
 {
     TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
     
-    XCTAssertEqualObjects(myScene.world.name, @"world", @"The world should be named world.");
+    XCTAssertEqualObjects(myScene.world.name, kWorldName, @"The world should be named world.");
 }
 
 @end

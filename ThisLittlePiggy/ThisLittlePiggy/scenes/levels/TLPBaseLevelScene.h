@@ -15,6 +15,7 @@ typedef enum : u_int8_t {
 
 #define kPiggyMinimumDistanceToEdge 256
 #define kNumPlayers 1
+#define kWorldName @"world"
 
 #import <SpriteKit/SpriteKit.h>
 
