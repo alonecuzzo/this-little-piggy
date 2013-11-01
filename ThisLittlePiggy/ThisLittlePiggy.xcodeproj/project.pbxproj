@@ -168,9 +168,6 @@
 				8EE97DA81821798800B4324A /* delegates */,
 				8EE97DA71821797400B4324A /* scenes */,
 				8EE97DA61821795D00B4324A /* sprites */,
-				8EE97D7E1821782400B4324A /* Main.storyboard */,
-				8EE97D871821782400B4324A /* Spaceship.png */,
-				8EE97D891821782400B4324A /* Images.xcassets */,
 				8EE97D731821782400B4324A /* Supporting Files */,
 			);
 			path = ThisLittlePiggy;
@@ -179,6 +176,9 @@
 		8EE97D731821782400B4324A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EE97D891821782400B4324A /* Images.xcassets */,
+				8EE97D7E1821782400B4324A /* Main.storyboard */,
+				8EE97D871821782400B4324A /* Spaceship.png */,
 				8EE97D741821782400B4324A /* ThisLittlePiggy-Info.plist */,
 				8EE97D751821782400B4324A /* InfoPlist.strings */,
 				8EE97D781821782400B4324A /* main.m */,
@@ -216,9 +216,9 @@
 		8EE97DA71821797400B4324A /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8E8C147F18234BFD00B07048 /* levels */,
 				8ED7EDA71823E29700533439 /* TLPMyScene.h */,
 				8ED7EDA81823E29700533439 /* TLPMyScene.m */,
-				8E8C147F18234BFD00B07048 /* levels */,
 				8E8C1489182352CD00B07048 /* TLPPlayer.h */,
 				8E8C148A182352CD00B07048 /* TLPPlayer.m */,
 			);
