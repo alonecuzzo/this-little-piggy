@@ -32,6 +32,7 @@
 		8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
 		8EDDDCA1182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
 		8EDDDCA2182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
+		8EDDDCB018240C0B00AAC5A8 /* placeholderImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDDCAF18240C0B00AAC5A8 /* placeholderImages.atlas */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
@@ -83,6 +84,7 @@
 		8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPParallaxSprite.m; path = sprites/TLPParallaxSprite.m; sourceTree = "<group>"; };
 		8EDDDC9F182404AD00AAC5A8 /* TLPColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPColorHelper.h; path = globals/TLPColorHelper.h; sourceTree = "<group>"; };
 		8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPColorHelper.m; path = globals/TLPColorHelper.m; sourceTree = "<group>"; };
+		8EDDDCAF18240C0B00AAC5A8 /* placeholderImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = placeholderImages.atlas; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -194,6 +196,22 @@
 			name = globals;
 			sourceTree = "<group>";
 		};
+		8EDDDCAD18240C0B00AAC5A8 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDDCAE18240C0B00AAC5A8 /* images */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		8EDDDCAE18240C0B00AAC5A8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDDCAF18240C0B00AAC5A8 /* placeholderImages.atlas */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		8EE97D5E1821782300B4324A = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +259,7 @@
 		8EE97D731821782400B4324A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EDDDCAD18240C0B00AAC5A8 /* assets */,
 				8EE97D891821782400B4324A /* Images.xcassets */,
 				8EE97D7E1821782400B4324A /* Main.storyboard */,
 				8EE97D871821782400B4324A /* Spaceship.png */,
@@ -388,6 +407,7 @@
 			files = (
 				8EE97D771821782400B4324A /* InfoPlist.strings in Resources */,
 				8EE97D8A1821782400B4324A /* Images.xcassets in Resources */,
+				8EDDDCB018240C0B00AAC5A8 /* placeholderImages.atlas in Resources */,
 				8EE97D881821782400B4324A /* Spaceship.png in Resources */,
 				8EE97D801821782400B4324A /* Main.storyboard in Resources */,
 			);

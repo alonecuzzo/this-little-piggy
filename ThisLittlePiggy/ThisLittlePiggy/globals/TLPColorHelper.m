@@ -12,7 +12,7 @@
 
 + (UIColor*)tlpSkyBlue
 {
-    return [UIColor colorWithRed:154/255.0f green:234/255.0f blue:245/255.0f alpha:1.0f];
+    return [UIColor colorWithRed:154/255.0f green:234/255.0f blue:245/255.0f alpha:1.0f]; //9AEAF5
 }
 
 @end
