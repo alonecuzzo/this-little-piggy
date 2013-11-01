@@ -60,11 +60,18 @@
 
 #pragma mark - init value tests
 
-- (void)testThatPlayerPropertyIsNotNilAfterSceneInitialized
+- (void)testThatDefaultPlayerPropertyIsNotNilAfterSceneInitialized
 {
     TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
     
     XCTAssertNotNil(myScene.defaultPlayer, @"Default player value should be not nil after base level scene initwithsize called.");
+}
+
+- (void)testThatPlayersLengthMatchesNumPlayers
+{
+    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
+    
+    XCTAssertTrue(myScene.players.count == kNumPlayers, @"Players count should equal num players constant in base level scene.");
 }
 
 @end

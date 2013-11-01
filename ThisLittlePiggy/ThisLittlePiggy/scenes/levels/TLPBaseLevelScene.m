@@ -16,9 +16,12 @@
 {
     self = [super initWithSize:size];
     if (self) {
-        
+        _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];
-        
+        [_players addObject:_defaultPlayer];
+        for (int i = 1; i < kNumPlayers; i++) {
+            [_players addObject:[NSNull null]];
+        }
     }
     
     return self;

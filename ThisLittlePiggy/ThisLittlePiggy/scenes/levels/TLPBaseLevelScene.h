@@ -14,6 +14,7 @@ typedef enum : u_int8_t {
 } TLPWorldLayer;
 
 #define kPiggyMinimumDistanceToEdge 256
+#define kNumPlayers 1
 
 #import <SpriteKit/SpriteKit.h>
 
@@ -24,7 +25,6 @@ typedef enum : u_int8_t {
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
 @property(nonatomic) NSMutableArray *players;
-
 
 + (void)loadSceneAssets;
 
