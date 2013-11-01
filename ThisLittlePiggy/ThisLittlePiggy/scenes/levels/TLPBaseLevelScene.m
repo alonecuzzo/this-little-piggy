@@ -44,6 +44,8 @@
             [_world addChild:layer];
             [_layers addObject:layer];
         }
+        
+        [self addChild:_world];
     }
     
     return self;

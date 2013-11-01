@@ -97,4 +97,10 @@
     XCTAssertTrue(mockScene.layers.count == kTLPWorldLayerCount, @"Layers count should be equal to the world layer count constant.");
 }
 
+- (void)testThatWorldIsChildOfBaseScene
+{
+    XCTAssertNotNil([_myScene childNodeWithName:kWorldName], @"World should be on the scene.");
+    
+}
+
 @end
