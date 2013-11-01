@@ -23,6 +23,7 @@ typedef enum : u_int8_t {
 
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
+@property(nonatomic) NSMutableArray *players;
 
 
 + (void)loadSceneAssets;

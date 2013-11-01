@@ -51,6 +51,13 @@
     XCTAssertTrue(defaultPlayerProperty != NULL, @"Base level scene should have default player property.");
 }
 
+- (void)testThatBaseLevelSceneHasPlayersProperty
+{
+    objc_property_t playersProperty = class_getProperty([[[TLPBaseLevelScene alloc] init] class], "players");
+    
+    XCTAssertTrue(playersProperty != NULL, @"Base level scene should have players property.");
+}
+
 #pragma mark - init value tests
 
 - (void)testThatPlayerPropertyIsNotNilAfterSceneInitialized
