@@ -22,6 +22,8 @@
         for (int i = 1; i < kNumPlayers; i++) {
             [_players addObject:[NSNull null]];
         }
+        
+        _world = [[SKNode alloc] init];
     }
     
     return self;

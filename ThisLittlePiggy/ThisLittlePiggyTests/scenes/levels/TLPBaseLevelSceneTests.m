@@ -74,4 +74,11 @@
     XCTAssertTrue(myScene.players.count == kNumPlayers, @"Players count should equal num players constant in base level scene.");
 }
 
+- (void)testThatWorldIsNotNilAfterSceneIsInitialized
+{
+    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
+
+    XCTAssertNotNil(myScene.world, @"World should be initialized after initwithsize called in base level scene.");
+}
+
 @end
