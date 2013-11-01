@@ -17,6 +17,9 @@ typedef enum : u_int8_t {
 #define kNumPlayers 1
 #define kWorldName @"world"
 
+#define kTLPBaseLevelLoadSharedAssetsException @"kTLPBaseLevelException"
+#define kTLPBaseLevelLoadSharedAssetsExceptionReason @"You can't call loadSceneAssets from the base class."
+
 #import <SpriteKit/SpriteKit.h>
 
 @class TLPPlayer;

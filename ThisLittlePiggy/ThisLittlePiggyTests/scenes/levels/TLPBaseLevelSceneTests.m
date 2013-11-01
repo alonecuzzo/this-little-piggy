@@ -100,7 +100,11 @@
 - (void)testThatWorldIsChildOfBaseScene
 {
     XCTAssertNotNil([_myScene childNodeWithName:kWorldName], @"World should be on the scene.");
-    
+}
+
+- (void)testThatBaseLevelLoadSharedAssetsThrowsException
+{
+    XCTAssertThrows([TLPBaseLevelScene loadSceneAssets], @"Shouldn't call loadSceneAssets in base level scene.");
 }
 
 @end

@@ -51,4 +51,10 @@
     return self;
 }
 
+#pragma mark - assets business
++ (void)loadSceneAssets
+{
+    [[NSException exceptionWithName:kTLPBaseLevelLoadSharedAssetsException reason:kTLPBaseLevelLoadSharedAssetsExceptionReason userInfo:nil] raise];
+}
+
 @end
