@@ -18,6 +18,8 @@
 		8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA81823E29700533439 /* TLPMyScene.m */; };
 		8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
 		8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
+		8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */; };
+		8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
@@ -55,6 +57,8 @@
 		8ED7EDA81823E29700533439 /* TLPMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMyScene.m; path = scenes/TLPMyScene.m; sourceTree = "<group>"; };
 		8ED7EDAB1823E2FE00533439 /* TLPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAppDelegate.h; path = delegates/TLPAppDelegate.h; sourceTree = "<group>"; };
 		8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAppDelegate.m; path = delegates/TLPAppDelegate.m; sourceTree = "<group>"; };
+		8ED7EDB11823F11300533439 /* TLPMockBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMockBaseLevelScene.h; path = mocks/scenes/TLPMockBaseLevelScene.h; sourceTree = "<group>"; };
+		8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMockBaseLevelScene.m; path = mocks/scenes/TLPMockBaseLevelScene.m; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +134,23 @@
 			name = characters;
 			sourceTree = "<group>";
 		};
+		8ED7EDAF1823F0C700533439 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7EDB01823F0CE00533439 /* scenes */,
+			);
+			name = mocks;
+			sourceTree = "<group>";
+		};
+		8ED7EDB01823F0CE00533439 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7EDB11823F11300533439 /* TLPMockBaseLevelScene.h */,
+				8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
 		8EE97D5E1821782300B4324A = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +211,7 @@
 		8EE97D961821782400B4324A /* ThisLittlePiggyTests */ = {
 			isa = PBXGroup;
 			children = (
+				8ED7EDAF1823F0C700533439 /* mocks */,
 				8E8C148418234EB300B07048 /* scenes */,
 				8EE97D971821782400B4324A /* Supporting Files */,
 			);
@@ -343,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */,
+				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
 				8ED7EDA91823E29700533439 /* TLPMyScene.m in Sources */,
@@ -356,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
+				8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
 				8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */,

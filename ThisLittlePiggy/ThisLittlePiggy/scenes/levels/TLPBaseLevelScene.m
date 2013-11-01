@@ -32,6 +32,15 @@
         
         _world = [[SKNode alloc] init];
         _world.name = kWorldName;
+        
+        _layers = [NSMutableArray arrayWithCapacity:kTLPWorldLayerCount];
+        for (int i = 0; i < kTLPWorldLayerCount; i++) {
+            //create the layers
+            SKNode *layer = [[SKNode alloc] init];
+            layer.zPosition = i - kTLPWorldLayerCount;
+            [_world addChild:layer];
+            [_layers addObject:layer];
+        }
     }
     
     return self;

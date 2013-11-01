@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "TLPBaseLevelScene.h"
+#import "TLPMockBaseLevelScene.h"
 #import <objc/runtime.h>
 
 @interface TLPBaseLevelSceneTests : XCTestCase
@@ -87,6 +88,13 @@
 - (void)testThatWorldIsNamedProperlyAfterInitialization
 {
     XCTAssertEqualObjects(_myScene.world.name, kWorldName, @"The world should be named world.");
+}
+
+- (void)testThatLayersCountEqualsNumLayersConstant
+{
+    TLPMockBaseLevelScene *mockScene = [[TLPMockBaseLevelScene alloc] initWithSize:CGSizeZero];
+    
+    XCTAssertTrue(mockScene.layers.count == kTLPWorldLayerCount, @"Layers count should be equal to the world layer count constant.");
 }
 
 @end
