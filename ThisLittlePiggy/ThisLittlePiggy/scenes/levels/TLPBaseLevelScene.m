@@ -8,6 +8,7 @@
 
 #import "TLPBaseLevelScene.h"
 #import "TLPPlayer.h"
+#import "TLPColorHelper.h"
 
 @interface TLPBaseLevelScene()
 
@@ -24,7 +25,7 @@
     self = [super initWithSize:size];
     if (self) {
         
-        self.backgroundColor = [SKColor redColor];
+        self.backgroundColor = [TLPColorHelper tlpSkyBlue];
         
         _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];

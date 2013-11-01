@@ -30,6 +30,8 @@
 		8EDDDC991824036800AAC5A8 /* TLPCloudCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */; };
 		8EDDDC9C182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
 		8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
+		8EDDDCA1182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
+		8EDDDCA2182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
@@ -79,6 +81,8 @@
 		8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCloudCharacter.m; path = sprites/characters/TLPCloudCharacter.m; sourceTree = "<group>"; };
 		8EDDDC9A182403E300AAC5A8 /* TLPParallaxSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPParallaxSprite.h; path = sprites/TLPParallaxSprite.h; sourceTree = "<group>"; };
 		8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPParallaxSprite.m; path = sprites/TLPParallaxSprite.m; sourceTree = "<group>"; };
+		8EDDDC9F182404AD00AAC5A8 /* TLPColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPColorHelper.h; path = globals/TLPColorHelper.h; sourceTree = "<group>"; };
+		8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPColorHelper.m; path = globals/TLPColorHelper.m; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -181,6 +185,15 @@
 			name = scenes;
 			sourceTree = "<group>";
 		};
+		8EDDDC9E1824048D00AAC5A8 /* globals */ = {
+			isa = PBXGroup;
+			children = (
+				8EDDDC9F182404AD00AAC5A8 /* TLPColorHelper.h */,
+				8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */,
+			);
+			name = globals;
+			sourceTree = "<group>";
+		};
 		8EE97D5E1821782300B4324A = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +228,7 @@
 		8EE97D721821782400B4324A /* ThisLittlePiggy */ = {
 			isa = PBXGroup;
 			children = (
+				8EDDDC9E1824048D00AAC5A8 /* globals */,
 				8EE97DA9182179C800B4324A /* controllers */,
 				8EE97DA81821798800B4324A /* delegates */,
 				8EE97DA71821797400B4324A /* scenes */,
@@ -405,6 +419,7 @@
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
+				8EDDDCA1182404AD00AAC5A8 /* TLPColorHelper.m in Sources */,
 				8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +439,7 @@
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
 				8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
+				8EDDDCA2182404AD00AAC5A8 /* TLPColorHelper.m in Sources */,
 				8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
