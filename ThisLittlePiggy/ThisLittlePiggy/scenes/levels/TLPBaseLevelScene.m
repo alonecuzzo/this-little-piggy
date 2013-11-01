@@ -24,6 +24,7 @@
         }
         
         _world = [[SKNode alloc] init];
+        _world.name = @"world";
     }
     
     return self;

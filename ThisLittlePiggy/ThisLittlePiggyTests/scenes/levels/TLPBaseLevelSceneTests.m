@@ -81,4 +81,11 @@
     XCTAssertNotNil(myScene.world, @"World should be initialized after initwithsize called in base level scene.");
 }
 
+- (void)testThatWorldIsNamedProperlyAfterInitialization
+{
+    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
+    
+    XCTAssertEqualObjects(myScene.world.name, @"world", @"The world should be named world.");
+}
+
 @end
