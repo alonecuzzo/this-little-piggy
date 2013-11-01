@@ -7,7 +7,21 @@
 //
 
 #import "TLPBaseLevelScene.h"
+#import "TLPPlayer.h"
 
 @implementation TLPBaseLevelScene
+
+#pragma mark - init
+- (instancetype)initWithSize:(CGSize)size
+{
+    self = [super initWithSize:size];
+    if (self) {
+        
+        _defaultPlayer = [[TLPPlayer alloc] init];
+        
+    }
+    
+    return self;
+}
 
 @end

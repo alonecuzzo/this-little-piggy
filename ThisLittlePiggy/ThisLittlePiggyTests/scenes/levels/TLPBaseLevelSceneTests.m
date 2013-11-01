@@ -28,6 +28,8 @@
     [super tearDown];
 }
 
+#pragma mark - property tests
+
 - (void)testThatCreatedBaseLevelSceneIsNotNil
 {
     TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] init];
@@ -47,6 +49,15 @@
     objc_property_t defaultPlayerProperty = class_getProperty([[[TLPBaseLevelScene alloc] init] class], "defaultPlayer");
     
     XCTAssertTrue(defaultPlayerProperty != NULL, @"Base level scene should have default player property.");
+}
+
+#pragma mark - init value tests
+
+- (void)testThatPlayerPropertyIsNotNilAfterSceneInitialized
+{
+    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
+    
+    XCTAssertNotNil(myScene.defaultPlayer, @"Default player value should be not nil after base level scene initwithsize called.");
 }
 
 @end
