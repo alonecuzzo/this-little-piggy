@@ -7,23 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
+		8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
+		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
+		8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
+		8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
+		8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
+		8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
+		8ED7EDA91823E29700533439 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA81823E29700533439 /* TLPMyScene.m */; };
+		8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA81823E29700533439 /* TLPMyScene.m */; };
+		8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
+		8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D711821782400B4324A /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D701821782400B4324A /* SpriteKit.framework */; };
 		8EE97D771821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D751821782400B4324A /* InfoPlist.strings */; };
 		8EE97D791821782400B4324A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE97D781821782400B4324A /* main.m */; };
-		8EE97D7D1821782400B4324A /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE97D7C1821782400B4324A /* TLPAppDelegate.m */; };
 		8EE97D801821782400B4324A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D7E1821782400B4324A /* Main.storyboard */; };
-		8EE97D831821782400B4324A /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE97D821821782400B4324A /* TLPViewController.m */; };
-		8EE97D861821782400B4324A /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE97D851821782400B4324A /* TLPMyScene.m */; };
 		8EE97D881821782400B4324A /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D871821782400B4324A /* Spaceship.png */; };
 		8EE97D8A1821782400B4324A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D891821782400B4324A /* Images.xcassets */; };
 		8EE97D911821782400B4324A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D901821782400B4324A /* XCTest.framework */; };
 		8EE97D921821782400B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D931821782400B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D9B1821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D991821782400B4324A /* InfoPlist.strings */; };
-		8EE97D9D1821782400B4324A /* ThisLittlePiggyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE97D9C1821782400B4324A /* ThisLittlePiggyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPBaseLevelScene.h; path = scenes/levels/TLPBaseLevelScene.h; sourceTree = "<group>"; };
+		8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelScene.m; path = scenes/levels/TLPBaseLevelScene.m; sourceTree = "<group>"; };
+		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
+		8E8C1489182352CD00B07048 /* TLPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPPlayer.h; path = scenes/TLPPlayer.h; sourceTree = "<group>"; };
+		8E8C148A182352CD00B07048 /* TLPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPlayer.m; path = scenes/TLPPlayer.m; sourceTree = "<group>"; };
+		8ED7EDA31823E23100533439 /* TLPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPViewController.h; path = controllers/TLPViewController.h; sourceTree = "<group>"; };
+		8ED7EDA41823E23100533439 /* TLPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPViewController.m; path = controllers/TLPViewController.m; sourceTree = "<group>"; };
+		8ED7EDA71823E29700533439 /* TLPMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMyScene.h; path = scenes/TLPMyScene.h; sourceTree = "<group>"; };
+		8ED7EDA81823E29700533439 /* TLPMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMyScene.m; path = scenes/TLPMyScene.m; sourceTree = "<group>"; };
+		8ED7EDAB1823E2FE00533439 /* TLPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAppDelegate.h; path = delegates/TLPAppDelegate.h; sourceTree = "<group>"; };
+		8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAppDelegate.m; path = delegates/TLPAppDelegate.m; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -46,20 +64,13 @@
 		8EE97D761821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EE97D781821782400B4324A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EE97D7A1821782400B4324A /* ThisLittlePiggy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThisLittlePiggy-Prefix.pch"; sourceTree = "<group>"; };
-		8EE97D7B1821782400B4324A /* TLPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPAppDelegate.h; sourceTree = "<group>"; };
-		8EE97D7C1821782400B4324A /* TLPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPAppDelegate.m; sourceTree = "<group>"; };
 		8EE97D7F1821782400B4324A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EE97D811821782400B4324A /* TLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPViewController.h; sourceTree = "<group>"; };
-		8EE97D821821782400B4324A /* TLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPViewController.m; sourceTree = "<group>"; };
-		8EE97D841821782400B4324A /* TLPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPMyScene.h; sourceTree = "<group>"; };
-		8EE97D851821782400B4324A /* TLPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPMyScene.m; sourceTree = "<group>"; };
 		8EE97D871821782400B4324A /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		8EE97D891821782400B4324A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EE97D8F1821782400B4324A /* ThisLittlePiggyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThisLittlePiggyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D901821782400B4324A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EE97D981821782400B4324A /* ThisLittlePiggyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyTests-Info.plist"; sourceTree = "<group>"; };
 		8EE97D9A1821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8EE97D9C1821782400B4324A /* ThisLittlePiggyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThisLittlePiggyTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +98,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E8C147F18234BFD00B07048 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */,
+				8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */,
+			);
+			name = levels;
+			sourceTree = "<group>";
+		};
+		8E8C148418234EB300B07048 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C148518234EBB00B07048 /* levels */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		8E8C148518234EBB00B07048 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */,
+			);
+			name = levels;
+			sourceTree = "<group>";
+		};
+		8E8C14881823527600B07048 /* characters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = characters;
+			sourceTree = "<group>";
+		};
 		8EE97D5E1821782300B4324A = {
 			isa = PBXGroup;
 			children = (
@@ -121,13 +164,11 @@
 		8EE97D721821782400B4324A /* ThisLittlePiggy */ = {
 			isa = PBXGroup;
 			children = (
-				8EE97D7B1821782400B4324A /* TLPAppDelegate.h */,
-				8EE97D7C1821782400B4324A /* TLPAppDelegate.m */,
+				8EE97DA9182179C800B4324A /* controllers */,
+				8EE97DA81821798800B4324A /* delegates */,
+				8EE97DA71821797400B4324A /* scenes */,
+				8EE97DA61821795D00B4324A /* sprites */,
 				8EE97D7E1821782400B4324A /* Main.storyboard */,
-				8EE97D811821782400B4324A /* TLPViewController.h */,
-				8EE97D821821782400B4324A /* TLPViewController.m */,
-				8EE97D841821782400B4324A /* TLPMyScene.h */,
-				8EE97D851821782400B4324A /* TLPMyScene.m */,
 				8EE97D871821782400B4324A /* Spaceship.png */,
 				8EE97D891821782400B4324A /* Images.xcassets */,
 				8EE97D731821782400B4324A /* Supporting Files */,
@@ -149,7 +190,7 @@
 		8EE97D961821782400B4324A /* ThisLittlePiggyTests */ = {
 			isa = PBXGroup;
 			children = (
-				8EE97D9C1821782400B4324A /* ThisLittlePiggyTests.m */,
+				8E8C148418234EB300B07048 /* scenes */,
 				8EE97D971821782400B4324A /* Supporting Files */,
 			);
 			path = ThisLittlePiggyTests;
@@ -162,6 +203,44 @@
 				8EE97D991821782400B4324A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EE97DA61821795D00B4324A /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C14881823527600B07048 /* characters */,
+			);
+			name = sprites;
+			sourceTree = "<group>";
+		};
+		8EE97DA71821797400B4324A /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7EDA71823E29700533439 /* TLPMyScene.h */,
+				8ED7EDA81823E29700533439 /* TLPMyScene.m */,
+				8E8C147F18234BFD00B07048 /* levels */,
+				8E8C1489182352CD00B07048 /* TLPPlayer.h */,
+				8E8C148A182352CD00B07048 /* TLPPlayer.m */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		8EE97DA81821798800B4324A /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7EDAB1823E2FE00533439 /* TLPAppDelegate.h */,
+				8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		8EE97DA9182179C800B4324A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8ED7EDA31823E23100533439 /* TLPViewController.h */,
+				8ED7EDA41823E23100533439 /* TLPViewController.m */,
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +342,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE97D831821782400B4324A /* TLPViewController.m in Sources */,
+				8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */,
+				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
-				8EE97D7D1821782400B4324A /* TLPAppDelegate.m in Sources */,
-				8EE97D861821782400B4324A /* TLPMyScene.m in Sources */,
+				8ED7EDA91823E29700533439 /* TLPMyScene.m in Sources */,
+				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
+				8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE97D9D1821782400B4324A /* ThisLittlePiggyTests.m in Sources */,
+				8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
+				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
+				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
+				8ED7EDAA1823E29700533439 /* TLPMyScene.m in Sources */,
+				8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
+				8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +565,7 @@
 				8EE97DA21821782400B4324A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EE97DA31821782400B4324A /* Build configuration list for PBXNativeTarget "ThisLittlePiggyTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +574,7 @@
 				8EE97DA51821782400B4324A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
