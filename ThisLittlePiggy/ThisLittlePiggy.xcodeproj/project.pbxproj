@@ -18,6 +18,18 @@
 		8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
 		8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */; };
 		8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */; };
+		8EDDDC88182402CD00AAC5A8 /* TLPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC87182402CD00AAC5A8 /* TLPCharacter.m */; };
+		8EDDDC89182402CD00AAC5A8 /* TLPCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC87182402CD00AAC5A8 /* TLPCharacter.m */; };
+		8EDDDC8C182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC8B182402FE00AAC5A8 /* TLPUmbrellaCharacter.m */; };
+		8EDDDC8D182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC8B182402FE00AAC5A8 /* TLPUmbrellaCharacter.m */; };
+		8EDDDC901824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC8F1824032400AAC5A8 /* TLPPiggyCharacter.m */; };
+		8EDDDC911824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC8F1824032400AAC5A8 /* TLPPiggyCharacter.m */; };
+		8EDDDC941824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC931824034A00AAC5A8 /* TLPEnemyCharacter.m */; };
+		8EDDDC951824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC931824034A00AAC5A8 /* TLPEnemyCharacter.m */; };
+		8EDDDC981824036800AAC5A8 /* TLPCloudCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */; };
+		8EDDDC991824036800AAC5A8 /* TLPCloudCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */; };
+		8EDDDC9C182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
+		8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
@@ -55,6 +67,18 @@
 		8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAppDelegate.m; path = delegates/TLPAppDelegate.m; sourceTree = "<group>"; };
 		8ED7EDB11823F11300533439 /* TLPMockBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMockBaseLevelScene.h; path = mocks/scenes/TLPMockBaseLevelScene.h; sourceTree = "<group>"; };
 		8ED7EDB21823F11300533439 /* TLPMockBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMockBaseLevelScene.m; path = mocks/scenes/TLPMockBaseLevelScene.m; sourceTree = "<group>"; };
+		8EDDDC86182402CD00AAC5A8 /* TLPCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCharacter.h; path = sprites/characters/TLPCharacter.h; sourceTree = "<group>"; };
+		8EDDDC87182402CD00AAC5A8 /* TLPCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCharacter.m; path = sprites/characters/TLPCharacter.m; sourceTree = "<group>"; };
+		8EDDDC8A182402FE00AAC5A8 /* TLPUmbrellaCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPUmbrellaCharacter.h; path = sprites/characters/TLPUmbrellaCharacter.h; sourceTree = "<group>"; };
+		8EDDDC8B182402FE00AAC5A8 /* TLPUmbrellaCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPUmbrellaCharacter.m; path = sprites/characters/TLPUmbrellaCharacter.m; sourceTree = "<group>"; };
+		8EDDDC8E1824032400AAC5A8 /* TLPPiggyCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPPiggyCharacter.h; path = sprites/characters/TLPPiggyCharacter.h; sourceTree = "<group>"; };
+		8EDDDC8F1824032400AAC5A8 /* TLPPiggyCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPiggyCharacter.m; path = sprites/characters/TLPPiggyCharacter.m; sourceTree = "<group>"; };
+		8EDDDC921824034A00AAC5A8 /* TLPEnemyCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPEnemyCharacter.h; path = sprites/characters/TLPEnemyCharacter.h; sourceTree = "<group>"; };
+		8EDDDC931824034A00AAC5A8 /* TLPEnemyCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPEnemyCharacter.m; path = sprites/characters/TLPEnemyCharacter.m; sourceTree = "<group>"; };
+		8EDDDC961824036800AAC5A8 /* TLPCloudCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCloudCharacter.h; path = sprites/characters/TLPCloudCharacter.h; sourceTree = "<group>"; };
+		8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCloudCharacter.m; path = sprites/characters/TLPCloudCharacter.m; sourceTree = "<group>"; };
+		8EDDDC9A182403E300AAC5A8 /* TLPParallaxSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPParallaxSprite.h; path = sprites/TLPParallaxSprite.h; sourceTree = "<group>"; };
+		8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPParallaxSprite.m; path = sprites/TLPParallaxSprite.m; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +150,16 @@
 		8E8C14881823527600B07048 /* characters */ = {
 			isa = PBXGroup;
 			children = (
+				8EDDDC86182402CD00AAC5A8 /* TLPCharacter.h */,
+				8EDDDC87182402CD00AAC5A8 /* TLPCharacter.m */,
+				8EDDDC961824036800AAC5A8 /* TLPCloudCharacter.h */,
+				8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */,
+				8EDDDC921824034A00AAC5A8 /* TLPEnemyCharacter.h */,
+				8EDDDC931824034A00AAC5A8 /* TLPEnemyCharacter.m */,
+				8EDDDC8E1824032400AAC5A8 /* TLPPiggyCharacter.h */,
+				8EDDDC8F1824032400AAC5A8 /* TLPPiggyCharacter.m */,
+				8EDDDC8A182402FE00AAC5A8 /* TLPUmbrellaCharacter.h */,
+				8EDDDC8B182402FE00AAC5A8 /* TLPUmbrellaCharacter.m */,
 			);
 			name = characters;
 			sourceTree = "<group>";
@@ -226,6 +260,8 @@
 		8EE97DA61821795D00B4324A /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				8EDDDC9A182403E300AAC5A8 /* TLPParallaxSprite.h */,
+				8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */,
 				8E8C14881823527600B07048 /* characters */,
 			);
 			name = sprites;
@@ -360,6 +396,12 @@
 			files = (
 				8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */,
 				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
+				8EDDDC901824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */,
+				8EDDDC8C182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */,
+				8EDDDC88182402CD00AAC5A8 /* TLPCharacter.m in Sources */,
+				8EDDDC981824036800AAC5A8 /* TLPCloudCharacter.m in Sources */,
+				8EDDDC9C182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */,
+				8EDDDC941824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */,
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
@@ -373,6 +415,12 @@
 			files = (
 				8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
+				8EDDDC911824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */,
+				8EDDDC8D182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */,
+				8EDDDC89182402CD00AAC5A8 /* TLPCharacter.m in Sources */,
+				8EDDDC991824036800AAC5A8 /* TLPCloudCharacter.m in Sources */,
+				8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */,
+				8EDDDC951824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */,
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
 				8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
