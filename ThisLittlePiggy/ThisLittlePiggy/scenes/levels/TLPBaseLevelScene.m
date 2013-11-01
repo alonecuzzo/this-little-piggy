@@ -9,6 +9,13 @@
 #import "TLPBaseLevelScene.h"
 #import "TLPPlayer.h"
 
+@interface TLPBaseLevelScene()
+
+@property(nonatomic) NSMutableArray *players;
+@property(nonatomic) NSMutableArray *layers;
+
+@end
+
 @implementation TLPBaseLevelScene
 
 #pragma mark - init
@@ -18,9 +25,9 @@
     if (self) {
         _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];
-        [_players addObject:_defaultPlayer];
+        [(NSMutableArray*)_players addObject:_defaultPlayer];
         for (int i = 1; i < kNumPlayers; i++) {
-            [_players addObject:[NSNull null]];
+            [(NSMutableArray*)_players addObject:[NSNull null]];
         }
         
         _world = [[SKNode alloc] init];

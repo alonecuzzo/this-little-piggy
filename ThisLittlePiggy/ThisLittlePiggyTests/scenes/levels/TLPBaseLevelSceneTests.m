@@ -12,6 +12,8 @@
 
 @interface TLPBaseLevelSceneTests : XCTestCase
 
+@property (nonatomic) TLPBaseLevelScene *myScene;
+
 @end
 
 @implementation TLPBaseLevelSceneTests
@@ -20,10 +22,12 @@
 {
     [super setUp];
     // Put setup code here; it will be run once, before the first test case.
+    _myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
 }
 
 - (void)tearDown
 {
+    _myScene = nil;
     // Put teardown code here; it will be run once, after the last test case.
     [super tearDown];
 }
@@ -32,60 +36,57 @@
 
 - (void)testThatCreatedBaseLevelSceneIsNotNil
 {
-    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] init];
-    
-    XCTAssertNotNil(myScene, @"Base level scene should be instantiated.");
+    XCTAssertNotNil(_myScene, @"Base level scene should be instantiated.");
 }
 
 - (void)testThatBaseLevelSceneHasWorldProperty
 {
-    objc_property_t worldBaseLevelSceneProperty = class_getProperty([[[TLPBaseLevelScene alloc] init] class], "world");
+    objc_property_t worldBaseLevelSceneProperty = class_getProperty([_myScene class], "world");
     
     XCTAssertTrue(worldBaseLevelSceneProperty != NULL, @"Base level scene should have world property.");
 }
 
 - (void)testThatBaseLevelSceneHasDefaultPlayerProperty
 {
-    objc_property_t defaultPlayerProperty = class_getProperty([[[TLPBaseLevelScene alloc] init] class], "defaultPlayer");
+    objc_property_t defaultPlayerProperty = class_getProperty([_myScene class], "defaultPlayer");
     
     XCTAssertTrue(defaultPlayerProperty != NULL, @"Base level scene should have default player property.");
 }
 
 - (void)testThatBaseLevelSceneHasPlayersProperty
 {
-    objc_property_t playersProperty = class_getProperty([[[TLPBaseLevelScene alloc] init] class], "players");
+    objc_property_t playersProperty = class_getProperty([_myScene class], "players");
     
     XCTAssertTrue(playersProperty != NULL, @"Base level scene should have players property.");
+}
+
+- (void)testThatBaseLevelSceneHasLayersProperty
+{
+    objc_property_t layersProperty = class_getProperty([_myScene class], "layers");
+    
+    XCTAssertTrue(layersProperty != NULL, @"Base level scene should have layers property.");
 }
 
 #pragma mark - init value tests
 
 - (void)testThatDefaultPlayerPropertyIsNotNilAfterSceneInitialized
 {
-    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
-    
-    XCTAssertNotNil(myScene.defaultPlayer, @"Default player value should be not nil after base level scene initwithsize called.");
+    XCTAssertNotNil(_myScene.defaultPlayer, @"Default player value should be not nil after base level scene initwithsize called.");
 }
 
 - (void)testThatPlayersLengthMatchesNumPlayers
 {
-    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
-    
-    XCTAssertTrue(myScene.players.count == kNumPlayers, @"Players count should equal num players constant in base level scene.");
+    XCTAssertTrue(_myScene.players.count == kNumPlayers, @"Players count should equal num players constant in base level scene.");
 }
 
 - (void)testThatWorldIsNotNilAfterSceneIsInitialized
 {
-    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
-
-    XCTAssertNotNil(myScene.world, @"World should be initialized after initwithsize called in base level scene.");
+    XCTAssertNotNil(_myScene.world, @"World should be initialized after initwithsize called in base level scene.");
 }
 
 - (void)testThatWorldIsNamedProperlyAfterInitialization
 {
-    TLPBaseLevelScene *myScene = [[TLPBaseLevelScene alloc] initWithSize:CGSizeZero];
-    
-    XCTAssertEqualObjects(myScene.world.name, kWorldName, @"The world should be named world.");
+    XCTAssertEqualObjects(_myScene.world.name, kWorldName, @"The world should be named world.");
 }
 
 @end
