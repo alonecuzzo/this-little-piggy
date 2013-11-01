@@ -107,4 +107,9 @@
     XCTAssertThrows([TLPBaseLevelScene loadSceneAssets], @"Shouldn't call loadSceneAssets in base level scene.");
 }
 
+- (void)testThatBaseLevelReleaseSharedAssetsThrowsException
+{
+    XCTAssertThrows([TLPBaseLevelScene releaseSceneAssets], @"Shouldn't call releaseSceneAssets in base level scene.");
+}
+
 @end

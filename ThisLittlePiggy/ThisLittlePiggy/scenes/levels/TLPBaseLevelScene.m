@@ -57,4 +57,9 @@
     [[NSException exceptionWithName:kTLPBaseLevelLoadSharedAssetsException reason:kTLPBaseLevelLoadSharedAssetsExceptionReason userInfo:nil] raise];
 }
 
++ (void)releaseSceneAssets
+{
+    [[NSException exceptionWithName:kTLPBaseLevelReleaseSharedAssetsException reason:kTLPBaseLevelReleaseSharedAssetsExceptionReason userInfo:nil] raise];
+}
+
 @end

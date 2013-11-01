@@ -19,6 +19,8 @@ typedef enum : u_int8_t {
 
 #define kTLPBaseLevelLoadSharedAssetsException @"kTLPBaseLevelException"
 #define kTLPBaseLevelLoadSharedAssetsExceptionReason @"You can't call loadSceneAssets from the base class."
+#define kTLPBaseLevelReleaseSharedAssetsException @"kTLPBaseLevelReleaseSharedAssetsException"
+#define kTLPBaseLevelReleaseSharedAssetsExceptionReason @"You can't call releaseSceneAssets from the base class."
 
 #import <SpriteKit/SpriteKit.h>
 
