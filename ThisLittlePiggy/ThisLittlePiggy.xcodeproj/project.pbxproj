@@ -12,6 +12,7 @@
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
 		8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
 		8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
+		8ECE9BC218257CA60049763C /* UIColor+ThisLittlePiggy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */; };
 		8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
 		8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDA41823E23100533439 /* TLPViewController.m */; };
 		8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED7EDAC1823E2FE00533439 /* TLPAppDelegate.m */; };
@@ -30,9 +31,8 @@
 		8EDDDC991824036800AAC5A8 /* TLPCloudCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */; };
 		8EDDDC9C182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
 		8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */; };
-		8EDDDCA1182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
-		8EDDDCA2182404AD00AAC5A8 /* TLPColorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */; };
 		8EDDDCB018240C0B00AAC5A8 /* placeholderImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8EDDDCAF18240C0B00AAC5A8 /* placeholderImages.atlas */; };
+		8EDDDCB318240E2B00AAC5A8 /* TLPTestLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDDCB218240E2B00AAC5A8 /* TLPTestLevelScene.m */; };
 		8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
@@ -64,6 +64,8 @@
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
 		8E8C1489182352CD00B07048 /* TLPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPPlayer.h; path = scenes/TLPPlayer.h; sourceTree = "<group>"; };
 		8E8C148A182352CD00B07048 /* TLPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPlayer.m; path = scenes/TLPPlayer.m; sourceTree = "<group>"; };
+		8ECE9BC018257CA60049763C /* UIColor+ThisLittlePiggy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ThisLittlePiggy.h"; path = "globals/helpers/UIColor+ThisLittlePiggy.h"; sourceTree = "<group>"; };
+		8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ThisLittlePiggy.m"; path = "globals/helpers/UIColor+ThisLittlePiggy.m"; sourceTree = "<group>"; };
 		8ED7EDA31823E23100533439 /* TLPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPViewController.h; path = controllers/TLPViewController.h; sourceTree = "<group>"; };
 		8ED7EDA41823E23100533439 /* TLPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPViewController.m; path = controllers/TLPViewController.m; sourceTree = "<group>"; };
 		8ED7EDAB1823E2FE00533439 /* TLPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAppDelegate.h; path = delegates/TLPAppDelegate.h; sourceTree = "<group>"; };
@@ -82,9 +84,9 @@
 		8EDDDC971824036800AAC5A8 /* TLPCloudCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCloudCharacter.m; path = sprites/characters/TLPCloudCharacter.m; sourceTree = "<group>"; };
 		8EDDDC9A182403E300AAC5A8 /* TLPParallaxSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPParallaxSprite.h; path = sprites/TLPParallaxSprite.h; sourceTree = "<group>"; };
 		8EDDDC9B182403E300AAC5A8 /* TLPParallaxSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPParallaxSprite.m; path = sprites/TLPParallaxSprite.m; sourceTree = "<group>"; };
-		8EDDDC9F182404AD00AAC5A8 /* TLPColorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPColorHelper.h; path = globals/TLPColorHelper.h; sourceTree = "<group>"; };
-		8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPColorHelper.m; path = globals/TLPColorHelper.m; sourceTree = "<group>"; };
 		8EDDDCAF18240C0B00AAC5A8 /* placeholderImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = placeholderImages.atlas; sourceTree = "<group>"; };
+		8EDDDCB118240E2B00AAC5A8 /* TLPTestLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPTestLevelScene.h; path = scenes/levels/TLPTestLevelScene.h; sourceTree = "<group>"; };
+		8EDDDCB218240E2B00AAC5A8 /* TLPTestLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPTestLevelScene.m; path = scenes/levels/TLPTestLevelScene.m; sourceTree = "<group>"; };
 		8EE97D671821782300B4324A /* ThisLittlePiggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE97D6A1821782300B4324A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EE97D6C1821782300B4324A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +135,8 @@
 			children = (
 				8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */,
 				8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */,
+				8EDDDCB118240E2B00AAC5A8 /* TLPTestLevelScene.h */,
+				8EDDDCB218240E2B00AAC5A8 /* TLPTestLevelScene.m */,
 			);
 			name = levels;
 			sourceTree = "<group>";
@@ -170,6 +174,15 @@
 			name = characters;
 			sourceTree = "<group>";
 		};
+		8ECE9BBF18257C4E0049763C /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8ECE9BC018257CA60049763C /* UIColor+ThisLittlePiggy.h */,
+				8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
 		8ED7EDAF1823F0C700533439 /* mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +203,7 @@
 		8EDDDC9E1824048D00AAC5A8 /* globals */ = {
 			isa = PBXGroup;
 			children = (
-				8EDDDC9F182404AD00AAC5A8 /* TLPColorHelper.h */,
-				8EDDDCA0182404AD00AAC5A8 /* TLPColorHelper.m */,
+				8ECE9BBF18257C4E0049763C /* helpers */,
 			);
 			name = globals;
 			sourceTree = "<group>";
@@ -438,8 +450,9 @@
 				8EDDDC941824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */,
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
+				8EDDDCB318240E2B00AAC5A8 /* TLPTestLevelScene.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
-				8EDDDCA1182404AD00AAC5A8 /* TLPColorHelper.m in Sources */,
+				8ECE9BC218257CA60049763C /* UIColor+ThisLittlePiggy.m in Sources */,
 				8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +472,6 @@
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,
 				8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
-				8EDDDCA2182404AD00AAC5A8 /* TLPColorHelper.m in Sources */,
 				8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

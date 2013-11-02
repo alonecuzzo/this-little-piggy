@@ -10,4 +10,8 @@
 
 @interface TLPCharacter : TLPParallaxSprite
 
+- (id)initWithTexture:(SKTexture *)texture andPosition:(CGPoint)position;
+
++ (void)loadSharedAssets;
+
 @end

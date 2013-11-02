@@ -8,7 +8,7 @@
 
 #import "TLPBaseLevelScene.h"
 #import "TLPPlayer.h"
-#import "TLPColorHelper.h"
+#import "UIColor+ThisLittlePiggy.h"
 
 @interface TLPBaseLevelScene()
 
@@ -25,7 +25,7 @@
     self = [super initWithSize:size];
     if (self) {
         
-        self.backgroundColor = [TLPColorHelper tlpSkyBlue];
+        self.backgroundColor = [UIColor thisLittlePiggySkyBlue];
         
         _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];
