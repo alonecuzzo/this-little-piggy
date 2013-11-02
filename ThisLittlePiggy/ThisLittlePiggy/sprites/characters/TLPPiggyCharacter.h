@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
-#import "TLPCharacter.h"
+#import "TLPComputerControlledCharacter.h"
 
-@interface TLPPiggyCharacter : TLPCharacter
+@interface TLPPiggyCharacter : TLPComputerControlledCharacter
 
 - (id)initAtPosition:(CGPoint)position;
 

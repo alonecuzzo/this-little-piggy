@@ -52,6 +52,24 @@
     return self;
 }
 
+#pragma mark - loop stuff
+- (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast
+{
+    //overridden by subclasses
+}
+
+- (void)update:(NSTimeInterval)currentTime
+{
+    CFTimeInterval timeSinceLast = currentTime - self.lastUpdateTimeInterval;
+    self.lastUpdateTimeInterval = currentTime;
+    if (timeSinceLast > 1) {
+        timeSinceLast = kMinTimeInterval;
+        self.lastUpdateTimeInterval = currentTime;
+    }
+    
+    [self updateWithTimeSinceLastUpdate:timeSinceLast];
+}
+
 #pragma mark - assets business
 + (void)loadSceneAssets
 {

@@ -17,10 +17,20 @@
     self = [super initWithSize:size];
     if (self) {
         TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+        piggy.name = @"piggy";
+        piggy.movementSpeed = 2.0f;
         [self addChild:piggy];
     }
     
     return self;
+}
+
+#pragma mark - loop stuff
+- (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast
+{
+    TLPPiggyCharacter *piggy = (TLPPiggyCharacter*)[self childNodeWithName:@"piggy"];
+    
+    [piggy updateWithTimeSinceLastInterval:timeSinceLast];
 }
 
 @end

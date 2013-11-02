@@ -10,8 +10,15 @@
 
 @interface TLPCharacter : TLPParallaxSprite
 
+@property(nonatomic) CGFloat movementSpeed;
+
 - (id)initWithTexture:(SKTexture *)texture andPosition:(CGPoint)position;
 
 + (void)loadSharedAssets;
+
+- (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval;
+
+//movement and stuffs
+- (void)moveTowards:(CGPoint)position withTimeInterval:(NSTimeInterval)timeInterval;
 
 @end

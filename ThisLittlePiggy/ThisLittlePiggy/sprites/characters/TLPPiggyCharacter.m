@@ -7,6 +7,7 @@
 //
 
 #import "TLPPiggyCharacter.h"
+#import "TLPWalkAI.h"
 
 @implementation TLPPiggyCharacter
 
@@ -17,6 +18,7 @@
     self = [super initWithTexture:[atlas textureNamed:@"piggy.png"] andPosition:position];
     if (self) {
         self.name = @"piggy";
+        self.intelligence = [[TLPWalkAI alloc] initWithCharacter:self andDestination:CGPointMake(100.0, self.position.y)];
     }
     return self;
 }
@@ -27,7 +29,7 @@
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"placeholderImages"];
+//        SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"placeholderImages"];
         
     });
 }

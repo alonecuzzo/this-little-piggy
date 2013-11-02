@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
-#import "TLPCharacter.h"
+#import "TLPComputerControlledCharacter.h"
 
-@interface TLPEnemyCharacter : TLPCharacter
+@interface TLPEnemyCharacter : TLPComputerControlledCharacter
 
 @end

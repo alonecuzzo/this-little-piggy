@@ -14,6 +14,7 @@ typedef enum : u_int8_t {
 } TLPWorldLayer;
 
 #define kPiggyMinimumDistanceToEdge 256
+#define kMinTimeInterval (1.0f / 60.0f)
 #define kNumPlayers 1
 #define kWorldName @"world"
 
@@ -31,9 +32,12 @@ typedef enum : u_int8_t {
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
 @property(nonatomic, readonly) NSArray *players;
+@property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
 
 + (void)loadSceneAssets;
 
 + (void)releaseSceneAssets;
+
+- (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast;
 
 @end
