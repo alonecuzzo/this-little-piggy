@@ -11,6 +11,7 @@
 @interface TLPCharacter : TLPParallaxSprite
 
 @property(nonatomic) CGFloat movementSpeed;
+@property(nonatomic) CGFloat animationSpeed;
 
 - (id)initWithTexture:(SKTexture *)texture andPosition:(CGPoint)position;
 

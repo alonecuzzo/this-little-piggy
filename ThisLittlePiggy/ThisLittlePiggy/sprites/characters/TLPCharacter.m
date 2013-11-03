@@ -37,14 +37,13 @@
     CGFloat dx = position.x - curPosition.x;
     CGFloat dy = position.y - curPosition.y;
     
-    CGFloat distance = sqrtf((dx*dx) + (dy*dy));
-    CGFloat rotation = atan2f(dx, dy) / M_PI * 180.0f;
+    CGFloat distance = sqrt((dx*dx) + (dy*dy));
     
     if (distance < self.movementSpeed) {
         [self setPosition:position];
     } else {
-        CGFloat newX = curPosition.x + cosf(rotation / 180.0f * M_PI) * self.movementSpeed;
-        CGFloat newY = curPosition.y - sinf(rotation / 180.0f * M_PI) * self.movementSpeed;
+        CGFloat newX = curPosition.x + dx / self.animationSpeed;
+        CGFloat newY = curPosition.y + dy / self.animationSpeed;
         
         [self setPosition:CGPointMake(newX, newY)];
     }

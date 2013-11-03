@@ -18,7 +18,7 @@
     self = [super initWithTexture:[atlas textureNamed:@"piggy.png"] andPosition:position];
     if (self) {
         self.name = @"piggy";
-        self.intelligence = [[TLPWalkAI alloc] initWithCharacter:self andDestination:CGPointMake(100.0, self.position.y)];
+        self.intelligence = [[TLPWalkAI alloc] initWithCharacter:self andDestination:CGPointMake(3000.0, self.position.y)];
     }
     return self;
 }

@@ -16,9 +16,10 @@
 {
     self = [super initWithSize:size];
     if (self) {
-        TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+        TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame) - 300, CGRectGetMidY(self.frame) - 200)];
         piggy.name = @"piggy";
         piggy.movementSpeed = 2.0f;
+        piggy.animationSpeed = 1130.0f;
         [self addChild:piggy];
     }
     
