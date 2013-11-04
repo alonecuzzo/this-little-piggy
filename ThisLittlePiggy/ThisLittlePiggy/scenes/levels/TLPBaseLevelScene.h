@@ -10,6 +10,7 @@ typedef enum : u_int8_t {
     TLPWorldLayerBackground = 0,
     TLPWorldLayerGround,
     TLPWorldLayerCharacter,
+    TLPWorldLayerDebug,
     kTLPWorldLayerCount
 } TLPWorldLayer;
 
@@ -17,6 +18,8 @@ typedef enum : u_int8_t {
 #define kMinTimeInterval (1.0f / 60.0f)
 #define kNumPlayers 1
 #define kWorldName @"world"
+#define kUmbrellaDistanceFromEdge 100
+#define kIsDebugMode 1
 
 #define kTLPBaseLevelLoadSharedAssetsException @"kTLPBaseLevelException"
 #define kTLPBaseLevelLoadSharedAssetsExceptionReason @"You can't call loadSceneAssets from the base class."
@@ -42,5 +45,7 @@ typedef enum : u_int8_t {
 + (void)releaseSceneAssets;
 
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast;
+
+- (void)addChild:(SKNode *)node atWorldLayer:(TLPWorldLayer)layer;
 
 @end

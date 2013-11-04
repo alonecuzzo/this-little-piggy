@@ -19,10 +19,10 @@
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
-    
+    [skView setFrame:CGRectMake(0, 0, 1024, 768)];
     // Create and configure the scene.
     SKScene * scene = [TLPTestLevelScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeAspectFit;
     
     // Present the scene.
     [skView presentScene:scene];

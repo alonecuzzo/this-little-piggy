@@ -40,9 +40,19 @@
         umbrella.physicsBody.mass = 0.02;
         umbrella.name = @"umbrella";
         [self addChild:umbrella];
+        
     }
     
     return self;
+}
+
+- (void)didMoveToView:(SKView *)view
+{
+    [super didMoveToView:view];
+    
+    if (kIsDebugMode) {
+        [self buildDebugGraphics];
+    }
 }
 
 #pragma mark - loop stuff
@@ -67,6 +77,17 @@
     if (fabs(data.acceleration.y) > 0.2) {
         [umbrella.physicsBody applyForce:CGVectorMake(40.0 * data.acceleration.y, 0)];
     }
+}
+
+#pragma mark - debug stuff
+- (void)buildDebugGraphics
+{
+    SKSpriteNode *activeUmbrellaMovementAreaSprite = [[SKSpriteNode alloc] initWithColor:[UIColor purpleColor] size:CGSizeMake(758, 593)];
+    activeUmbrellaMovementAreaSprite.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    activeUmbrellaMovementAreaSprite.alpha = 0.4;
+    [self addChild:activeUmbrellaMovementAreaSprite atWorldLayer:TLPWorldLayerDebug];
+    NSLog(@"width: %f", self.size.width - kUmbrellaDistanceFromEdge * 2);
+    NSLog(@"height: %f", self.size.height - kUmbrellaDistanceFromEdge * 2);
 }
 
 @end

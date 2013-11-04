@@ -95,4 +95,11 @@
     [[NSException exceptionWithName:kTLPBaseLevelReleaseSharedAssetsException reason:kTLPBaseLevelReleaseSharedAssetsExceptionReason userInfo:nil] raise];
 }
 
+#pragma mark - character stuff
+- (void)addChild:(SKNode *)node atWorldLayer:(TLPWorldLayer)layer
+{
+    SKNode *layerNode = self.layers[layer];
+    [layerNode addChild:node];
+}
+
 @end
