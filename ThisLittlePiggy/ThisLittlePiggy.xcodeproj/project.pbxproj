@@ -12,6 +12,10 @@
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
 		8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
 		8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
+		8EB1C49618271D400074AA95 /* TLPSpawnAI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C49518271D400074AA95 /* TLPSpawnAI.m */; };
+		8EB1C49718271D400074AA95 /* TLPSpawnAI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C49518271D400074AA95 /* TLPSpawnAI.m */; };
+		8EB1C49A182726880074AA95 /* TLPSkySprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C499182726880074AA95 /* TLPSkySprite.m */; };
+		8EB1C49B182726880074AA95 /* TLPSkySprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C499182726880074AA95 /* TLPSkySprite.m */; };
 		8ECE9BC218257CA60049763C /* UIColor+ThisLittlePiggy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */; };
 		8ECE9BC618258C070049763C /* TLPArtificialIntelligence.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE9BC518258C070049763C /* TLPArtificialIntelligence.m */; };
 		8ECE9BC718258C070049763C /* TLPArtificialIntelligence.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE9BC518258C070049763C /* TLPArtificialIntelligence.m */; };
@@ -70,6 +74,10 @@
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
 		8E8C1489182352CD00B07048 /* TLPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPPlayer.h; path = scenes/TLPPlayer.h; sourceTree = "<group>"; };
 		8E8C148A182352CD00B07048 /* TLPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPlayer.m; path = scenes/TLPPlayer.m; sourceTree = "<group>"; };
+		8EB1C49418271D400074AA95 /* TLPSpawnAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSpawnAI.h; path = ai/TLPSpawnAI.h; sourceTree = "<group>"; };
+		8EB1C49518271D400074AA95 /* TLPSpawnAI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSpawnAI.m; path = ai/TLPSpawnAI.m; sourceTree = "<group>"; };
+		8EB1C498182726880074AA95 /* TLPSkySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSkySprite.h; path = sprites/characters/TLPSkySprite.h; sourceTree = "<group>"; };
+		8EB1C499182726880074AA95 /* TLPSkySprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSkySprite.m; path = sprites/characters/TLPSkySprite.m; sourceTree = "<group>"; };
 		8ECE9BC018257CA60049763C /* UIColor+ThisLittlePiggy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+ThisLittlePiggy.h"; path = "globals/helpers/UIColor+ThisLittlePiggy.h"; sourceTree = "<group>"; };
 		8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ThisLittlePiggy.m"; path = "globals/helpers/UIColor+ThisLittlePiggy.m"; sourceTree = "<group>"; };
 		8ECE9BC418258C070049763C /* TLPArtificialIntelligence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPArtificialIntelligence.h; path = ai/TLPArtificialIntelligence.h; sourceTree = "<group>"; };
@@ -182,6 +190,8 @@
 				8EDDDC931824034A00AAC5A8 /* TLPEnemyCharacter.m */,
 				8EDDDC8E1824032400AAC5A8 /* TLPPiggyCharacter.h */,
 				8EDDDC8F1824032400AAC5A8 /* TLPPiggyCharacter.m */,
+				8EB1C498182726880074AA95 /* TLPSkySprite.h */,
+				8EB1C499182726880074AA95 /* TLPSkySprite.m */,
 				8EDDDC8A182402FE00AAC5A8 /* TLPUmbrellaCharacter.h */,
 				8EDDDC8B182402FE00AAC5A8 /* TLPUmbrellaCharacter.m */,
 			);
@@ -202,6 +212,8 @@
 			children = (
 				8ECE9BC418258C070049763C /* TLPArtificialIntelligence.h */,
 				8ECE9BC518258C070049763C /* TLPArtificialIntelligence.m */,
+				8EB1C49418271D400074AA95 /* TLPSpawnAI.h */,
+				8EB1C49518271D400074AA95 /* TLPSpawnAI.m */,
 				8ECE9BC818258D2D0049763C /* TLPWalkAI.h */,
 				8ECE9BC918258D2D0049763C /* TLPWalkAI.m */,
 			);
@@ -466,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB1C49618271D400074AA95 /* TLPSpawnAI.m in Sources */,
 				8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */,
 				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8ECE9BCE18259DD70049763C /* TLPComputerControlledCharacter.m in Sources */,
@@ -477,6 +490,7 @@
 				8EDDDC9C182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */,
 				8EDDDC941824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */,
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
+				8EB1C49A182726880074AA95 /* TLPSkySprite.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
 				8EDDDCB318240E2B00AAC5A8 /* TLPTestLevelScene.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
@@ -490,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB1C49B182726880074AA95 /* TLPSkySprite.m in Sources */,
 				8ED7EDAE1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8ED7EDB41823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8EDDDC911824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */,
@@ -500,6 +515,7 @@
 				8EDDDC991824036800AAC5A8 /* TLPCloudCharacter.m in Sources */,
 				8EDDDC9D182403E300AAC5A8 /* TLPParallaxSprite.m in Sources */,
 				8EDDDC951824034A00AAC5A8 /* TLPEnemyCharacter.m in Sources */,
+				8EB1C49718271D400074AA95 /* TLPSpawnAI.m in Sources */,
 				8ECE9BCF18259DD70049763C /* TLPComputerControlledCharacter.m in Sources */,
 				8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */,
 				8ED7EDA61823E23100533439 /* TLPViewController.m in Sources */,

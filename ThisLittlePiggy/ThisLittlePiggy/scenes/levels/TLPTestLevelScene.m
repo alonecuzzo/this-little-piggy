@@ -8,6 +8,8 @@
 
 #import "TLPTestLevelScene.h"
 #import "TLPPiggyCharacter.h"
+#import "TLPUmbrellaCharacter.h"
+#import "TLPSkySprite.h"
 
 @implementation TLPTestLevelScene
 
@@ -16,11 +18,19 @@
 {
     self = [super initWithSize:size];
     if (self) {
+        
+        TLPSkySprite *sky = [[TLPSkySprite alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+        [self addChild:sky];
+        
         TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame) - 300, CGRectGetMidY(self.frame) - 200)];
         piggy.name = @"piggy";
         piggy.movementSpeed = 2.0f;
         piggy.animationSpeed = 1130.0f;
         [self addChild:piggy];
+        
+        TLPUmbrellaCharacter *umbrella = [[TLPUmbrellaCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 70)];
+        umbrella.name = @"umbrella";
+        [self addChild:umbrella];
     }
     
     return self;

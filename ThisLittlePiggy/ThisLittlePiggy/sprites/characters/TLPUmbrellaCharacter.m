@@ -10,4 +10,15 @@
 
 @implementation TLPUmbrellaCharacter
 
+#pragma mark - init stuff
+- (id)initAtPosition:(CGPoint)position
+{
+   SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"placeholderImages"];
+    self = [super initWithTexture:[atlas textureNamed:@"umbrella.png"] andPosition:position];
+    if (self) {
+        self.name = @"umbrella";
+    }
+    return self;
+}
+
 @end

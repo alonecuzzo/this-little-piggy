@@ -10,4 +10,10 @@
 
 @implementation TLPEnemyCharacter
 
+#pragma mark - update loop stuff
+- (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval
+{
+    [super updateWithTimeSinceLastInterval:interval];
+}
+
 @end

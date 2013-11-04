@@ -7,6 +7,7 @@
 //
 
 #import "TLPCharacter.h"
+#import "TLPBaseLevelScene.h"
 
 @implementation TLPCharacter
 
@@ -53,6 +54,18 @@
 - (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval
 {
     
+}
+
+#pragma mark - scene business
+- (TLPBaseLevelScene*)characterScene
+{
+    TLPBaseLevelScene *scene = (id)[self scene];
+    
+    if ([scene isKindOfClass:[TLPBaseLevelScene class]]) {
+        return scene;
+    } else {
+        return nil;
+    }
 }
 
 @end

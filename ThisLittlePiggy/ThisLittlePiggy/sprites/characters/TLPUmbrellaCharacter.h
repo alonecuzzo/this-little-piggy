@@ -10,4 +10,6 @@
 
 @interface TLPUmbrellaCharacter : TLPCharacter
 
+- (id)initAtPosition:(CGPoint)position;
+
 @end

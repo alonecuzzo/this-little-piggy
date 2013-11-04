@@ -8,6 +8,8 @@
 
 #import "TLPParallaxSprite.h"
 
+@class TLPBaseLevelScene;
+
 @interface TLPCharacter : TLPParallaxSprite
 
 @property(nonatomic) CGFloat movementSpeed;
@@ -21,5 +23,7 @@
 
 //movement and stuffs
 - (void)moveTowards:(CGPoint)position withTimeInterval:(NSTimeInterval)timeInterval;
+
+- (TLPBaseLevelScene*)characterScene;
 
 @end
