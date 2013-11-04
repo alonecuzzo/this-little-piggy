@@ -24,6 +24,7 @@ typedef enum : u_int8_t {
 #define kTLPBaseLevelReleaseSharedAssetsExceptionReason @"You can't call releaseSceneAssets from the base class."
 
 #import <SpriteKit/SpriteKit.h>
+#import <CoreMotion/CoreMotion.h>
 
 @class TLPPlayer;
 
@@ -34,6 +35,7 @@ typedef enum : u_int8_t {
 @property(nonatomic, readonly) NSArray *players;
 @property(nonatomic) NSTimeInterval lastUpdateTimeInterval;
 @property(nonatomic) NSTimeInterval timeSinceLastCloudSpawn;
+@property(nonatomic) CMMotionManager *motionManager;
 
 + (void)loadSceneAssets;
 

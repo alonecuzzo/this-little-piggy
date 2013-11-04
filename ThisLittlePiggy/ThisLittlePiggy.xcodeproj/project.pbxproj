@@ -56,6 +56,7 @@
 		8EE97D921821782400B4324A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8EE97D931821782400B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D9B1821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D991821782400B4324A /* InfoPlist.strings */; };
+		8EFA4E8B18281F4700FD157E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFA4E8A18281F4700FD157E /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		8EE97D901821782400B4324A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8EE97D981821782400B4324A /* ThisLittlePiggyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyTests-Info.plist"; sourceTree = "<group>"; };
 		8EE97D9A1821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8EFA4E8A18281F4700FD157E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFA4E8B18281F4700FD157E /* CoreMotion.framework in Frameworks */,
 				8EE97D6D1821782300B4324A /* CoreGraphics.framework in Frameworks */,
 				8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */,
 				8EE97D711821782400B4324A /* SpriteKit.framework in Frameworks */,
@@ -283,6 +286,7 @@
 		8EE97D691821782300B4324A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EFA4E8A18281F4700FD157E /* CoreMotion.framework */,
 				8EE97D6A1821782300B4324A /* Foundation.framework */,
 				8EE97D6C1821782300B4324A /* CoreGraphics.framework */,
 				8EE97D6E1821782300B4324A /* UIKit.framework */,

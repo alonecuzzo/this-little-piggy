@@ -48,8 +48,20 @@
         
         [self addChild:_world];
     }
-    
     return self;
+}
+
+#pragma mark - delegate stuff
+- (void)didMoveToView:(SKView *)view
+{
+    _motionManager = [[CMMotionManager alloc] init];
+    [_motionManager startAccelerometerUpdates];
+}
+
+#pragma mark - core motion stuff
+- (void)processUserMotionForUpdate:(NSTimeInterval)interval
+{
+    //override
 }
 
 #pragma mark - loop stuff

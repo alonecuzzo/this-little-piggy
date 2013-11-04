@@ -35,7 +35,6 @@
         [sky generate];
         sky.timeUntilNextGenerate = 0;
     }
-    //make sum clouds
 }
 
 @end
