@@ -82,7 +82,7 @@
 #pragma mark - debug stuff
 - (void)buildDebugGraphics
 {
-    SKSpriteNode *activeUmbrellaMovementAreaSprite = [[SKSpriteNode alloc] initWithColor:[UIColor purpleColor] size:CGSizeMake(758, 593)];
+    SKSpriteNode *activeUmbrellaMovementAreaSprite = [[SKSpriteNode alloc] initWithColor:[UIColor purpleColor] size:CGSizeMake(self.size.width - kUmbrellaDistanceFromEdge * 2, self.size.height - kUmbrellaDistanceFromEdge * 2)];
     activeUmbrellaMovementAreaSprite.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     activeUmbrellaMovementAreaSprite.alpha = 0.4;
     [self addChild:activeUmbrellaMovementAreaSprite atWorldLayer:TLPWorldLayerDebug];
