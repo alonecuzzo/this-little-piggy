@@ -45,7 +45,7 @@
             SKNode *layer = [[SKNode alloc] init];
             layer.zPosition = i - kTLPWorldLayerCount;
             [_world addChild:layer];
-            [_layers addObject:layer];
+            [(NSMutableArray*)_layers addObject:layer];
         }
         
         [self addChild:_world];

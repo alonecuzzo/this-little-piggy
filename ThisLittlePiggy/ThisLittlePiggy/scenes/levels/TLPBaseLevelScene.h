@@ -7,9 +7,10 @@
 //
 
 typedef enum : u_int8_t {
-    TLPWorldLayerBackground = 0,
+    TLPWorldLayerSky = 0,
     TLPWorldLayerGround,
     TLPWorldLayerCharacter,
+    TLPWorldLayerUmbrella,
     TLPWorldLayerDebug,
     kTLPWorldLayerCount
 } TLPWorldLayer;
@@ -36,6 +37,7 @@ typedef enum : u_int8_t {
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
 @property(nonatomic, readonly) NSArray *players;
+@property(nonatomic, readonly) NSArray *layers;
 @property(nonatomic) NSTimeInterval lastUpdateTimeInterval;
 @property(nonatomic) NSTimeInterval timeSinceLastCloudSpawn;
 @property(nonatomic) CMMotionManager *motionManager;

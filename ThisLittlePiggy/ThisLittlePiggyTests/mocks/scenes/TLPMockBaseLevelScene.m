@@ -14,9 +14,9 @@
 {
     self = [super initWithSize:size];
     if (self) {
-        _layers = [NSMutableArray arrayWithCapacity:kTLPWorldLayerCount];
+//        _layers = [NSMutableArray arrayWithCapacity:kTLPWorldLayerCount];
         for (int i = 0; i < kTLPWorldLayerCount; i++) {
-            [_layers addObject:[NSNull null]];
+//            [_layers addObject:[NSNull null]];
         }
     }
     return self;

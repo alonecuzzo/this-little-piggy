@@ -10,6 +10,4 @@
 
 @interface TLPMockBaseLevelScene : TLPBaseLevelScene
 
-@property(nonatomic) NSMutableArray *layers;
-
 @end

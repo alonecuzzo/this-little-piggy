@@ -24,14 +24,14 @@
         
         //this is wrong, the cloud layer should move since the camera is moving, old clouds that are passed will still be hanging around
         TLPSky *sky = [[TLPSky alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
-        [TLPSky setGlobalCloudCap:15];
-        [self addChild:sky];
+        [TLPSky setGlobalCloudCap:35];
+        [self addChild:sky atWorldLayer:TLPWorldLayerSky];
         
         TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame) - 300, CGRectGetMidY(self.frame) - 200)];
         piggy.name = @"piggy";
         piggy.movementSpeed = 1.0f;
         piggy.animationSpeed = 1930.0f;
-        [self addChild:piggy];
+        [self addChild:piggy atWorldLayer:TLPWorldLayerCharacter];
         
         TLPUmbrellaCharacter *umbrella = [[TLPUmbrellaCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 70)];
         umbrella.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:umbrella.size];
@@ -39,8 +39,7 @@
         umbrella.physicsBody.affectedByGravity = NO;
         umbrella.physicsBody.mass = 0.02;
         umbrella.name = @"umbrella";
-        [self addChild:umbrella];
-        
+        [self addChild:umbrella atWorldLayer:TLPWorldLayerUmbrella];
     }
     
     return self;
@@ -58,20 +57,40 @@
 #pragma mark - loop stuff
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast
 {
-    TLPPiggyCharacter *piggy = (TLPPiggyCharacter*)[self childNodeWithName:@"piggy"];
+    TLPPiggyCharacter *piggy = [self piggySprite];
     [piggy updateWithTimeSinceLastInterval:timeSinceLast];
     
-    TLPSky *sky = (TLPSky*)[self childNodeWithName:@"sky"];
+    TLPSky *sky = [self skySprite];
     [sky updateWithTimeSinceLastInterval:timeSinceLast];
     
     [self processUserMotionForUpdate:timeSinceLast];
+    
+    //check to see if the umbrella is in the hot zone
+    [self moveWorldAccordingToUmbrellaPosition];
 }
 
+- (void)moveWorldAccordingToUmbrellaPosition
+{
+    TLPUmbrellaCharacter *umbrella = [self umbrellaSprite];
+    SKNode *skyLayer = (SKNode*)self.layers[TLPWorldLayerSky];
+    SKNode *piggyLayer = (SKNode*)self.layers[TLPWorldLayerCharacter];
+    float skyBackgroundMoveSpeed = 7.0f;
+    
+    if (umbrella.position.x > self.size.width - kUmbrellaDistanceFromEdge) {
+        CGPoint newPoint = CGPointMake(skyLayer.position.x-skyBackgroundMoveSpeed, skyLayer.position.y);
+        skyLayer.position = newPoint;
+        piggyLayer.position = newPoint;
+    } else if (umbrella.position.x < kUmbrellaDistanceFromEdge) {
+        CGPoint newPoint = CGPointMake(skyLayer.position.x+skyBackgroundMoveSpeed, skyLayer.position.y);
+        skyLayer.position = newPoint;
+        piggyLayer.position = newPoint;
+    }
+}
 
 #pragma mark - core motion stuff
 - (void)processUserMotionForUpdate:(CFTimeInterval)interval
 {
-    TLPUmbrellaCharacter *umbrella = (TLPUmbrellaCharacter*)[self childNodeWithName:@"umbrella"];
+    TLPUmbrellaCharacter *umbrella = [self umbrellaSprite];
     CMAccelerometerData *data = self.motionManager.accelerometerData;
     
     if (fabs(data.acceleration.y) > 0.2) {
@@ -86,8 +105,22 @@
     activeUmbrellaMovementAreaSprite.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     activeUmbrellaMovementAreaSprite.alpha = 0.4;
     [self addChild:activeUmbrellaMovementAreaSprite atWorldLayer:TLPWorldLayerDebug];
-    NSLog(@"width: %f", self.size.width - kUmbrellaDistanceFromEdge * 2);
-    NSLog(@"height: %f", self.size.height - kUmbrellaDistanceFromEdge * 2);
+}
+
+#pragma mark - layer helpers
+- (TLPUmbrellaCharacter*)umbrellaSprite
+{
+    return (TLPUmbrellaCharacter*)((SKNode*)[self.layers[TLPWorldLayerUmbrella] childNodeWithName:@"umbrella"]);
+}
+
+- (TLPPiggyCharacter*)piggySprite
+{
+    return (TLPPiggyCharacter*)((SKNode*)[self.layers[TLPWorldLayerCharacter] childNodeWithName:@"piggy"]);
+}
+
+- (TLPSky*)skySprite
+{
+    return (TLPSky*)((SKNode*)[self.layers[TLPWorldLayerSky] childNodeWithName:@"sky"]);
 }
 
 @end

@@ -9,6 +9,7 @@
 #import "TLPSky.h"
 #import "TLPSpawnAI.h"
 #import "TLPCloudCharacter.h"
+#import "TLPBaseLevelScene.h"
 
 #define kNumClouds 30
 
@@ -26,7 +27,7 @@
 {
 //    SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"placeholderImages"];
 //    self = [super initWithTexture:[atlas textureNamed:@"sky.png"]];
-    self = [super initWithColor:[UIColor orangeColor] size:CGSizeMake(1024, 60)];
+    self = [super initWithColor:[UIColor clearColor] size:CGSizeMake(1024, 768)];
     if (self) {
         self.name = @"sky";
         self.intelligence = [[TLPSpawnAI alloc] initWithCharacter:self];
@@ -57,6 +58,10 @@
         return;
     }
     
+    if (_inActiveClouds.count == 0) {
+        return;
+    }
+    
     TLPCloudCharacter *cloud = [_inActiveClouds lastObject];
     cloud.movementSpeed = 3;
     //the clouds aren't going to randomly pop on the stage, they're going to slide in...
@@ -64,7 +69,9 @@
     int randy = arc4random() % ((int)[self scene].size.height - 600) + 600;
     cloud.position = CGPointMake([self scene].size.width + 100, randy);
     
-    [[self scene] addChild:cloud];
+    TLPBaseLevelScene *scene = (TLPBaseLevelScene*)[self scene];
+    [scene addChild:cloud atWorldLayer:TLPWorldLayerSky];
+//    [self addChild:cloud];
     
 //    [cloud moveTowards:CGPointMake(randx, randy) withTimeInterval:1.0];
     SKAction *moveToRandomX = [SKAction moveToX:randx duration:3.0];
