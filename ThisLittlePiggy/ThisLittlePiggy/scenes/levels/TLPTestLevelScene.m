@@ -37,7 +37,7 @@
         umbrella.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:umbrella.size];
         umbrella.physicsBody.dynamic = YES;
         umbrella.physicsBody.affectedByGravity = NO;
-        umbrella.physicsBody.mass = 0.2;
+        umbrella.physicsBody.mass = 0.02;
         umbrella.name = @"umbrella";
         [self addChild:umbrella];
     }
@@ -64,12 +64,9 @@
     TLPUmbrellaCharacter *umbrella = (TLPUmbrellaCharacter*)[self childNodeWithName:@"umbrella"];
     CMAccelerometerData *data = self.motionManager.accelerometerData;
     
-    if (fabs(data.acceleration.x) > 0.2) {
-        NSLog(@"LOLZ: %f", fabs(data.acceleration.x));
-        [umbrella.physicsBody applyForce:CGVectorMake(40.0 * data.acceleration.x, 0)];
-        
+    if (fabs(data.acceleration.y) > 0.2) {
+        [umbrella.physicsBody applyForce:CGVectorMake(40.0 * data.acceleration.y, 0)];
     }
-    
 }
 
 @end

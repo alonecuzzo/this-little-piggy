@@ -27,6 +27,8 @@
         
         self.backgroundColor = [UIColor thisLittlePiggySkyBlue];
         
+        self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
+        
         _players = [[NSMutableArray alloc] initWithCapacity:kNumPlayers];
         _defaultPlayer = [[TLPPlayer alloc] init];
         [(NSMutableArray*)_players addObject:_defaultPlayer];
