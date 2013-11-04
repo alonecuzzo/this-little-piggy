@@ -9,6 +9,7 @@
 #import "TLPSpawnAI.h"
 #import "TLPCharacter.h"
 #import "TLPBaseLevelScene.h"
+#import "TLPSky.h"
 
 @implementation TLPSpawnAI
 
@@ -25,10 +26,11 @@
 #pragma mark - update loop stuff
 - (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval
 {
-    TLPBaseLevelScene *characterScene = [self.character characterScene];
-    NSTimeInterval timeSinceLastCloudSpawn = characterScene.timeSinceLastCloudSpawn;
+    TLPSky *sky = (id)self.character;
+    TLPBaseLevelScene *scene = [sky characterScene];
     
-    
+    //make sum clouds
+    [sky generate];
 }
 
 @end

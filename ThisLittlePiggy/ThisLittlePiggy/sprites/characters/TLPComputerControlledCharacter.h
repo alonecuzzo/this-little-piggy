@@ -14,4 +14,6 @@
 
 @property(nonatomic) TLPArtificialIntelligence *intelligence;
 
+- (id)initAtPosition:(CGPoint)position;
+
 @end

@@ -9,7 +9,7 @@
 #import "TLPTestLevelScene.h"
 #import "TLPPiggyCharacter.h"
 #import "TLPUmbrellaCharacter.h"
-#import "TLPSkySprite.h"
+#import "TLPSky.h"
 
 @implementation TLPTestLevelScene
 
@@ -19,7 +19,8 @@
     self = [super initWithSize:size];
     if (self) {
         
-        TLPSkySprite *sky = [[TLPSkySprite alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+        TLPSky *sky = [[TLPSky alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
+        [TLPSky setGlobalCloudCap:15];
         [self addChild:sky];
         
         TLPPiggyCharacter *piggy = [[TLPPiggyCharacter alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame) - 300, CGRectGetMidY(self.frame) - 200)];
@@ -40,8 +41,10 @@
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast
 {
     TLPPiggyCharacter *piggy = (TLPPiggyCharacter*)[self childNodeWithName:@"piggy"];
-    
     [piggy updateWithTimeSinceLastInterval:timeSinceLast];
+    
+    TLPSky *sky = (TLPSky*)[self childNodeWithName:@"sky"];
+    [sky updateWithTimeSinceLastInterval:timeSinceLast];
 }
 
 @end

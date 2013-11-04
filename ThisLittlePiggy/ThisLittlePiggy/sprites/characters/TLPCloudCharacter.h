@@ -8,6 +8,12 @@
 
 #import "TLPEnemyCharacter.h"
 
+@class TLPSky;
+
 @interface TLPCloudCharacter : TLPEnemyCharacter
+
+@property(nonatomic) TLPSky *sky;
+
+- (id)initAtPosition:(CGPoint)position;
 
 @end

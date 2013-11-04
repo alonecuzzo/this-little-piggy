@@ -8,12 +8,17 @@
 
 #import "TLPEnemyCharacter.h"
 
-@interface TLPSkySprite : TLPEnemyCharacter
+@interface TLPSky : TLPEnemyCharacter
 
 @property(nonatomic, readonly) NSArray *activeClouds;
 @property(nonatomic, readonly) NSArray *inactiveClouds;
 @property(nonatomic) CGFloat timeUntilNextGenerate;
 
++ (void)setGlobalCloudCap:(uint)cap;
++ (uint)globalCloudCap;
+
 - (id)initAtPosition:(CGPoint)position;
+
+- (void)generate;
 
 @end

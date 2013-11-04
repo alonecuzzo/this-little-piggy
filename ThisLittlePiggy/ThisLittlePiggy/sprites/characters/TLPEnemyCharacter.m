@@ -7,6 +7,7 @@
 //
 
 #import "TLPEnemyCharacter.h"
+#import "TLPArtificialIntelligence.h"
 
 @implementation TLPEnemyCharacter
 
