@@ -26,7 +26,7 @@
 {
 //    SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"placeholderImages"];
 //    self = [super initWithTexture:[atlas textureNamed:@"sky.png"]];
-    self = [super initWithColor:[UIColor orangeColor] size:CGSizeMake(1024, 768)];
+    self = [super initWithColor:[UIColor orangeColor] size:CGSizeMake(1024, 60)];
     if (self) {
         self.name = @"sky";
         self.intelligence = [[TLPSpawnAI alloc] initWithCharacter:self];
@@ -58,11 +58,17 @@
     }
     
     TLPCloudCharacter *cloud = [_inActiveClouds lastObject];
-    int randx = arc4random() % (int)[self scene].size.width;
-    int randy = arc4random() % (int)[self scene].size.height;
-    cloud.position = CGPointMake(randx, randy);
+    cloud.movementSpeed = 3;
+    //the clouds aren't going to randomly pop on the stage, they're going to slide in...
+    int randx = arc4random() % (int)[self scene].size.width; // the x value should always be + or - the x bounds of the scene, then the cloud floats in
+    int randy = arc4random() % ((int)[self scene].size.height - 600) + 600;
+    cloud.position = CGPointMake([self scene].size.width + 100, randy);
     
     [[self scene] addChild:cloud];
+    
+//    [cloud moveTowards:CGPointMake(randx, randy) withTimeInterval:1.0];
+    SKAction *moveToRandomX = [SKAction moveToX:randx duration:3.0];
+    [cloud runAction:moveToRandomX];
     
     [_inActiveClouds removeLastObject];
     

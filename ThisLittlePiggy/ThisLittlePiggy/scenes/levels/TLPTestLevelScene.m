@@ -18,7 +18,9 @@
 {
     self = [super initWithSize:size];
     if (self) {
-        
+       
+        //the sky should sit over the world, it shouldn't ever move, only the world moves and the clouds populate on either side of the
+        //xbounds for the sky
         TLPSky *sky = [[TLPSky alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
         [TLPSky setGlobalCloudCap:15];
         [self addChild:sky];
