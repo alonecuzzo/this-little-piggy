@@ -29,8 +29,13 @@
     TLPSky *sky = (id)self.character;
     TLPBaseLevelScene *scene = [sky characterScene];
     
+    sky.timeUntilNextGenerate++;
+    
+    if (sky.timeUntilNextGenerate > 40) {
+        [sky generate];
+        sky.timeUntilNextGenerate = 0;
+    }
     //make sum clouds
-    [sky generate];
 }
 
 @end
