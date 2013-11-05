@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<level>
+    <clouds>
+        <cloud id="1" speed="2.0" start-point-x="20.0" start-point-y="100.0" seconds-until-rain="2.0"/>
+    </clouds>
+</level>
