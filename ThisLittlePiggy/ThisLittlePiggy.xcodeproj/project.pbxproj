@@ -28,6 +28,10 @@
 		8E75DFF41829A55A00BCCDC1 /* level0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFF21829A55A00BCCDC1 /* level0.xml */; };
 		8E75DFF81829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */; };
 		8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */; };
+		8E75DFFD1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */; };
+		8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */; };
+		8E75E0011829AA0600BCCDC1 /* TLPCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */; };
+		8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */; };
 		8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
@@ -122,6 +126,10 @@
 		8E75DFF21829A55A00BCCDC1 /* level0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = level0.xml; path = xml/levels/level0.xml; sourceTree = "<group>"; };
 		8E75DFF61829A5BB00BCCDC1 /* TLPFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPFileHelper.h; path = utilities/TLPFileHelper.h; sourceTree = "<group>"; };
 		8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPFileHelper.m; path = utilities/TLPFileHelper.m; sourceTree = "<group>"; };
+		8E75DFFB1829A9BD00BCCDC1 /* TLPAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAbstractModel.h; path = models/TLPAbstractModel.h; sourceTree = "<group>"; };
+		8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAbstractModel.m; path = models/TLPAbstractModel.m; sourceTree = "<group>"; };
+		8E75DFFF1829AA0600BCCDC1 /* TLPCloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCloudModel.h; path = models/TLPCloudModel.h; sourceTree = "<group>"; };
+		8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCloudModel.m; path = models/TLPCloudModel.m; sourceTree = "<group>"; };
 		8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPBaseLevelScene.h; path = scenes/levels/TLPBaseLevelScene.h; sourceTree = "<group>"; };
 		8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelScene.m; path = scenes/levels/TLPBaseLevelScene.m; sourceTree = "<group>"; };
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
@@ -333,6 +341,17 @@
 			name = utilities;
 			sourceTree = "<group>";
 		};
+		8E75DFFA1829A99300BCCDC1 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				8E75DFFB1829A9BD00BCCDC1 /* TLPAbstractModel.h */,
+				8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */,
+				8E75DFFF1829AA0600BCCDC1 /* TLPCloudModel.h */,
+				8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
 		8E8C147F18234BFD00B07048 /* levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,6 +512,7 @@
 				8EE97DA81821798800B4324A /* delegates */,
 				8EDDDC9E1824048D00AAC5A8 /* globals */,
 				8E1BCEE318289B94004655AB /* maps */,
+				8E75DFFA1829A99300BCCDC1 /* models */,
 				8EE97DA71821797400B4324A /* scenes */,
 				8EE97DA61821795D00B4324A /* sprites */,
 				8EE97D731821782400B4324A /* Supporting Files */,
@@ -801,6 +821,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
+				8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
 				8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */,
 				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
@@ -827,6 +849,7 @@
 				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,
 				8ECE9BCE18259DD70049763C /* TLPComputerControlledCharacter.m in Sources */,
 				8EDDDC901824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */,
+				8E75DFFD1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
 				8EDDDC8C182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */,
 				8EDDDC88182402CD00AAC5A8 /* TLPCharacter.m in Sources */,
 				8EDDDC981824036800AAC5A8 /* TLPCloudCharacter.m in Sources */,
@@ -840,6 +863,7 @@
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
 				8ECE9BC218257CA60049763C /* UIColor+ThisLittlePiggy.m in Sources */,
 				8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */,
+				8E75E0011829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
 				8ECE9BCA18258D2D0049763C /* TLPWalkAI.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
