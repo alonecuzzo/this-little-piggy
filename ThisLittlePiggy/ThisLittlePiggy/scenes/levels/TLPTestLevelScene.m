@@ -10,6 +10,7 @@
 #import "TLPPiggyCharacter.h"
 #import "TLPUmbrellaCharacter.h"
 #import "TLPSky.h"
+#import "TLPSpawnMap.h"
 
 @implementation TLPTestLevelScene
 
@@ -40,6 +41,8 @@
         umbrella.physicsBody.mass = 0.02;
         umbrella.name = @"umbrella";
         [self addChild:umbrella atWorldLayer:TLPWorldLayerUmbrella];
+        
+        self.cloudSpawnMap = [[TLPSpawnMap alloc] init];
     }
     
     return self;
@@ -63,9 +66,11 @@
     TLPSky *sky = [self skySprite];
     [sky updateWithTimeSinceLastInterval:timeSinceLast];
     
-    [self processUserMotionForUpdate:timeSinceLast];
+    //check to see how far piggy and the umbrella are away from each other
+    TLPUmbrellaCharacter *umbrella = [self umbrellaSprite];
+    int umbrellaPiggyXDifference = abs(umbrella.position.x - piggy.position.x);
     
-    //check to see if the umbrella is in the hot zone
+    [self processUserMotionForUpdate:timeSinceLast];
     [self moveWorldAccordingToUmbrellaPosition];
 }
 

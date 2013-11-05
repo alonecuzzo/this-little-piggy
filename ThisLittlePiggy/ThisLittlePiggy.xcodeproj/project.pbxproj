@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E75DFB61829A20600BCCDC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
+		8E75DFB71829A20600BCCDC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
+		8E75DFB81829A20600BCCDC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
+		8E75DFB91829A20600BCCDC1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D701821782400B4324A /* SpriteKit.framework */; };
+		8E75DFBF1829A20600BCCDC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFBD1829A20600BCCDC1 /* InfoPlist.strings */; };
+		8E75DFC11829A20600BCCDC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFC01829A20600BCCDC1 /* main.m */; };
+		8E75DFC51829A20600BCCDC1 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */; };
+		8E75DFC81829A20600BCCDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFC61829A20600BCCDC1 /* Main.storyboard */; };
+		8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */; };
+		8E75DFCE1829A20600BCCDC1 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */; };
+		8E75DFD01829A20600BCCDC1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFCF1829A20600BCCDC1 /* Spaceship.png */; };
+		8E75DFD21829A20600BCCDC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFD11829A20600BCCDC1 /* Images.xcassets */; };
+		8E75DFD81829A20600BCCDC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D901821782400B4324A /* XCTest.framework */; };
+		8E75DFD91829A20600BCCDC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
+		8E75DFDA1829A20600BCCDC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
+		8E75DFE21829A20600BCCDC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFE01829A20600BCCDC1 /* InfoPlist.strings */; };
+		8E75DFE41829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFE31829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m */; };
 		8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
@@ -57,9 +74,17 @@
 		8EE97D931821782400B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D9B1821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D991821782400B4324A /* InfoPlist.strings */; };
 		8EFA4E8B18281F4700FD157E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFA4E8A18281F4700FD157E /* CoreMotion.framework */; };
+		CA153C4FDC8B42F1BD19EEBB /* libPods-ThisLittlePiggy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8E75DFDB1829A20600BCCDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EE97D5F1821782300B4324A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E75DFB41829A20600BCCDC1;
+			remoteInfo = ThisLittlePiggyLevelEditor;
+		};
 		8EE97D941821782400B4324A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8EE97D5F1821782300B4324A /* Project object */;
@@ -70,6 +95,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E75DFB51829A20600BCCDC1 /* ThisLittlePiggyLevelEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggyLevelEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E75DFBC1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyLevelEditor-Info.plist"; sourceTree = "<group>"; };
+		8E75DFBE1829A20600BCCDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E75DFC01829A20600BCCDC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E75DFC21829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThisLittlePiggyLevelEditor-Prefix.pch"; sourceTree = "<group>"; };
+		8E75DFC31829A20600BCCDC1 /* TLPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPAppDelegate.h; sourceTree = "<group>"; };
+		8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPAppDelegate.m; sourceTree = "<group>"; };
+		8E75DFC71829A20600BCCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E75DFC91829A20600BCCDC1 /* TLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPViewController.h; sourceTree = "<group>"; };
+		8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPViewController.m; sourceTree = "<group>"; };
+		8E75DFCC1829A20600BCCDC1 /* TLPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPMyScene.h; sourceTree = "<group>"; };
+		8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPMyScene.m; sourceTree = "<group>"; };
+		8E75DFCF1829A20600BCCDC1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		8E75DFD11829A20600BCCDC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8E75DFD71829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThisLittlePiggyLevelEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E75DFDF1829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyLevelEditorTests-Info.plist"; sourceTree = "<group>"; };
+		8E75DFE11829A20600BCCDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E75DFE31829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThisLittlePiggyLevelEditorTests.m; sourceTree = "<group>"; };
 		8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPBaseLevelScene.h; path = scenes/levels/TLPBaseLevelScene.h; sourceTree = "<group>"; };
 		8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelScene.m; path = scenes/levels/TLPBaseLevelScene.m; sourceTree = "<group>"; };
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
@@ -125,9 +168,32 @@
 		8EE97D981821782400B4324A /* ThisLittlePiggyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyTests-Info.plist"; sourceTree = "<group>"; };
 		8EE97D9A1821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EFA4E8A18281F4700FD157E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E48AEB66B3A64232B09B364A /* Pods-ThisLittlePiggy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThisLittlePiggy.xcconfig"; path = "Pods/Pods-ThisLittlePiggy.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E75DFB21829A20600BCCDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFB71829A20600BCCDC1 /* CoreGraphics.framework in Frameworks */,
+				8E75DFB81829A20600BCCDC1 /* UIKit.framework in Frameworks */,
+				8E75DFB91829A20600BCCDC1 /* SpriteKit.framework in Frameworks */,
+				8E75DFB61829A20600BCCDC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E75DFD41829A20600BCCDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFD81829A20600BCCDC1 /* XCTest.framework in Frameworks */,
+				8E75DFDA1829A20600BCCDC1 /* UIKit.framework in Frameworks */,
+				8E75DFD91829A20600BCCDC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EE97D641821782300B4324A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,6 +203,7 @@
 				8EE97D6F1821782300B4324A /* UIKit.framework in Frameworks */,
 				8EE97D711821782400B4324A /* SpriteKit.framework in Frameworks */,
 				8EE97D6B1821782300B4324A /* Foundation.framework in Frameworks */,
+				CA153C4FDC8B42F1BD19EEBB /* libPods-ThisLittlePiggy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +220,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E1BCEE318289B94004655AB /* maps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = maps;
+			sourceTree = "<group>";
+		};
+		8E75DFBA1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */ = {
+			isa = PBXGroup;
+			children = (
+				8E75DFC31829A20600BCCDC1 /* TLPAppDelegate.h */,
+				8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */,
+				8E75DFC61829A20600BCCDC1 /* Main.storyboard */,
+				8E75DFC91829A20600BCCDC1 /* TLPViewController.h */,
+				8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */,
+				8E75DFCC1829A20600BCCDC1 /* TLPMyScene.h */,
+				8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */,
+				8E75DFCF1829A20600BCCDC1 /* Spaceship.png */,
+				8E75DFD11829A20600BCCDC1 /* Images.xcassets */,
+				8E75DFBB1829A20600BCCDC1 /* Supporting Files */,
+			);
+			path = ThisLittlePiggyLevelEditor;
+			sourceTree = "<group>";
+		};
+		8E75DFBB1829A20600BCCDC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E75DFBC1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Info.plist */,
+				8E75DFBD1829A20600BCCDC1 /* InfoPlist.strings */,
+				8E75DFC01829A20600BCCDC1 /* main.m */,
+				8E75DFC21829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E75DFDD1829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E75DFE31829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m */,
+				8E75DFDE1829A20600BCCDC1 /* Supporting Files */,
+			);
+			path = ThisLittlePiggyLevelEditorTests;
+			sourceTree = "<group>";
+		};
+		8E75DFDE1829A20600BCCDC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E75DFDF1829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests-Info.plist */,
+				8E75DFE01829A20600BCCDC1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		8E8C147F18234BFD00B07048 /* levels */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,8 +389,11 @@
 			children = (
 				8EE97D721821782400B4324A /* ThisLittlePiggy */,
 				8EE97D961821782400B4324A /* ThisLittlePiggyTests */,
+				8E75DFBA1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */,
+				8E75DFDD1829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests */,
 				8EE97D691821782300B4324A /* Frameworks */,
 				8EE97D681821782300B4324A /* Products */,
+				E48AEB66B3A64232B09B364A /* Pods-ThisLittlePiggy.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,6 +402,8 @@
 			children = (
 				8EE97D671821782300B4324A /* ThisLittlePiggy.app */,
 				8EE97D8F1821782400B4324A /* ThisLittlePiggyTests.xctest */,
+				8E75DFB51829A20600BCCDC1 /* ThisLittlePiggyLevelEditor.app */,
+				8E75DFD71829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +417,7 @@
 				8EE97D6E1821782300B4324A /* UIKit.framework */,
 				8EE97D701821782400B4324A /* SpriteKit.framework */,
 				8EE97D901821782400B4324A /* XCTest.framework */,
+				D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,6 +429,7 @@
 				8EDDDC9E1824048D00AAC5A8 /* globals */,
 				8EE97DA9182179C800B4324A /* controllers */,
 				8EE97DA81821798800B4324A /* delegates */,
+				8E1BCEE318289B94004655AB /* maps */,
 				8EE97DA71821797400B4324A /* scenes */,
 				8EE97DA61821795D00B4324A /* sprites */,
 				8EE97D731821782400B4324A /* Supporting Files */,
@@ -385,13 +512,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E75DFB41829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E75DFE91829A20600BCCDC1 /* Build configuration list for PBXNativeTarget "ThisLittlePiggyLevelEditor" */;
+			buildPhases = (
+				8E75DFB11829A20600BCCDC1 /* Sources */,
+				8E75DFB21829A20600BCCDC1 /* Frameworks */,
+				8E75DFB31829A20600BCCDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThisLittlePiggyLevelEditor;
+			productName = ThisLittlePiggyLevelEditor;
+			productReference = 8E75DFB51829A20600BCCDC1 /* ThisLittlePiggyLevelEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E75DFD61829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E75DFEA1829A20600BCCDC1 /* Build configuration list for PBXNativeTarget "ThisLittlePiggyLevelEditorTests" */;
+			buildPhases = (
+				8E75DFD31829A20600BCCDC1 /* Sources */,
+				8E75DFD41829A20600BCCDC1 /* Frameworks */,
+				8E75DFD51829A20600BCCDC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E75DFDC1829A20600BCCDC1 /* PBXTargetDependency */,
+			);
+			name = ThisLittlePiggyLevelEditorTests;
+			productName = ThisLittlePiggyLevelEditorTests;
+			productReference = 8E75DFD71829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		8EE97D661821782300B4324A /* ThisLittlePiggy */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EE97DA01821782400B4324A /* Build configuration list for PBXNativeTarget "ThisLittlePiggy" */;
 			buildPhases = (
+				263E42D5B1E4417EBBE62310 /* Check Pods Manifest.lock */,
 				8EE97D631821782300B4324A /* Sources */,
 				8EE97D641821782300B4324A /* Frameworks */,
 				8EE97D651821782300B4324A /* Resources */,
+				1EF85B824D214A55B14F29B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -430,6 +594,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = 23bit;
 				TargetAttributes = {
+					8E75DFD61829A20600BCCDC1 = {
+						TestTargetID = 8EE97D661821782300B4324A;
+					};
 					8EE97D8E1821782400B4324A = {
 						TestTargetID = 8EE97D661821782300B4324A;
 					};
@@ -450,11 +617,32 @@
 			targets = (
 				8EE97D661821782300B4324A /* ThisLittlePiggy */,
 				8EE97D8E1821782400B4324A /* ThisLittlePiggyTests */,
+				8E75DFB41829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */,
+				8E75DFD61829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8E75DFB31829A20600BCCDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFBF1829A20600BCCDC1 /* InfoPlist.strings in Resources */,
+				8E75DFD21829A20600BCCDC1 /* Images.xcassets in Resources */,
+				8E75DFD01829A20600BCCDC1 /* Spaceship.png in Resources */,
+				8E75DFC81829A20600BCCDC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E75DFD51829A20600BCCDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFE21829A20600BCCDC1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EE97D651821782300B4324A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -477,7 +665,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EF85B824D214A55B14F29B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ThisLittlePiggy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		263E42D5B1E4417EBBE62310 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		8E75DFB11829A20600BCCDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */,
+				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
+				8E75DFC51829A20600BCCDC1 /* TLPAppDelegate.m in Sources */,
+				8E75DFCE1829A20600BCCDC1 /* TLPMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E75DFD31829A20600BCCDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E75DFE41829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EE97D631821782300B4324A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -531,6 +771,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8E75DFDC1829A20600BCCDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E75DFB41829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */;
+			targetProxy = 8E75DFDB1829A20600BCCDC1 /* PBXContainerItemProxy */;
+		};
 		8EE97D951821782400B4324A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8EE97D661821782300B4324A /* ThisLittlePiggy */;
@@ -539,6 +784,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8E75DFBD1829A20600BCCDC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E75DFBE1829A20600BCCDC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8E75DFC61829A20600BCCDC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E75DFC71829A20600BCCDC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E75DFE01829A20600BCCDC1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E75DFE11829A20600BCCDC1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		8EE97D751821782400B4324A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -566,6 +835,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8E75DFE51829A20600BCCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8E75DFE61829A20600BCCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Prefix.pch";
+				INFOPLIST_FILE = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8E75DFE71829A20600BCCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggy.app/ThisLittlePiggy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ThisLittlePiggyLevelEditorTests/ThisLittlePiggyLevelEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8E75DFE81829A20600BCCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggy.app/ThisLittlePiggy";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThisLittlePiggyLevelEditor/ThisLittlePiggyLevelEditor-Prefix.pch";
+				INFOPLIST_FILE = "ThisLittlePiggyLevelEditorTests/ThisLittlePiggyLevelEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		8EE97D9E1821782400B4324A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -642,6 +987,7 @@
 		};
 		8EE97DA11821782400B4324A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48AEB66B3A64232B09B364A /* Pods-ThisLittlePiggy.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -656,6 +1002,7 @@
 		};
 		8EE97DA21821782400B4324A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E48AEB66B3A64232B09B364A /* Pods-ThisLittlePiggy.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -713,6 +1060,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E75DFE91829A20600BCCDC1 /* Build configuration list for PBXNativeTarget "ThisLittlePiggyLevelEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E75DFE51829A20600BCCDC1 /* Debug */,
+				8E75DFE61829A20600BCCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8E75DFEA1829A20600BCCDC1 /* Build configuration list for PBXNativeTarget "ThisLittlePiggyLevelEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E75DFE71829A20600BCCDC1 /* Debug */,
+				8E75DFE81829A20600BCCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		8EE97D621821782300B4324A /* Build configuration list for PBXProject "ThisLittlePiggy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

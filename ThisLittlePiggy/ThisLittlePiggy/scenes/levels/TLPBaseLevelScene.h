@@ -20,6 +20,7 @@ typedef enum : u_int8_t {
 #define kNumPlayers 1
 #define kWorldName @"world"
 #define kUmbrellaDistanceFromEdge 100
+#define kMaxUmbrellaDistanceFromPiggy 300
 #define kIsDebugMode 1
 
 #define kTLPBaseLevelLoadSharedAssetsException @"kTLPBaseLevelException"
@@ -30,12 +31,13 @@ typedef enum : u_int8_t {
 #import <SpriteKit/SpriteKit.h>
 #import <CoreMotion/CoreMotion.h>
 
-@class TLPPlayer;
+@class TLPPlayer, TLPSpawnMap;
 
 @interface TLPBaseLevelScene : SKScene
 
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
+@property(nonatomic) TLPSpawnMap *cloudSpawnMap;
 @property(nonatomic, readonly) NSArray *players;
 @property(nonatomic, readonly) NSArray *layers;
 @property(nonatomic) NSTimeInterval lastUpdateTimeInterval;

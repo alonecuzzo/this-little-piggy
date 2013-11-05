@@ -10,6 +10,7 @@
 #import "TLPSpawnAI.h"
 #import "TLPCloudCharacter.h"
 #import "TLPBaseLevelScene.h"
+#import "TLPSpawnMap.h"
 
 #define kNumClouds 30
 
@@ -37,6 +38,7 @@
         _inActiveClouds = [[NSMutableArray alloc] init];
         
         for (int i = 0; i < kNumClouds; i++) {
+            //map stuff should be here!
             TLPCloudCharacter *cloud = [[TLPCloudCharacter alloc] initAtPosition:self.position];
             cloud.sky = self;
             [(NSMutableArray*)_inActiveClouds addObject:cloud];
@@ -62,14 +64,19 @@
         return;
     }
     
+    //we need to get a measurement/location for the camera and the visible area...
+    //how are we going to have a consistent cloud creation instruction set??
+    //maybe the level has a length, and all of the clouds have locations & speeds
+    //we should also put the start point and end point on the stage as well
+    TLPBaseLevelScene *scene = (TLPBaseLevelScene*)[self scene];
+    TLPSpawnMap *spawnMap = scene.cloudSpawnMap;
     TLPCloudCharacter *cloud = [_inActiveClouds lastObject];
     cloud.movementSpeed = 3;
     //the clouds aren't going to randomly pop on the stage, they're going to slide in...
-    int randx = arc4random() % (int)[self scene].size.width; // the x value should always be + or - the x bounds of the scene, then the cloud floats in
-    int randy = arc4random() % ((int)[self scene].size.height - 600) + 600;
-    cloud.position = CGPointMake([self scene].size.width + 100, randy);
+    int randx = arc4random() % (int)scene.size.width; // the x value should always be + or - the x bounds of the scene, then the cloud floats in
+    int randy = arc4random() % ((int)scene.size.height - 600) + 600;
+    cloud.position = CGPointMake(scene.size.width + 100, randy);
     
-    TLPBaseLevelScene *scene = (TLPBaseLevelScene*)[self scene];
     [scene addChild:cloud atWorldLayer:TLPWorldLayerSky];
 //    [self addChild:cloud];
     
