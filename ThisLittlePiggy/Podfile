@@ -9,3 +9,10 @@ target "ThisLittlePiggyTests" do
 
 end
 
+target "ThisLittlePiggyLevelEditor" do
+pod 'GDataXML-HTML', '~> 1.1.0'
+end
+
+target "ThisLittlePiggyLevelEditorTests" do
+
+end
