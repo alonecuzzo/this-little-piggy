@@ -36,6 +36,21 @@
     if (doc == nil) {
         return;
     }
+   
+    GDataXMLElement *cloudsElement = [doc.rootElement elementsForName:@"clouds"][0];
+    NSArray *cloudElements = [cloudsElement elementsForName:@"cloud"];
+    
+    for (GDataXMLElement *cloud in cloudElements) {
+        NSLog(@"cloud: %@", cloud);
+        
+        TLPCloudModel *model = [[TLPCloudModel alloc] init];
+        
+        model.id = [cloud attributeForName:@"id"].stringValue.intValue;
+        model.position = CGPointMake([cloud attributeForName:@"start-point-x"].stringValue.floatValue, [cloud attributeForName:@"start-point-y"].stringValue.floatValue);
+        model.secondsUntilRain = [cloud attributeForName:@"seconds-until-rain"].stringValue.intValue;
+        
+        [self.clouds addObject:model];
+    }
 }
 
 @end
