@@ -3,6 +3,14 @@
     <clouds>
         <cloud id="1" speed="2.0" start-point-x="520.0" start-point-y="500.0" seconds-until-rain="2.0"/>
         <cloud id="2" speed="2.0" start-point-x="870.0" start-point-y="722.0" seconds-until-rain="1.0"/>
-        <cloud id="3" speed="4.0" start-point-x="390.0" start-point-y="600.0" seconds-until-rain="2.0"/>
+        <cloud id="3" speed="4.0" start-point-x="3190.0" start-point-y="600.0" seconds-until-rain="2.0"/>
+        <cloud id="4" speed="4.0" start-point-x="5690.0" start-point-y="400.0" seconds-until-rain="2.0"/>
+        <cloud id="5" speed="4.0" start-point-x="1390.0" start-point-y="500.0" seconds-until-rain="2.0"/>
+        <cloud id="6" speed="4.0" start-point-x="45.0" start-point-y="200.0" seconds-until-rain="2.0"/>
+        <cloud id="7" speed="4.0" start-point-x="3390.0" start-point-y="500.0" seconds-until-rain="2.0"/>
+        <cloud id="8" speed="4.0" start-point-x="2000.0" start-point-y="700.0" seconds-until-rain="2.0"/>
+        <cloud id="9" speed="4.0" start-point-x="4490.0" start-point-y="630.0" seconds-until-rain="2.0"/>
+        <cloud id="10" speed="4.0" start-point-x="790.0" start-point-y="690.0" seconds-until-rain="2.0"/>
+        <cloud id="11" speed="4.0" start-point-x="890.0" start-point-y="540.0" seconds-until-rain="2.0"/>
     </clouds>
 </level>
