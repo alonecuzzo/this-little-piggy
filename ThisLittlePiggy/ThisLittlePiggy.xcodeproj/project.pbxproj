@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E13D0D3182A92DA0018FF62 /* TLPLevelEditorScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E13D0D2182A92DA0018FF62 /* TLPLevelEditorScene.m */; };
+		8E13D0D8182A937F0018FF62 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E13D0D7182A937F0018FF62 /* TLPAppDelegate.m */; };
+		8E13D0DB182A938A0018FF62 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E13D0DA182A938A0018FF62 /* TLPViewController.m */; };
+		8E13D0DC182A94840018FF62 /* UIColor+ThisLittlePiggy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */; };
 		8E75DFB61829A20600BCCDC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6A1821782300B4324A /* Foundation.framework */; };
 		8E75DFB71829A20600BCCDC1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6C1821782300B4324A /* CoreGraphics.framework */; };
 		8E75DFB81829A20600BCCDC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8E75DFB91829A20600BCCDC1 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D701821782400B4324A /* SpriteKit.framework */; };
 		8E75DFBF1829A20600BCCDC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFBD1829A20600BCCDC1 /* InfoPlist.strings */; };
 		8E75DFC11829A20600BCCDC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFC01829A20600BCCDC1 /* main.m */; };
-		8E75DFC51829A20600BCCDC1 /* TLPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */; };
 		8E75DFC81829A20600BCCDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFC61829A20600BCCDC1 /* Main.storyboard */; };
-		8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */; };
-		8E75DFCE1829A20600BCCDC1 /* TLPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */; };
 		8E75DFD01829A20600BCCDC1 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFCF1829A20600BCCDC1 /* Spaceship.png */; };
 		8E75DFD21829A20600BCCDC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFD11829A20600BCCDC1 /* Images.xcassets */; };
 		8E75DFD81829A20600BCCDC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D901821782400B4324A /* XCTest.framework */; };
@@ -107,18 +108,18 @@
 
 /* Begin PBXFileReference section */
 		79E3F8FCFB7F45D484BA5939 /* libPods-ThisLittlePiggyLevelEditor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggyLevelEditor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E13D0D1182A92DA0018FF62 /* TLPLevelEditorScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelEditorScene.h; path = scenes/TLPLevelEditorScene.h; sourceTree = "<group>"; };
+		8E13D0D2182A92DA0018FF62 /* TLPLevelEditorScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelEditorScene.m; path = scenes/TLPLevelEditorScene.m; sourceTree = "<group>"; };
+		8E13D0D6182A937F0018FF62 /* TLPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAppDelegate.h; path = delegates/TLPAppDelegate.h; sourceTree = "<group>"; };
+		8E13D0D7182A937F0018FF62 /* TLPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAppDelegate.m; path = delegates/TLPAppDelegate.m; sourceTree = "<group>"; };
+		8E13D0D9182A938A0018FF62 /* TLPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPViewController.h; path = controllers/TLPViewController.h; sourceTree = "<group>"; };
+		8E13D0DA182A938A0018FF62 /* TLPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPViewController.m; path = controllers/TLPViewController.m; sourceTree = "<group>"; };
 		8E75DFB51829A20600BCCDC1 /* ThisLittlePiggyLevelEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThisLittlePiggyLevelEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E75DFBC1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyLevelEditor-Info.plist"; sourceTree = "<group>"; };
 		8E75DFBE1829A20600BCCDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E75DFC01829A20600BCCDC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8E75DFC21829A20600BCCDC1 /* ThisLittlePiggyLevelEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThisLittlePiggyLevelEditor-Prefix.pch"; sourceTree = "<group>"; };
-		8E75DFC31829A20600BCCDC1 /* TLPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPAppDelegate.h; sourceTree = "<group>"; };
-		8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPAppDelegate.m; sourceTree = "<group>"; };
 		8E75DFC71829A20600BCCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E75DFC91829A20600BCCDC1 /* TLPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPViewController.h; sourceTree = "<group>"; };
-		8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPViewController.m; sourceTree = "<group>"; };
-		8E75DFCC1829A20600BCCDC1 /* TLPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLPMyScene.h; sourceTree = "<group>"; };
-		8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLPMyScene.m; sourceTree = "<group>"; };
 		8E75DFCF1829A20600BCCDC1 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		8E75DFD11829A20600BCCDC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8E75DFD71829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThisLittlePiggyLevelEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -243,16 +244,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E13D0D0182A92B50018FF62 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8E13D0D1182A92DA0018FF62 /* TLPLevelEditorScene.h */,
+				8E13D0D2182A92DA0018FF62 /* TLPLevelEditorScene.m */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
+		8E13D0D4182A93190018FF62 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8E13D0D6182A937F0018FF62 /* TLPAppDelegate.h */,
+				8E13D0D7182A937F0018FF62 /* TLPAppDelegate.m */,
+			);
+			name = delegates;
+			sourceTree = "<group>";
+		};
+		8E13D0D5182A934B0018FF62 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E13D0D9182A938A0018FF62 /* TLPViewController.h */,
+				8E13D0DA182A938A0018FF62 /* TLPViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		8E75DFBA1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */ = {
 			isa = PBXGroup;
 			children = (
-				8E75DFC31829A20600BCCDC1 /* TLPAppDelegate.h */,
-				8E75DFC41829A20600BCCDC1 /* TLPAppDelegate.m */,
+				8E13D0D5182A934B0018FF62 /* controllers */,
+				8E13D0D4182A93190018FF62 /* delegates */,
+				8E13D0D0182A92B50018FF62 /* scenes */,
 				8E75DFC61829A20600BCCDC1 /* Main.storyboard */,
-				8E75DFC91829A20600BCCDC1 /* TLPViewController.h */,
-				8E75DFCA1829A20600BCCDC1 /* TLPViewController.m */,
-				8E75DFCC1829A20600BCCDC1 /* TLPMyScene.h */,
-				8E75DFCD1829A20600BCCDC1 /* TLPMyScene.m */,
 				8E75DFCF1829A20600BCCDC1 /* Spaceship.png */,
 				8E75DFD11829A20600BCCDC1 /* Images.xcassets */,
 				8E75DFBB1829A20600BCCDC1 /* Supporting Files */,
@@ -687,7 +712,7 @@
 				ORGANIZATIONNAME = 23bit;
 				TargetAttributes = {
 					8E75DFD61829A20600BCCDC1 = {
-						TestTargetID = 8EE97D661821782300B4324A;
+						TestTargetID = 8E75DFB41829A20600BCCDC1;
 					};
 					8EE97D8E1821782400B4324A = {
 						TestTargetID = 8EE97D661821782300B4324A;
@@ -827,14 +852,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E13D0DC182A94840018FF62 /* UIColor+ThisLittlePiggy.m in Sources */,
 				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
+				8E13D0D8182A937F0018FF62 /* TLPAppDelegate.m in Sources */,
 				8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
 				8E75E0071829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */,
-				8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */,
 				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
+				8E13D0DB182A938A0018FF62 /* TLPViewController.m in Sources */,
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
-				8E75DFC51829A20600BCCDC1 /* TLPAppDelegate.m in Sources */,
-				8E75DFCE1829A20600BCCDC1 /* TLPMyScene.m in Sources */,
+				8E13D0D3182A92DA0018FF62 /* TLPLevelEditorScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,7 +1033,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggy.app/ThisLittlePiggy";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggyLevelEditor.app/ThisLittlePiggyLevelEditor";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1030,7 +1056,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggy.app/ThisLittlePiggy";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThisLittlePiggyLevelEditor.app/ThisLittlePiggyLevelEditor";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
