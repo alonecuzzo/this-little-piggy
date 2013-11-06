@@ -31,25 +31,22 @@ typedef enum : u_int8_t {
 #import <SpriteKit/SpriteKit.h>
 #import <CoreMotion/CoreMotion.h>
 
-@class TLPPlayer, TLPSpawnMap;
+@class TLPPlayer, TLPLevelHandler;
 
 @interface TLPBaseLevelScene : SKScene
 
 @property(nonatomic) SKNode *world;
 @property(nonatomic) TLPPlayer *defaultPlayer;
-@property(nonatomic) TLPSpawnMap *cloudSpawnMap;
 @property(nonatomic, readonly) NSArray *players;
 @property(nonatomic, readonly) NSArray *layers;
 @property(nonatomic) NSTimeInterval lastUpdateTimeInterval;
 @property(nonatomic) NSTimeInterval timeSinceLastCloudSpawn;
 @property(nonatomic) CMMotionManager *motionManager;
+@property(nonatomic) TLPLevelHandler *levelHandler;
 
 + (void)loadSceneAssets;
-
 + (void)releaseSceneAssets;
-
 - (void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast;
-
 - (void)addChild:(SKNode *)node atWorldLayer:(TLPWorldLayer)layer;
 
 @end

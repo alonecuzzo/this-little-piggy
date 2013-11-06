@@ -10,7 +10,7 @@
 #import "TLPPiggyCharacter.h"
 #import "TLPUmbrellaCharacter.h"
 #import "TLPSky.h"
-#import "TLPSpawnMap.h"
+#import "TLPLevelHandler.h"
 
 @implementation TLPTestLevelScene
 
@@ -20,10 +20,10 @@
     self = [super initWithSize:size];
     if (self) {
        
-        //the sky should sit over the world, it shouldn't ever move, only the world moves and the clouds populate on either side of the
-        //xbounds for the sky
+        self.levelHandler = [[TLPLevelHandler alloc] initWithFileName:@"level0"];
         
-        //this is wrong, the cloud layer should move since the camera is moving, old clouds that are passed will still be hanging around
+        NSAssert(self.levelHandler != nil, @"Level File Handler is nil.  Game cannot be run.");
+        
         TLPSky *sky = [[TLPSky alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
         [TLPSky setGlobalCloudCap:35];
         [self addChild:sky atWorldLayer:TLPWorldLayerSky];
@@ -41,8 +41,6 @@
         umbrella.physicsBody.mass = 0.02;
         umbrella.name = @"umbrella";
         [self addChild:umbrella atWorldLayer:TLPWorldLayerUmbrella];
-        
-        self.cloudSpawnMap = [[TLPSpawnMap alloc] init];
     }
     
     return self;

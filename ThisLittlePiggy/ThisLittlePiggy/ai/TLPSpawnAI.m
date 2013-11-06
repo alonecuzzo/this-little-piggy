@@ -27,7 +27,6 @@
 - (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval
 {
     TLPSky *sky = (id)self.character;
-    TLPBaseLevelScene *scene = [sky characterScene];
     
     sky.timeUntilNextGenerate++;
     

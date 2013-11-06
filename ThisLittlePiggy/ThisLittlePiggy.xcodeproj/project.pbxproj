@@ -24,14 +24,16 @@
 		8E75DFDA1829A20600BCCDC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8E75DFE21829A20600BCCDC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFE01829A20600BCCDC1 /* InfoPlist.strings */; };
 		8E75DFE41829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFE31829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m */; };
-		8E75DFF31829A55A00BCCDC1 /* level0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFF21829A55A00BCCDC1 /* level0.xml */; };
-		8E75DFF41829A55A00BCCDC1 /* level0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E75DFF21829A55A00BCCDC1 /* level0.xml */; };
 		8E75DFF81829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */; };
 		8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */; };
 		8E75DFFD1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */; };
 		8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */; };
 		8E75E0011829AA0600BCCDC1 /* TLPCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */; };
 		8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */; };
+		8E75E0061829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0051829ABD400BCCDC1 /* TLPLevelHandler.m */; };
+		8E75E0071829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E75E0051829ABD400BCCDC1 /* TLPLevelHandler.m */; };
+		8E75E00B1829B8F900BCCDC1 /* level0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E75E00A1829B8F900BCCDC1 /* level0.xml */; };
+		8E75E00C1829B8F900BCCDC1 /* level0.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E75E00A1829B8F900BCCDC1 /* level0.xml */; };
 		8E8C148218234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148318234C2900B07048 /* TLPBaseLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */; };
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
@@ -123,13 +125,15 @@
 		8E75DFDF1829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyLevelEditorTests-Info.plist"; sourceTree = "<group>"; };
 		8E75DFE11829A20600BCCDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E75DFE31829A20600BCCDC1 /* ThisLittlePiggyLevelEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThisLittlePiggyLevelEditorTests.m; sourceTree = "<group>"; };
-		8E75DFF21829A55A00BCCDC1 /* level0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = level0.xml; path = xml/levels/level0.xml; sourceTree = "<group>"; };
 		8E75DFF61829A5BB00BCCDC1 /* TLPFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPFileHelper.h; path = utilities/TLPFileHelper.h; sourceTree = "<group>"; };
 		8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPFileHelper.m; path = utilities/TLPFileHelper.m; sourceTree = "<group>"; };
 		8E75DFFB1829A9BD00BCCDC1 /* TLPAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPAbstractModel.h; path = models/TLPAbstractModel.h; sourceTree = "<group>"; };
 		8E75DFFC1829A9BD00BCCDC1 /* TLPAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPAbstractModel.m; path = models/TLPAbstractModel.m; sourceTree = "<group>"; };
 		8E75DFFF1829AA0600BCCDC1 /* TLPCloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCloudModel.h; path = models/TLPCloudModel.h; sourceTree = "<group>"; };
 		8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCloudModel.m; path = models/TLPCloudModel.m; sourceTree = "<group>"; };
+		8E75E0041829ABD400BCCDC1 /* TLPLevelHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelHandler.h; path = utilities/level/TLPLevelHandler.h; sourceTree = "<group>"; };
+		8E75E0051829ABD400BCCDC1 /* TLPLevelHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelHandler.m; path = utilities/level/TLPLevelHandler.m; sourceTree = "<group>"; };
+		8E75E00A1829B8F900BCCDC1 /* level0.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = level0.xml; sourceTree = "<group>"; };
 		8E8C148018234C2900B07048 /* TLPBaseLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPBaseLevelScene.h; path = scenes/levels/TLPBaseLevelScene.h; sourceTree = "<group>"; };
 		8E8C148118234C2900B07048 /* TLPBaseLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelScene.m; path = scenes/levels/TLPBaseLevelScene.m; sourceTree = "<group>"; };
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
@@ -239,13 +243,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E1BCEE318289B94004655AB /* maps */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = maps;
-			sourceTree = "<group>";
-		};
 		8E75DFBA1829A20600BCCDC1 /* ThisLittlePiggyLevelEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,25 +313,10 @@
 			name = levels;
 			sourceTree = "<group>";
 		};
-		8E75DFF01829A53300BCCDC1 /* xml */ = {
-			isa = PBXGroup;
-			children = (
-				8E75DFF11829A53A00BCCDC1 /* levels */,
-			);
-			name = xml;
-			sourceTree = "<group>";
-		};
-		8E75DFF11829A53A00BCCDC1 /* levels */ = {
-			isa = PBXGroup;
-			children = (
-				8E75DFF21829A55A00BCCDC1 /* level0.xml */,
-			);
-			name = levels;
-			sourceTree = "<group>";
-		};
 		8E75DFF51829A58B00BCCDC1 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8E75E0031829ABB900BCCDC1 /* level */,
 				8E75DFF61829A5BB00BCCDC1 /* TLPFileHelper.h */,
 				8E75DFF71829A5BB00BCCDC1 /* TLPFileHelper.m */,
 			);
@@ -350,6 +332,31 @@
 				8E75E0001829AA0600BCCDC1 /* TLPCloudModel.m */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		8E75E0031829ABB900BCCDC1 /* level */ = {
+			isa = PBXGroup;
+			children = (
+				8E75E0041829ABD400BCCDC1 /* TLPLevelHandler.h */,
+				8E75E0051829ABD400BCCDC1 /* TLPLevelHandler.m */,
+			);
+			name = level;
+			sourceTree = "<group>";
+		};
+		8E75E0081829B8F900BCCDC1 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				8E75E0091829B8F900BCCDC1 /* levels */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		8E75E0091829B8F900BCCDC1 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				8E75E00A1829B8F900BCCDC1 /* level0.xml */,
+			);
+			path = levels;
 			sourceTree = "<group>";
 		};
 		8E8C147F18234BFD00B07048 /* levels */ = {
@@ -450,7 +457,7 @@
 		8EDDDCAD18240C0B00AAC5A8 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				8E75DFF01829A53300BCCDC1 /* xml */,
+				8E75E0081829B8F900BCCDC1 /* xml */,
 				8EDDDCAE18240C0B00AAC5A8 /* images */,
 			);
 			path = assets;
@@ -511,7 +518,6 @@
 				8EE97DA9182179C800B4324A /* controllers */,
 				8EE97DA81821798800B4324A /* delegates */,
 				8EDDDC9E1824048D00AAC5A8 /* globals */,
-				8E1BCEE318289B94004655AB /* maps */,
 				8E75DFFA1829A99300BCCDC1 /* models */,
 				8EE97DA71821797400B4324A /* scenes */,
 				8EE97DA61821795D00B4324A /* sprites */,
@@ -714,9 +720,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E75E00C1829B8F900BCCDC1 /* level0.xml in Resources */,
 				8E75DFBF1829A20600BCCDC1 /* InfoPlist.strings in Resources */,
 				8E75DFD21829A20600BCCDC1 /* Images.xcassets in Resources */,
-				8E75DFF41829A55A00BCCDC1 /* level0.xml in Resources */,
 				8E75DFD01829A20600BCCDC1 /* Spaceship.png in Resources */,
 				8E75DFC81829A20600BCCDC1 /* Main.storyboard in Resources */,
 			);
@@ -737,7 +743,7 @@
 				8EE97D771821782400B4324A /* InfoPlist.strings in Resources */,
 				8EE97D8A1821782400B4324A /* Images.xcassets in Resources */,
 				8EDDDCB018240C0B00AAC5A8 /* placeholderImages.atlas in Resources */,
-				8E75DFF31829A55A00BCCDC1 /* level0.xml in Resources */,
+				8E75E00B1829B8F900BCCDC1 /* level0.xml in Resources */,
 				8EE97D881821782400B4324A /* Spaceship.png in Resources */,
 				8EE97D801821782400B4324A /* Main.storyboard in Resources */,
 			);
@@ -823,6 +829,7 @@
 			files = (
 				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
 				8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
+				8E75E0071829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */,
 				8E75DFCB1829A20600BCCDC1 /* TLPViewController.m in Sources */,
 				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
@@ -851,6 +858,7 @@
 				8EDDDC901824032400AAC5A8 /* TLPPiggyCharacter.m in Sources */,
 				8E75DFFD1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
 				8EDDDC8C182402FE00AAC5A8 /* TLPUmbrellaCharacter.m in Sources */,
+				8E75E0061829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */,
 				8EDDDC88182402CD00AAC5A8 /* TLPCharacter.m in Sources */,
 				8EDDDC981824036800AAC5A8 /* TLPCloudCharacter.m in Sources */,
 				8ECE9BC618258C070049763C /* TLPArtificialIntelligence.m in Sources */,

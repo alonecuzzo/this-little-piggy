@@ -10,7 +10,6 @@
 #import "TLPSpawnAI.h"
 #import "TLPCloudCharacter.h"
 #import "TLPBaseLevelScene.h"
-#import "TLPSpawnMap.h"
 
 #define kNumClouds 30
 
@@ -69,7 +68,6 @@
     //maybe the level has a length, and all of the clouds have locations & speeds
     //we should also put the start point and end point on the stage as well
     TLPBaseLevelScene *scene = (TLPBaseLevelScene*)[self scene];
-    TLPSpawnMap *spawnMap = scene.cloudSpawnMap;
     TLPCloudCharacter *cloud = [_inActiveClouds lastObject];
     cloud.movementSpeed = 3;
     //the clouds aren't going to randomly pop on the stage, they're going to slide in...

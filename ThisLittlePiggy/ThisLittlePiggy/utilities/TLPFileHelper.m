@@ -27,6 +27,7 @@
 + (NSString*)dataFilePathForFileWithName:(NSString *)filename withExtension:(NSString *)extension forSave:(BOOL)forSave
 {
     NSString *filenameWithExtension = [filename stringByAppendingString:extension];
+    NSLog(@"file name with extension: %@", filenameWithExtension);
     if (forSave || [TLPFileHelper fileExistsInDocumentsDirectory:filenameWithExtension]) {
         return [TLPFileHelper fullFileNameInDocumentsDirectory:filenameWithExtension];
     } else {
