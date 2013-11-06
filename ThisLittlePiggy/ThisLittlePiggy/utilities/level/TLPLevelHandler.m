@@ -9,6 +9,7 @@
 #import "TLPLevelHandler.h"
 #import "TLPCloudModel.h"
 #import "TLPFileHelper.h"
+#import "TLPAbstractModel.h"
 #import <GDataXMLNode.h>
 
 @implementation TLPLevelHandler {
@@ -41,7 +42,7 @@
     NSArray *cloudElements = [cloudsElement elementsForName:@"cloud"];
     
     for (GDataXMLElement *cloud in cloudElements) {
-        NSLog(@"cloud: %@", cloud);
+//        NSLog(@"cloud: %@", cloud);
         
         TLPCloudModel *model = [[TLPCloudModel alloc] init];
         
@@ -51,6 +52,21 @@
         
         [self.clouds addObject:model];
     }
+}
+
++ (TLPAbstractModel*)getModelWithID:(int)id fromArray:(NSArray*)array
+{
+    for (TLPAbstractModel *model in array){
+        if (model.id == id) {
+            return model;
+        }
+    }
+    return  nil;
+}
+
+- (TLPCloudModel*)getCloudWithID:(int)id
+{
+    return (TLPCloudModel*)[TLPLevelHandler getModelWithID:id fromArray:self.clouds];
 }
 
 @end

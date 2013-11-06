@@ -21,7 +21,7 @@
     if (self) {
        
         self.levelHandler = [[TLPLevelHandler alloc] initWithFileName:@"level0"];
-        
+        NSLog(@"clouds: %@", self.levelHandler.clouds);
         NSAssert(self.levelHandler != nil, @"Level File Handler is nil.  Game cannot be run.");
         
         TLPSky *sky = [[TLPSky alloc] initAtPosition:CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame))];
@@ -49,6 +49,8 @@
 - (void)didMoveToView:(SKView *)view
 {
     [super didMoveToView:view];
+    
+    [[self skySprite] generateClouds:self.levelHandler.clouds];
     
     if (kIsDebugMode) {
         [self buildDebugGraphics];

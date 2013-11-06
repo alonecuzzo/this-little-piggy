@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <level>
     <clouds>
-        <cloud id="1" speed="2.0" start-point-x="20.0" start-point-y="100.0" seconds-until-rain="2.0"/>
-        <cloud id="2" speed="2.0" start-point-x="170.0" start-point-y="72.0" seconds-until-rain="1.0"/>
-        <cloud id="3" speed="4.0" start-point-x="90.0" start-point-y="100.0" seconds-until-rain="2.0"/>
+        <cloud id="1" speed="2.0" start-point-x="520.0" start-point-y="500.0" seconds-until-rain="2.0"/>
+        <cloud id="2" speed="2.0" start-point-x="870.0" start-point-y="722.0" seconds-until-rain="1.0"/>
+        <cloud id="3" speed="4.0" start-point-x="390.0" start-point-y="600.0" seconds-until-rain="2.0"/>
     </clouds>
 </level>

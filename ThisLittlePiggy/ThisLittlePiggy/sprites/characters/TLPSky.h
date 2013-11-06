@@ -12,6 +12,7 @@
 
 @property(nonatomic, readonly) NSArray *activeClouds;
 @property(nonatomic, readonly) NSArray *inactiveClouds;
+//@property(nonatomic) NSArray *cloudModels;
 @property(nonatomic) CGFloat timeUntilNextGenerate;
 
 + (void)setGlobalCloudCap:(uint)cap;
@@ -20,5 +21,6 @@
 - (id)initAtPosition:(CGPoint)position;
 
 - (void)generate;
+- (void)generateClouds:(NSArray*)cloudModels;
 
 @end

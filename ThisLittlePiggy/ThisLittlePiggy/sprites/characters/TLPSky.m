@@ -10,6 +10,8 @@
 #import "TLPSpawnAI.h"
 #import "TLPCloudCharacter.h"
 #import "TLPBaseLevelScene.h"
+#import "TLPLevelHandler.h"
+#import "TLPCloudModel.h"
 
 #define kNumClouds 30
 
@@ -46,6 +48,17 @@
     return self;
 }
 
+- (void)generateClouds:(NSArray*)cloudModels
+{
+    TLPBaseLevelScene *scene = (TLPBaseLevelScene*)[self scene];
+    for (TLPCloudModel *model in cloudModels) {
+        TLPCloudCharacter *cloud = [[TLPCloudCharacter alloc] initAtPosition:model.position];
+        cloud.name = [NSString stringWithFormat:@"%d", model.id];
+        cloud.movementSpeed = model.speed;
+        [scene addChild:cloud atWorldLayer:TLPWorldLayerSky];
+    }
+}
+
 #pragma mark - update loop stuff
 - (void)updateWithTimeSinceLastInterval:(CFTimeInterval)interval
 {
@@ -62,6 +75,8 @@
     if (_inActiveClouds.count == 0) {
         return;
     }
+    
+    return;
     
     //we need to get a measurement/location for the camera and the visible area...
     //how are we going to have a consistent cloud creation instruction set??
