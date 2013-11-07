@@ -11,5 +11,9 @@
 @interface UIColor (ThisLittlePiggy)
 
 + (instancetype)thisLittlePiggySkyBlue;
++ (instancetype)thisLittlePiggyPaleBlue;
+
++ (instancetype)thisLittlePiggySkyDarkPurple;
+
 
 @end
