@@ -16,4 +16,6 @@
 
 @property(weak) id <TLPSceneCreationInputTextFieldViewDelegate> tfDelegate;
 
+- (void)setWidthTFAsFirstResponder;
+
 @end

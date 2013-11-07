@@ -46,6 +46,18 @@
 //    self.minimap.backgroundColor = [UIColor blackColor];
     [view addSubview:self.minimap];
     
+    [self.sceneCreationPanel setWidthTFAsFirstResponder];
+    
+    CGRect doneButtonFrame = CGRectMake(minimapFrame.size.width + minimapFrame.origin.x + 10, minimapFrame.origin.y, 100, 70);
+    UIButton *doneButton = [[UIButton alloc] initWithFrame:doneButtonFrame];
+    doneButton.backgroundColor = [UIColor whiteColor];
+    [doneButton addTarget:self action:@selector(doneButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:doneButton];
+}
+
+- (void)doneButtonPressed
+{
+    
 }
 
 #pragma mark - delegate business
