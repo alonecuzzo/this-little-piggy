@@ -19,6 +19,7 @@
     if (self) {
         self.actionBlock = actionBlock;
         self.title = title;
+        self.userInteractionEnabled = YES;
         [self buildButton];
     }
     return self;
@@ -35,6 +36,12 @@
     titleLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
     titleLabel.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
     [self addChild:titleLabel];
+}
+
+#pragma mark - touch handlezz
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    self.actionBlock();
 }
 
 @end
