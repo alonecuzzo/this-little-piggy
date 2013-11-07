@@ -85,6 +85,19 @@
 		8EE97D931821782400B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D9B1821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D991821782400B4324A /* InfoPlist.strings */; };
 		8EFA4E8B18281F4700FD157E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFA4E8A18281F4700FD157E /* CoreMotion.framework */; };
+		8EFBDC62182BDE4E0061C44A /* TLPMainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */; };
+		8EFBDC67182BE0560061C44A /* TLPButtonSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC66182BE0560061C44A /* TLPButtonSprite.m */; };
+		8EFBDC6A182BE0900061C44A /* TLPMainMenuButtonSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC69182BE0900061C44A /* TLPMainMenuButtonSprite.m */; };
+		8EFBDC70182BE4D70061C44A /* Raleway-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6C182BE4D70061C44A /* Raleway-ExtraLight.otf */; };
+		8EFBDC71182BE4D70061C44A /* Raleway-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6D182BE4D70061C44A /* Raleway-Heavy.otf */; };
+		8EFBDC72182BE4D70061C44A /* Raleway-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6E182BE4D70061C44A /* Raleway-Medium.otf */; };
+		8EFBDC73182BE4D70061C44A /* Raleway-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */; };
+		8EFBDC76182BE50E0061C44A /* TLPFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */; };
+		8EFBDC77182BE50E0061C44A /* TLPFontHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */; };
+		8EFBDC78182BEA360061C44A /* Raleway-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6C182BE4D70061C44A /* Raleway-ExtraLight.otf */; };
+		8EFBDC79182BEA360061C44A /* Raleway-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6D182BE4D70061C44A /* Raleway-Heavy.otf */; };
+		8EFBDC7A182BEA360061C44A /* Raleway-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6E182BE4D70061C44A /* Raleway-Medium.otf */; };
+		8EFBDC7B182BEA360061C44A /* Raleway-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */; };
 		C5AB56A59055412CB654A6CE /* libPods-ThisLittlePiggyLevelEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E3F8FCFB7F45D484BA5939 /* libPods-ThisLittlePiggyLevelEditor.a */; };
 		CA153C4FDC8B42F1BD19EEBB /* libPods-ThisLittlePiggy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */; };
 /* End PBXBuildFile section */
@@ -190,6 +203,18 @@
 		8EE97D981821782400B4324A /* ThisLittlePiggyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThisLittlePiggyTests-Info.plist"; sourceTree = "<group>"; };
 		8EE97D9A1821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EFA4E8A18281F4700FD157E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		8EFBDC60182BDE4E0061C44A /* TLPMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMainMenuScene.h; path = scenes/TLPMainMenuScene.h; sourceTree = "<group>"; };
+		8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuScene.m; path = scenes/TLPMainMenuScene.m; sourceTree = "<group>"; };
+		8EFBDC65182BE0560061C44A /* TLPButtonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPButtonSprite.h; path = sprites/buttons/TLPButtonSprite.h; sourceTree = "<group>"; };
+		8EFBDC66182BE0560061C44A /* TLPButtonSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPButtonSprite.m; path = sprites/buttons/TLPButtonSprite.m; sourceTree = "<group>"; };
+		8EFBDC68182BE0900061C44A /* TLPMainMenuButtonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMainMenuButtonSprite.h; path = sprites/buttons/TLPMainMenuButtonSprite.h; sourceTree = "<group>"; };
+		8EFBDC69182BE0900061C44A /* TLPMainMenuButtonSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuButtonSprite.m; path = sprites/buttons/TLPMainMenuButtonSprite.m; sourceTree = "<group>"; };
+		8EFBDC6C182BE4D70061C44A /* Raleway-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.otf"; sourceTree = "<group>"; };
+		8EFBDC6D182BE4D70061C44A /* Raleway-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Heavy.otf"; sourceTree = "<group>"; };
+		8EFBDC6E182BE4D70061C44A /* Raleway-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.otf"; sourceTree = "<group>"; };
+		8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.otf"; sourceTree = "<group>"; };
+		8EFBDC74182BE50E0061C44A /* TLPFontHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPFontHelper.h; path = globals/helpers/TLPFontHelper.h; sourceTree = "<group>"; };
+		8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPFontHelper.m; path = globals/helpers/TLPFontHelper.m; sourceTree = "<group>"; };
 		D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C4A7E107E421C8FD65338 /* Pods-ThisLittlePiggyLevelEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThisLittlePiggyLevelEditor.xcconfig"; path = "Pods/Pods-ThisLittlePiggyLevelEditor.xcconfig"; sourceTree = "<group>"; };
 		E48AEB66B3A64232B09B364A /* Pods-ThisLittlePiggy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThisLittlePiggy.xcconfig"; path = "Pods/Pods-ThisLittlePiggy.xcconfig"; sourceTree = "<group>"; };
@@ -249,6 +274,8 @@
 			children = (
 				8E13D0D1182A92DA0018FF62 /* TLPLevelEditorScene.h */,
 				8E13D0D2182A92DA0018FF62 /* TLPLevelEditorScene.m */,
+				8EFBDC60182BDE4E0061C44A /* TLPMainMenuScene.h */,
+				8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -277,6 +304,7 @@
 				8E13D0D5182A934B0018FF62 /* controllers */,
 				8E13D0D4182A93190018FF62 /* delegates */,
 				8E13D0D0182A92B50018FF62 /* scenes */,
+				8EFBDC63182BE0170061C44A /* sprites */,
 				8E75DFC61829A20600BCCDC1 /* Main.storyboard */,
 				8E75DFCF1829A20600BCCDC1 /* Spaceship.png */,
 				8E75DFD11829A20600BCCDC1 /* Images.xcassets */,
@@ -435,6 +463,8 @@
 		8ECE9BBF18257C4E0049763C /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8EFBDC74182BE50E0061C44A /* TLPFontHelper.h */,
+				8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */,
 				8ECE9BC018257CA60049763C /* UIColor+ThisLittlePiggy.h */,
 				8ECE9BC118257CA60049763C /* UIColor+ThisLittlePiggy.m */,
 			);
@@ -482,6 +512,7 @@
 		8EDDDCAD18240C0B00AAC5A8 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				8EFBDC6B182BE4D70061C44A /* fonts */,
 				8E75E0081829B8F900BCCDC1 /* xml */,
 				8EDDDCAE18240C0B00AAC5A8 /* images */,
 			);
@@ -624,6 +655,36 @@
 			name = controllers;
 			sourceTree = "<group>";
 		};
+		8EFBDC63182BE0170061C44A /* sprites */ = {
+			isa = PBXGroup;
+			children = (
+				8EFBDC64182BE01F0061C44A /* buttons */,
+			);
+			name = sprites;
+			sourceTree = "<group>";
+		};
+		8EFBDC64182BE01F0061C44A /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				8EFBDC65182BE0560061C44A /* TLPButtonSprite.h */,
+				8EFBDC66182BE0560061C44A /* TLPButtonSprite.m */,
+				8EFBDC68182BE0900061C44A /* TLPMainMenuButtonSprite.h */,
+				8EFBDC69182BE0900061C44A /* TLPMainMenuButtonSprite.m */,
+			);
+			name = buttons;
+			sourceTree = "<group>";
+		};
+		8EFBDC6B182BE4D70061C44A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8EFBDC6C182BE4D70061C44A /* Raleway-ExtraLight.otf */,
+				8EFBDC6D182BE4D70061C44A /* Raleway-Heavy.otf */,
+				8EFBDC6E182BE4D70061C44A /* Raleway-Medium.otf */,
+				8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -745,6 +806,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFBDC78182BEA360061C44A /* Raleway-ExtraLight.otf in Resources */,
+				8EFBDC79182BEA360061C44A /* Raleway-Heavy.otf in Resources */,
+				8EFBDC7A182BEA360061C44A /* Raleway-Medium.otf in Resources */,
+				8EFBDC7B182BEA360061C44A /* Raleway-Thin.otf in Resources */,
 				8E75E00C1829B8F900BCCDC1 /* level0.xml in Resources */,
 				8E75DFBF1829A20600BCCDC1 /* InfoPlist.strings in Resources */,
 				8E75DFD21829A20600BCCDC1 /* Images.xcassets in Resources */,
@@ -765,12 +830,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFBDC73182BE4D70061C44A /* Raleway-Thin.otf in Resources */,
 				8EE97D771821782400B4324A /* InfoPlist.strings in Resources */,
+				8EFBDC70182BE4D70061C44A /* Raleway-ExtraLight.otf in Resources */,
 				8EE97D8A1821782400B4324A /* Images.xcassets in Resources */,
 				8EDDDCB018240C0B00AAC5A8 /* placeholderImages.atlas in Resources */,
 				8E75E00B1829B8F900BCCDC1 /* level0.xml in Resources */,
 				8EE97D881821782400B4324A /* Spaceship.png in Resources */,
+				8EFBDC72182BE4D70061C44A /* Raleway-Medium.otf in Resources */,
 				8EE97D801821782400B4324A /* Main.storyboard in Resources */,
+				8EFBDC71182BE4D70061C44A /* Raleway-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,13 +921,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFBDC62182BDE4E0061C44A /* TLPMainMenuScene.m in Sources */,
+				8EFBDC6A182BE0900061C44A /* TLPMainMenuButtonSprite.m in Sources */,
 				8E13D0DC182A94840018FF62 /* UIColor+ThisLittlePiggy.m in Sources */,
+				8EFBDC67182BE0560061C44A /* TLPButtonSprite.m in Sources */,
 				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
 				8E13D0D8182A937F0018FF62 /* TLPAppDelegate.m in Sources */,
 				8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
 				8E75E0071829ABD400BCCDC1 /* TLPLevelHandler.m in Sources */,
 				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
 				8E13D0DB182A938A0018FF62 /* TLPViewController.m in Sources */,
+				8EFBDC77182BE50E0061C44A /* TLPFontHelper.m in Sources */,
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
 				8E13D0D3182A92DA0018FF62 /* TLPLevelEditorScene.m in Sources */,
 			);
@@ -893,6 +966,7 @@
 				8ED7EDAD1823E2FE00533439 /* TLPAppDelegate.m in Sources */,
 				8EB1C49A182726880074AA95 /* TLPSky.m in Sources */,
 				8EE97D791821782400B4324A /* main.m in Sources */,
+				8EFBDC76182BE50E0061C44A /* TLPFontHelper.m in Sources */,
 				8EDDDCB318240E2B00AAC5A8 /* TLPTestLevelScene.m in Sources */,
 				8ED7EDA51823E23100533439 /* TLPViewController.m in Sources */,
 				8ECE9BC218257CA60049763C /* UIColor+ThisLittlePiggy.m in Sources */,

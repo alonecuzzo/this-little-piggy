@@ -7,7 +7,7 @@
 //
 
 #import "TLPViewController.h"
-#import "TLPLevelEditorScene.h"
+#import "TLPMainMenuScene.h"
 
 @implementation TLPViewController
 
@@ -21,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [TLPLevelEditorScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [TLPMainMenuScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
