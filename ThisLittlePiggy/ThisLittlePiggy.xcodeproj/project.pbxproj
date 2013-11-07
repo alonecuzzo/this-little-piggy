@@ -85,6 +85,8 @@
 		8EE97D931821782400B4324A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE97D6E1821782300B4324A /* UIKit.framework */; };
 		8EE97D9B1821782400B4324A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EE97D991821782400B4324A /* InfoPlist.strings */; };
 		8EF93CFF182C2768009ACA1C /* TLPMinimap.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF93CFE182C2768009ACA1C /* TLPMinimap.m */; };
+		8EF93D02182C3657009ACA1C /* UIView+GCLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF93D01182C3657009ACA1C /* UIView+GCLibrary.m */; };
+		8EF93D03182C3657009ACA1C /* UIView+GCLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF93D01182C3657009ACA1C /* UIView+GCLibrary.m */; };
 		8EFA4E8B18281F4700FD157E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EFA4E8A18281F4700FD157E /* CoreMotion.framework */; };
 		8EFBDC62182BDE4E0061C44A /* TLPMainMenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */; };
 		8EFBDC67182BE0560061C44A /* TLPButtonSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC66182BE0560061C44A /* TLPButtonSprite.m */; };
@@ -208,6 +210,8 @@
 		8EE97D9A1821782400B4324A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EF93CFD182C2768009ACA1C /* TLPMinimap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMinimap.h; path = views/TLPMinimap.h; sourceTree = "<group>"; };
 		8EF93CFE182C2768009ACA1C /* TLPMinimap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMinimap.m; path = views/TLPMinimap.m; sourceTree = "<group>"; };
+		8EF93D00182C3657009ACA1C /* UIView+GCLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+GCLibrary.h"; path = "globals/helpers/UIView+GCLibrary.h"; sourceTree = "<group>"; };
+		8EF93D01182C3657009ACA1C /* UIView+GCLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+GCLibrary.m"; path = "globals/helpers/UIView+GCLibrary.m"; sourceTree = "<group>"; };
 		8EFA4E8A18281F4700FD157E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		8EFBDC60182BDE4E0061C44A /* TLPMainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMainMenuScene.h; path = scenes/TLPMainMenuScene.h; sourceTree = "<group>"; };
 		8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuScene.m; path = scenes/TLPMainMenuScene.m; sourceTree = "<group>"; };
@@ -478,6 +482,8 @@
 		8ECE9BBF18257C4E0049763C /* helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8EF93D00182C3657009ACA1C /* UIView+GCLibrary.h */,
+				8EF93D01182C3657009ACA1C /* UIView+GCLibrary.m */,
 				8EFBDC74182BE50E0061C44A /* TLPFontHelper.h */,
 				8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */,
 				8ECE9BC018257CA60049763C /* UIColor+ThisLittlePiggy.h */,
@@ -959,6 +965,7 @@
 			files = (
 				8EFBDC62182BDE4E0061C44A /* TLPMainMenuScene.m in Sources */,
 				8EFBDC6A182BE0900061C44A /* TLPMainMenuButtonSprite.m in Sources */,
+				8EF93D03182C3657009ACA1C /* UIView+GCLibrary.m in Sources */,
 				8E13D0DC182A94840018FF62 /* UIColor+ThisLittlePiggy.m in Sources */,
 				8EFBDC67182BE0560061C44A /* TLPButtonSprite.m in Sources */,
 				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
@@ -990,6 +997,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB1C49618271D400074AA95 /* TLPSpawnAI.m in Sources */,
+				8EF93D02182C3657009ACA1C /* UIView+GCLibrary.m in Sources */,
 				8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */,
 				8E75DFF81829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
 				8ED7EDB31823F11300533439 /* TLPMockBaseLevelScene.m in Sources */,

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define kScale 30
+
 @interface TLPMinimap : UIView
 
-- (void)resizeLevel:(CGSize)size;
+- (void)updateLevelWidth:(CGFloat)width;
+- (void)updateLevelHeight:(CGFloat)height;
 
 @end

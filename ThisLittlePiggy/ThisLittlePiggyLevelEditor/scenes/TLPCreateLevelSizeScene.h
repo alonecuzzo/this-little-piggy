@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "TLPSceneCreationInputTextFieldView.h"
 
-@interface TLPCreateLevelSizeScene : SKScene
+@interface TLPCreateLevelSizeScene : SKScene <TLPSceneCreationInputTextFieldViewDelegate>
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TLPSceneCreationInputTextFieldView.h"
 
-@interface TLPSceneCreationPanelView : UIView
+#define kWidthTextFieldTag 1
+#define kHeightTextFieldTag 2
+
+@interface TLPSceneCreationPanelView : UIView <TLPSceneCreationInputTextFieldViewDelegate>
+
+@property(weak) id <TLPSceneCreationInputTextFieldViewDelegate> tfDelegate;
 
 @end

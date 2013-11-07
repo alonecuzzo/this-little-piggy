@@ -29,14 +29,22 @@
     CGFloat tfHeight = 70;
     
     CGRect widthFrame = CGRectMake(leftMargin, topMargin, self.frame.size.width - leftMargin*2, tfHeight);
-    TLPSceneCreationInputTextFieldView *widthTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:widthFrame];
+    TLPSceneCreationInputTextFieldView *widthTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:widthFrame andTag:kWidthTextFieldTag];
+    widthTF.tfDelegate = self;
     [widthTF setPlaceHolderText:@"1024"];
     [self addSubview:widthTF];
     
     CGRect heightFrame = CGRectMake(leftMargin, widthTF.frame.size.height + widthTF.frame.origin.y + topMargin, widthTF.frame.size.width, tfHeight);
-    TLPSceneCreationInputTextFieldView *heightTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:heightFrame];
+    TLPSceneCreationInputTextFieldView *heightTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:heightFrame andTag:kHeightTextFieldTag];
+    heightTF.tfDelegate = self;
     [heightTF setPlaceHolderText:@"768"];
     [self addSubview:heightTF];
+}
+
+#pragma mark - DELEGATEZ BRO!
+- (void)textFieldDidFinishEditing:(UITextField *)textField
+{
+    [self.tfDelegate textFieldDidFinishEditing:textField];
 }
 
 @end

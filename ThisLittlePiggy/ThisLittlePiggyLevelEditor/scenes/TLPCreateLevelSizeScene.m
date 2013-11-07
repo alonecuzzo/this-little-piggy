@@ -38,13 +38,24 @@
     CGRect sceneCreationFrame = CGRectMake(CGRectGetMidX(self.frame) - (panelWidth / 2) - panelWidth + 40, CGRectGetMidY(self.frame) - (panelHeight / 2) - 150, panelWidth, panelHeight);
     
     self.sceneCreationPanel = [[TLPSceneCreationPanelView alloc] initWithFrame:sceneCreationFrame];
+    self.sceneCreationPanel.tfDelegate = self;
     [view addSubview:self.sceneCreationPanel];
     
     CGRect minimapFrame = CGRectMake(self.sceneCreationPanel.frame.origin.x + self.sceneCreationPanel.frame.size.width + 60, self.sceneCreationPanel.frame.origin.y, self.sceneCreationPanel.frame.size.width, self.sceneCreationPanel.frame.size.height);
     self.minimap = [[TLPMinimap alloc] initWithFrame:minimapFrame];
-    self.minimap.backgroundColor = [UIColor blackColor];
+//    self.minimap.backgroundColor = [UIColor blackColor];
     [view addSubview:self.minimap];
     
+}
+
+#pragma mark - delegate business
+- (void)textFieldDidFinishEditing:(UITextField *)textField
+{
+    if (textField.tag == kWidthTextFieldTag) {
+        [self.minimap updateLevelWidth:[textField.text floatValue]];
+    } else if (textField.tag == kHeightTextFieldTag) {
+        [self.minimap updateLevelHeight:[textField.text floatValue]];
+    }
 }
 
 @end

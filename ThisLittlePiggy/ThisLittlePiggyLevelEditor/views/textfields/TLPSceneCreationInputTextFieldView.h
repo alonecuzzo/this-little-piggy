@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TLPSceneCreationInputTextFieldView : UIView
+@protocol TLPSceneCreationInputTextFieldViewDelegate <NSObject>
 
+- (void)textFieldDidFinishEditing:(UITextField*)textField;
+
+@end
+
+@interface TLPSceneCreationInputTextFieldView : UIView <UITextFieldDelegate>
+
+@property(weak) id <TLPSceneCreationInputTextFieldViewDelegate> tfDelegate;
+
+- (id)initWithFrame:(CGRect)frame andTag:(int)tag;
 - (void)setPlaceHolderText:(NSString*)text;
 
 @end
