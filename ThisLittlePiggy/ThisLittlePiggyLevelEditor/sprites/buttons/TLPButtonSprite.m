@@ -27,7 +27,7 @@
 #pragma mark - setup stuff
 - (void)buildButton
 {
-    SKLabelNode *titleLabel = [SKLabelNode labelNodeWithFontNamed:[TLPFontHelper fontNameForRalewayMedium]];
+    SKLabelNode *titleLabel = [SKLabelNode labelNodeWithFontNamed:[TLPFontHelper fontNameForRalewayExtraLight]];
     titleLabel.fontColor = [UIColor thisLittlePiggySkyBlue];
     titleLabel.fontSize = TLPFontSizeCityNameLarge;
     titleLabel.text = self.title;

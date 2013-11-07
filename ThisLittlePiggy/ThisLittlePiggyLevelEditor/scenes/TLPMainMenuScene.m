@@ -26,11 +26,19 @@
 #pragma mark - scene functions
 - (void)didMoveToView:(SKView *)view
 {
-    TLPMainMenuButtonSprite *createNewLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"new level" andBackgroundColor:[UIColor whiteColor] andSize:CGSizeMake(350.0f, 70.0f) andActionBlock:^{
+    CGSize buttonSize = CGSizeMake(350.0f, 70.0f);
+    
+    TLPMainMenuButtonSprite *createNewLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"new level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
         
     }];
-    createNewLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+    createNewLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 10 + createNewLevelButton.size.height / 2);
     [self addChild:createNewLevelButton];
+    
+    TLPMainMenuButtonSprite *loadLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"load level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
+        
+    }];
+    loadLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 10 - loadLevelButton.size.height / 2);
+    [self addChild:loadLevelButton];
 }
 
 @end
