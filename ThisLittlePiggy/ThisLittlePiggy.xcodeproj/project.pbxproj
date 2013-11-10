@@ -40,6 +40,8 @@
 		8E8C148718234EE300B07048 /* TLPBaseLevelSceneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */; };
 		8E8C148B182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
 		8E8C148C182352CD00B07048 /* TLPPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8C148A182352CD00B07048 /* TLPPlayer.m */; };
+		8E904F8E1830329B0052A43C /* TLPCreateLevelSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E904F8D1830329B0052A43C /* TLPCreateLevelSizeView.m */; };
+		8E904F91183033990052A43C /* TLPSceneCreationPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E904F90183033990052A43C /* TLPSceneCreationPanelView.m */; };
 		8EB1C49618271D400074AA95 /* TLPSpawnAI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C49518271D400074AA95 /* TLPSpawnAI.m */; };
 		8EB1C49718271D400074AA95 /* TLPSpawnAI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C49518271D400074AA95 /* TLPSpawnAI.m */; };
 		8EB1C49A182726880074AA95 /* TLPSky.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB1C499182726880074AA95 /* TLPSky.m */; };
@@ -102,7 +104,6 @@
 		8EFBDC7A182BEA360061C44A /* Raleway-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6E182BE4D70061C44A /* Raleway-Medium.otf */; };
 		8EFBDC7B182BEA360061C44A /* Raleway-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */; };
 		8EFBDC7E182BF2900061C44A /* TLPCreateLevelSizeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC7D182BF2900061C44A /* TLPCreateLevelSizeScene.m */; };
-		8EFBDC82182BF83F0061C44A /* TLPSceneCreationPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC81182BF83F0061C44A /* TLPSceneCreationPanelView.m */; };
 		8EFBDC86182C00120061C44A /* TLPSceneCreationInputTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC85182C00120061C44A /* TLPSceneCreationInputTextFieldView.m */; };
 		C5AB56A59055412CB654A6CE /* libPods-ThisLittlePiggyLevelEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E3F8FCFB7F45D484BA5939 /* libPods-ThisLittlePiggyLevelEditor.a */; };
 		CA153C4FDC8B42F1BD19EEBB /* libPods-ThisLittlePiggy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */; };
@@ -159,6 +160,10 @@
 		8E8C148618234EE300B07048 /* TLPBaseLevelSceneTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPBaseLevelSceneTests.m; path = scenes/levels/TLPBaseLevelSceneTests.m; sourceTree = "<group>"; };
 		8E8C1489182352CD00B07048 /* TLPPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPPlayer.h; path = scenes/TLPPlayer.h; sourceTree = "<group>"; };
 		8E8C148A182352CD00B07048 /* TLPPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPPlayer.m; path = scenes/TLPPlayer.m; sourceTree = "<group>"; };
+		8E904F8C1830329B0052A43C /* TLPCreateLevelSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCreateLevelSizeView.h; path = views/levelCreation/createLevelSizeView/TLPCreateLevelSizeView.h; sourceTree = "<group>"; };
+		8E904F8D1830329B0052A43C /* TLPCreateLevelSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCreateLevelSizeView.m; path = views/levelCreation/createLevelSizeView/TLPCreateLevelSizeView.m; sourceTree = "<group>"; };
+		8E904F8F183033990052A43C /* TLPSceneCreationPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSceneCreationPanelView.h; path = views/levelCreation/panel/TLPSceneCreationPanelView.h; sourceTree = "<group>"; };
+		8E904F90183033990052A43C /* TLPSceneCreationPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSceneCreationPanelView.m; path = views/levelCreation/panel/TLPSceneCreationPanelView.m; sourceTree = "<group>"; };
 		8EB1C49418271D400074AA95 /* TLPSpawnAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSpawnAI.h; path = ai/TLPSpawnAI.h; sourceTree = "<group>"; };
 		8EB1C49518271D400074AA95 /* TLPSpawnAI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSpawnAI.m; path = ai/TLPSpawnAI.m; sourceTree = "<group>"; };
 		8EB1C498182726880074AA95 /* TLPSky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSky.h; path = sprites/characters/TLPSky.h; sourceTree = "<group>"; };
@@ -227,8 +232,6 @@
 		8EFBDC75182BE50E0061C44A /* TLPFontHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPFontHelper.m; path = globals/helpers/TLPFontHelper.m; sourceTree = "<group>"; };
 		8EFBDC7C182BF2900061C44A /* TLPCreateLevelSizeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPCreateLevelSizeScene.h; path = scenes/TLPCreateLevelSizeScene.h; sourceTree = "<group>"; };
 		8EFBDC7D182BF2900061C44A /* TLPCreateLevelSizeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPCreateLevelSizeScene.m; path = scenes/TLPCreateLevelSizeScene.m; sourceTree = "<group>"; };
-		8EFBDC80182BF83F0061C44A /* TLPSceneCreationPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSceneCreationPanelView.h; path = views/TLPSceneCreationPanelView.h; sourceTree = "<group>"; };
-		8EFBDC81182BF83F0061C44A /* TLPSceneCreationPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSceneCreationPanelView.m; path = views/TLPSceneCreationPanelView.m; sourceTree = "<group>"; };
 		8EFBDC84182C00120061C44A /* TLPSceneCreationInputTextFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPSceneCreationInputTextFieldView.h; path = views/textfields/TLPSceneCreationInputTextFieldView.h; sourceTree = "<group>"; };
 		8EFBDC85182C00120061C44A /* TLPSceneCreationInputTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSceneCreationInputTextFieldView.m; path = views/textfields/TLPSceneCreationInputTextFieldView.m; sourceTree = "<group>"; };
 		D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -479,6 +482,33 @@
 			name = characters;
 			sourceTree = "<group>";
 		};
+		8E904F89183031DA0052A43C /* panel */ = {
+			isa = PBXGroup;
+			children = (
+				8E904F8F183033990052A43C /* TLPSceneCreationPanelView.h */,
+				8E904F90183033990052A43C /* TLPSceneCreationPanelView.m */,
+			);
+			name = panel;
+			sourceTree = "<group>";
+		};
+		8E904F8A183031F30052A43C /* level creation */ = {
+			isa = PBXGroup;
+			children = (
+				8E904F8B183032300052A43C /* create level size view */,
+				8E904F89183031DA0052A43C /* panel */,
+			);
+			name = "level creation";
+			sourceTree = "<group>";
+		};
+		8E904F8B183032300052A43C /* create level size view */ = {
+			isa = PBXGroup;
+			children = (
+				8E904F8C1830329B0052A43C /* TLPCreateLevelSizeView.h */,
+				8E904F8D1830329B0052A43C /* TLPCreateLevelSizeView.m */,
+			);
+			name = "create level size view";
+			sourceTree = "<group>";
+		};
 		8ECE9BBF18257C4E0049763C /* helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -709,11 +739,10 @@
 		8EFBDC7F182BF80D0061C44A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				8E904F8A183031F30052A43C /* level creation */,
 				8EFBDC83182BFFC80061C44A /* textfields */,
 				8EF93CFD182C2768009ACA1C /* TLPMinimap.h */,
 				8EF93CFE182C2768009ACA1C /* TLPMinimap.m */,
-				8EFBDC80182BF83F0061C44A /* TLPSceneCreationPanelView.h */,
-				8EFBDC81182BF83F0061C44A /* TLPSceneCreationPanelView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -969,6 +998,8 @@
 				8E13D0DC182A94840018FF62 /* UIColor+ThisLittlePiggy.m in Sources */,
 				8EFBDC67182BE0560061C44A /* TLPButtonSprite.m in Sources */,
 				8E75DFFE1829A9BD00BCCDC1 /* TLPAbstractModel.m in Sources */,
+				8E904F8E1830329B0052A43C /* TLPCreateLevelSizeView.m in Sources */,
+				8E904F91183033990052A43C /* TLPSceneCreationPanelView.m in Sources */,
 				8E13D0D8182A937F0018FF62 /* TLPAppDelegate.m in Sources */,
 				8EFBDC86182C00120061C44A /* TLPSceneCreationInputTextFieldView.m in Sources */,
 				8E75E0021829AA0600BCCDC1 /* TLPCloudModel.m in Sources */,
@@ -977,7 +1008,6 @@
 				8E75DFC11829A20600BCCDC1 /* main.m in Sources */,
 				8E13D0DB182A938A0018FF62 /* TLPViewController.m in Sources */,
 				8EFBDC77182BE50E0061C44A /* TLPFontHelper.m in Sources */,
-				8EFBDC82182BF83F0061C44A /* TLPSceneCreationPanelView.m in Sources */,
 				8EFBDC7E182BF2900061C44A /* TLPCreateLevelSizeScene.m in Sources */,
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
 				8E13D0D3182A92DA0018FF62 /* TLPLevelEditorScene.m in Sources */,
