@@ -10,4 +10,6 @@
 
 @interface TLPLevelEditorScene : SKScene
 
+@property(nonatomic) CGSize levelSize;
+
 @end

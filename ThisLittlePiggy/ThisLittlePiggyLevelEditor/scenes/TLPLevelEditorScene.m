@@ -20,4 +20,9 @@
     return  self;
 }
 
+#pragma mark - delegate stuff
+- (void)didMoveToView:(SKView *)view
+{
+}
+
 @end

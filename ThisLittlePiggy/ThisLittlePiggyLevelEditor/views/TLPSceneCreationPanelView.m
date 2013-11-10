@@ -12,6 +12,7 @@
 @interface TLPSceneCreationPanelView()
 
 @property(nonatomic) TLPSceneCreationInputTextFieldView *widthTF;
+@property(nonatomic) TLPSceneCreationInputTextFieldView *heightTF;
 
 @end
 
@@ -41,15 +42,20 @@
     [self addSubview:_widthTF];
     
     CGRect heightFrame = CGRectMake(leftMargin, _widthTF.frame.size.height + _widthTF.frame.origin.y + topMargin, _widthTF.frame.size.width, tfHeight);
-    TLPSceneCreationInputTextFieldView *heightTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:heightFrame andTag:kHeightTextFieldTag];
-    heightTF.tfDelegate = self;
-    [heightTF setPlaceHolderText:@"1000"];
-    [self addSubview:heightTF];
+    _heightTF = [[TLPSceneCreationInputTextFieldView alloc] initWithFrame:heightFrame andTag:kHeightTextFieldTag];
+    _heightTF.tfDelegate = self;
+    [_heightTF setPlaceHolderText:@"1000"];
+    [self addSubview:_heightTF];
 }
 
 - (void)setWidthTFAsFirstResponder
 {
     [_widthTF becomeFirstResponder];
+}
+
+- (CGSize)levelSize
+{
+    return CGSizeMake([_widthTF.textField.text floatValue], [_heightTF.textField.text floatValue]);
 }
 
 #pragma mark - DELEGATEZ BRO!

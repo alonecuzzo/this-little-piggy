@@ -10,6 +10,7 @@
 #import "UIColor+ThisLittlePiggy.h"
 #import "TLPSceneCreationPanelView.h"
 #import "TLPMinimap.h"
+#import "TLPLevelEditorScene.h"
 
 @interface TLPCreateLevelSizeScene()
 
@@ -57,7 +58,10 @@
 
 - (void)doneButtonPressed
 {
-    
+    SKTransition *doors = [SKTransition fadeWithDuration:0.5];
+    TLPLevelEditorScene *scene = [[TLPLevelEditorScene alloc] initWithSize:self.size];
+    scene.levelSize = self.sceneCreationPanel.levelSize;
+    [self.view presentScene:scene transition:doors];
 }
 
 #pragma mark - delegate business

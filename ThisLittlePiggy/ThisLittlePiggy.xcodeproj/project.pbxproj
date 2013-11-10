@@ -288,12 +288,12 @@
 		8E13D0D0182A92B50018FF62 /* scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8EFBDC7C182BF2900061C44A /* TLPCreateLevelSizeScene.h */,
+				8EFBDC7D182BF2900061C44A /* TLPCreateLevelSizeScene.m */,
 				8E13D0D1182A92DA0018FF62 /* TLPLevelEditorScene.h */,
 				8E13D0D2182A92DA0018FF62 /* TLPLevelEditorScene.m */,
 				8EFBDC60182BDE4E0061C44A /* TLPMainMenuScene.h */,
 				8EFBDC61182BDE4E0061C44A /* TLPMainMenuScene.m */,
-				8EFBDC7C182BF2900061C44A /* TLPCreateLevelSizeScene.h */,
-				8EFBDC7D182BF2900061C44A /* TLPCreateLevelSizeScene.m */,
 			);
 			name = scenes;
 			sourceTree = "<group>";

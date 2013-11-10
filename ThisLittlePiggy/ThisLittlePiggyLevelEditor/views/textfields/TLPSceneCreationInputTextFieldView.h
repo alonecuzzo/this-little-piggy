@@ -16,6 +16,7 @@
 
 @interface TLPSceneCreationInputTextFieldView : UIView <UITextFieldDelegate>
 
+@property(nonatomic) UITextField *textField;
 @property(weak) id <TLPSceneCreationInputTextFieldViewDelegate> tfDelegate;
 
 - (id)initWithFrame:(CGRect)frame andTag:(int)tag;

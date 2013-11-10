@@ -12,8 +12,6 @@
 
 @interface TLPSceneCreationInputTextFieldView()
 
-@property(nonatomic) UITextField *textField;
-
 @end
 
 @implementation TLPSceneCreationInputTextFieldView
