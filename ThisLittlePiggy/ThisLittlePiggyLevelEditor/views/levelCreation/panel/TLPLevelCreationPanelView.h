@@ -12,7 +12,7 @@
 #define kWidthTextFieldTag 1
 #define kHeightTextFieldTag 2
 
-@interface TLPSceneCreationPanelView : UIView <TLPSceneCreationInputTextFieldViewDelegate>
+@interface TLPLevelCreationPanelView : UIView <TLPSceneCreationInputTextFieldViewDelegate>
 
 @property(weak) id <TLPSceneCreationInputTextFieldViewDelegate> tfDelegate;
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TLPSceneCreationInputTextFieldView.h"
 
-@interface TLPCreateLevelSizeView : UIView
+@interface TLPLevelCreationSizeView : UIView <TLPSceneCreationInputTextFieldViewDelegate>
+
+
 
 @end

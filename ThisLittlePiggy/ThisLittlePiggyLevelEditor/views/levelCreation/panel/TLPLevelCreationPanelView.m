@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
-#import "TLPSceneCreationPanelView.h"
+#import "TLPLevelCreationPanelView.h"
 #import "TLPSceneCreationInputTextFieldView.h"
 
-@interface TLPSceneCreationPanelView()
+@interface TLPLevelCreationPanelView()
 
 @property(nonatomic) TLPSceneCreationInputTextFieldView *widthTF;
 @property(nonatomic) TLPSceneCreationInputTextFieldView *heightTF;
 
 @end
 
-@implementation TLPSceneCreationPanelView
+@implementation TLPLevelCreationPanelView
 
 - (id)initWithFrame:(CGRect)frame
 {

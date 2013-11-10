@@ -10,7 +10,6 @@
 #import "TLPMainMenuButtonSprite.h"
 #import "UIColor+ThisLittlePiggy.h"
 #import "TLPMainMenuButtonSprite.h"
-#import "TLPCreateLevelSizeScene.h"
 
 @implementation TLPMainMenuScene
 
@@ -46,11 +45,7 @@
 
 - (void)moveToScene:(NSString*)sceneName
 {
-    SKTransition *doors = [SKTransition fadeWithDuration:0.5];
-    
     if ([sceneName isEqualToString:@"newLevel"]) {
-        TLPCreateLevelSizeScene *scene = [[TLPCreateLevelSizeScene alloc] initWithSize:self.size];
-        [self.view presentScene:scene transition:doors];
     }
     
     if ([sceneName isEqualToString:@"loadLevel"]) {
