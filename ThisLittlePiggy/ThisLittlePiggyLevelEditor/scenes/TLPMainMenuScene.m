@@ -12,6 +12,7 @@
 #import "UIButton+RACCommandSupport.h"
 #import "RACCommand.h"
 #import "RACSignal.h"
+#import "TLPLevelCreationView.h"
 
 @interface TLPMainMenuScene ()
 @property(nonatomic, strong) UIView *parentView;
@@ -21,6 +22,7 @@
 {
     TLPMainMenuButton *_createNewLevelButton;
     TLPLevelCreationSizeView *_levelSizeView;
+    TLPLevelCreationView *_levelCreationView;
 }
 
 #pragma mark - init stuff
@@ -81,11 +83,16 @@
 
 - (void)fadeLevelCreationViewIn
 {
+    _levelCreationView = [[TLPLevelCreationView alloc] initWithFrame:self.frame andLevelSize:[_levelSizeView levelSize]];
+    _levelCreationView.alpha = 0.0f;
+    [_parentView addSubview:_levelCreationView];
 
     [UIView animateWithDuration:0.3f animations:^{
        _levelSizeView.alpha = 0.0f;
+        _levelCreationView.alpha = 1.0f;
     } completion:^ (BOOL completed) {
-
+        [_levelSizeView removeFromSuperview];
+        _levelSizeView = nil;
     }];
 }
 

@@ -65,6 +65,11 @@
     [self addSubview:doneButton];
 }
 
+- (CGSize)levelSize
+{
+    return [_levelCreationPanel levelSize];
+}
+
 #pragma mark - delegate business
 - (void)textFieldDidFinishEditing:(UITextField *)textField
 {

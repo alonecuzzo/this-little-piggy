@@ -19,4 +19,6 @@
 
 @property (weak) id <TLPLevelCreationSizeViewDelegate> levelCreationDelegate;
 
+- (CGSize)levelSize;
+
 @end
