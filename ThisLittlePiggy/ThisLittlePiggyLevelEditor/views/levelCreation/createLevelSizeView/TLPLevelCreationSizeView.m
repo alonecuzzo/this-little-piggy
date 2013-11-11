@@ -12,6 +12,8 @@
 #import "TLPMiniMap.h"
 #import "TLPLevelCreationPanelView.h"
 #import "RACSignal.h"
+#import "TLPMainMenuButton.h"
+#import "UIColor+ThisLittlePiggy.h"
 
 @interface TLPLevelCreationSizeView()
 
@@ -49,7 +51,9 @@
     [self.levelCreationPanel setWidthTFAsFirstResponder];
 
     CGRect doneButtonFrame = CGRectMake(minimapFrame.size.width + minimapFrame.origin.x + 10, minimapFrame.origin.y, 100, 70);
-    UIButton *doneButton = [[UIButton alloc] initWithFrame:doneButtonFrame];
+    TLPMainMenuButton *doneButton = [[TLPMainMenuButton alloc] initWithFrame:doneButtonFrame];
+    [doneButton setTitle:@"done" forState:UIControlStateNormal];
+    [doneButton setTitleColor:[UIColor thisLittlePiggySkyBlue] forState:UIControlStateNormal];
     doneButton.backgroundColor = [UIColor whiteColor];
     id __weak weakSelf = self;
     doneButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {

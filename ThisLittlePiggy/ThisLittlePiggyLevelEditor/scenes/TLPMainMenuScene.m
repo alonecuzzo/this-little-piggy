@@ -12,7 +12,6 @@
 #import "UIButton+RACCommandSupport.h"
 #import "RACCommand.h"
 #import "RACSignal.h"
-#import "RACEXTScope.h"
 
 @interface TLPMainMenuScene ()
 @property(nonatomic, strong) UIView *parentView;
@@ -82,12 +81,12 @@
 
 - (void)fadeLevelCreationViewIn
 {
+
     [UIView animateWithDuration:0.3f animations:^{
        _levelSizeView.alpha = 0.0f;
     } completion:^ (BOOL completed) {
 
     }];
 }
-
 
 @end
