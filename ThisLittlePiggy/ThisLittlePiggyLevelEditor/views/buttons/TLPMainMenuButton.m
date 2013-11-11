@@ -7,6 +7,8 @@
 //
 
 #import "TLPMainMenuButton.h"
+#import "TLPFontHelper.h"
+#import "UIColor+ThisLittlePiggy.h"
 
 @implementation TLPMainMenuButton
 
@@ -14,9 +16,16 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        [self buildButton];
     }
     return self;
+}
+
+- (void)buildButton
+{
+   self.titleLabel.font = [TLPFontHelper getFont:TLPFontRalewayExtraLight withSize:TLPFontSizeCityNameLarge];
+    self.titleLabel.textColor = [UIColor thisLittlePiggySkyBlue];
+    self.titleLabel.text = self.title;
 }
 
 @end

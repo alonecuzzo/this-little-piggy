@@ -7,9 +7,8 @@
 //
 
 #import "TLPMainMenuScene.h"
-#import "TLPMainMenuButtonSprite.h"
 #import "UIColor+ThisLittlePiggy.h"
-#import "TLPMainMenuButtonSprite.h"
+#import "TLPMainMenuButton.h"
 
 @implementation TLPMainMenuScene
 
@@ -30,28 +29,26 @@
     
     __weak  TLPMainMenuScene *selfRef = self;
     
-    TLPMainMenuButtonSprite *createNewLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"new level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
-        [selfRef moveToScene:@"newLevel"];
-    }];
-    createNewLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 10 + createNewLevelButton.size.height / 2);
-    [self addChild:createNewLevelButton];
-    
-    TLPMainMenuButtonSprite *loadLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"load level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
-        [selfRef moveToScene:@"loadLevel"];
-    }];
-    loadLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 10 - loadLevelButton.size.height / 2);
-    [self addChild:loadLevelButton];
-}
+//    TLPMainMenuButtonSprite *createNewLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"new level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
+//        [selfRef moveToScene:@"newLevel"];
+//    }];
+//    createNewLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) + 10 + createNewLevelButton.size.height / 2);
+//    [self addChild:createNewLevelButton];
+//    
+//    TLPMainMenuButtonSprite *loadLevelButton = [[TLPMainMenuButtonSprite alloc] initWithTitle:@"load level" andBackgroundColor:[UIColor whiteColor] andSize:buttonSize andActionBlock:^{
+//        [selfRef moveToScene:@"loadLevel"];
+//    }];
+//    loadLevelButton.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame) - 10 - loadLevelButton.size.height / 2);
+//    [self addChild:loadLevelButton];
 
-- (void)moveToScene:(NSString*)sceneName
-{
-    if ([sceneName isEqualToString:@"newLevel"]) {
+    CGRect newLevelButtonFrame = CGRectMake(CGRectGetMidX(self.frame) - (buttonSize.width / 2), CGRectGetMidY(self.frame) - 10 - (buttonSize.height / 2), buttonSize.width, buttonSize.height);
+    TLPMainMenuButton *createNewLevelButton = [[TLPMainMenuButton alloc] initWithFrame:newLevelButtonFrame];
+    [createNewLevelButton setTitle:@"new level" forState:UIControlStateNormal];
+    [createNewLevelButton setTitleColor:[UIColor thisLittlePiggySkyBlue] forState:UIControlStateNormal
+    ];
+    [createNewLevelButton setBackgroundColor:[UIColor whiteColor]];
+    [view addSubview:createNewLevelButton];
 
-    }
-    
-    if ([sceneName isEqualToString:@"loadLevel"]) {
-
-    }
 }
 
 @end

@@ -8,6 +8,8 @@
 
 
 
-@interface TLPMainMenuButton : UIView
+@interface TLPMainMenuButton : UIButton
+
+@property(nonatomic) NSString *title;
 
 @end
