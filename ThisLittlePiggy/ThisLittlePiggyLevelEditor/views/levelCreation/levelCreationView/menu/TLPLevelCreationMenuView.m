@@ -8,32 +8,32 @@
 
 #import "TLPLevelCreationMenuView.h"
 #import "UIView+GCLibrary.h"
+#import "UIColor+ThisLittlePiggy.h"
+#import "TLPLevelCreationMenuMinimap.h"
 
 @implementation TLPLevelCreationMenuView
 {
     BOOL _isOpen;
-    UIView *_minimap;
+    TLPLevelCreationMenuMinimap *_minimap;
     UIView *_sideMenu;
 }
 
 #pragma mark - init stuff
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame levelSize:(CGSize)levelSize
 {
     self = [super initWithFrame:frame];
     if (self) {
         //stub out the minimap and side menu
         CGSize minimapSize = CGSizeMake(200.0f, 100.0f);
         CGRect minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - minimapSize.height - 10.0f, minimapSize.width, minimapSize.height);
-        _minimap = [[UIView alloc] initWithFrame:minimapFrame];
-        _minimap.backgroundColor = [UIColor purpleColor];
-        _minimap.alpha = 0.8f;
+        _minimap = [[TLPLevelCreationMenuMinimap alloc] initWithFrame:minimapFrame andLevelSize:levelSize];
 
         CGSize sideMenuSize = CGSizeMake(150.0f, self.frame.size.height);
         CGRect sideMenuRect = CGRectMake(-sideMenuSize.width - 5.0f, 0.0f, sideMenuSize.width, sideMenuSize.height);
         _sideMenu = [[UIView alloc] initWithFrame:sideMenuRect];
-        _sideMenu.backgroundColor = [UIColor redColor];
-        _sideMenu.alpha = 0.8;
+        _sideMenu.backgroundColor = [UIColor thisLittlePiggySkyDarkPurple];
+        _sideMenu.alpha = 0.9;
     }
     return self;
 }

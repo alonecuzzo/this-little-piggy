@@ -24,7 +24,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         //menu
-        _menu = [[TLPLevelCreationMenuView alloc] initWithFrame:frame];
+        _menu = [[TLPLevelCreationMenuView alloc] initWithFrame:frame levelSize:levelSize];
         [self addSubview:_menu];
 
         _scrollView = [[UIScrollView alloc] initWithFrame:frame];
