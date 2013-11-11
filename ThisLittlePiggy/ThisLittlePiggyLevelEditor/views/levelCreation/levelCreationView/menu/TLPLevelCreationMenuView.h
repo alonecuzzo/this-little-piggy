@@ -9,9 +9,8 @@
 @interface TLPLevelCreationMenuView : UIView
 
 - (id)initWithFrame:(CGRect)frame levelSize:(CGSize)levelSize;
-
 - (void)setupViews;
-
+- (void)scrollIpadViewToPoint:(CGPoint)point;
 - (void)toggle;
 
 @end

@@ -33,6 +33,7 @@
         _scrollView.backgroundColor = [UIColor thisLittlePiggySkyDarkPurple];
         _scrollView.showsHorizontalScrollIndicator = YES;
         _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.delegate = self;
         [self addSubview:_scrollView];
         
         _levelView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, levelSize.width, levelSize.height)];
@@ -56,6 +57,12 @@
 - (void)toggleMenu
 {
     [_menu toggle];
+}
+
+#pragma mark - delegate stuff
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    [_menu scrollIpadViewToPoint:_scrollView.contentOffset];
 }
 
 @end

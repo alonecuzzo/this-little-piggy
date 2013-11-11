@@ -24,7 +24,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        //stub out the minimap and side menu
         CGSize minimapSize = CGSizeMake(200.0f, 100.0f);
         CGRect minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - minimapSize.height - 10.0f, minimapSize.width, minimapSize.height);
         _minimap = [[TLPLevelCreationMenuMinimap alloc] initWithFrame:minimapFrame andLevelSize:levelSize];
@@ -44,6 +43,11 @@
 {
     [self.superview addSubview:_minimap];
     [self.superview addSubview:_sideMenu];
+}
+
+- (void)scrollIpadViewToPoint:(CGPoint)point
+{
+    [_minimap scrollViewToPoint:point];
 }
 
 - (void)toggle

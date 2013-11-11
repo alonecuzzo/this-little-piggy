@@ -11,5 +11,6 @@
 @property(nonatomic) UIView *levelView;
 
 - (id)initWithFrame:(CGRect)frame andLevelSize:(CGSize)levelSize;
+- (void)scrollViewToPoint:(CGPoint)point;
 
 @end

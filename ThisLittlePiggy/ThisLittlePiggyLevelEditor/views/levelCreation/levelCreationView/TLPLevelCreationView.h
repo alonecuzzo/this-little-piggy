@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
-@interface TLPLevelCreationView : UIView
+@interface TLPLevelCreationView : UIView <UIScrollViewDelegate>
 
 @property(nonatomic, strong) UIScrollView *scrollView;
 @property(nonatomic, strong) UIView *levelView;
