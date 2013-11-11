@@ -46,6 +46,7 @@
 - (void)moveToScene:(NSString*)sceneName
 {
     if ([sceneName isEqualToString:@"newLevel"]) {
+
     }
     
     if ([sceneName isEqualToString:@"loadLevel"]) {
