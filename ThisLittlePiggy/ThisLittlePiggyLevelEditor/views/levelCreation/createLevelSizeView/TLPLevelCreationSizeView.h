@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "TLPSceneCreationInputTextFieldView.h"
 
+@protocol TLPLevelCreationSizeViewDelegate
+
+- (void)donePressed;
+
+@end
+
 @interface TLPLevelCreationSizeView : UIView <TLPSceneCreationInputTextFieldViewDelegate>
 
-
+@property (weak) id <TLPLevelCreationSizeViewDelegate> levelCreationDelegate;
 
 @end

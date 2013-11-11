@@ -7,7 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "TLPLevelCreationSizeView.h"
 
-@interface TLPMainMenuScene : SKScene
+@class TLPLevelCreationSizeView;
+
+@interface TLPMainMenuScene : SKScene <TLPLevelCreationSizeViewDelegate>
+
+@property(nonatomic) TLPLevelCreationSizeView *levelSizeView;
 
 @end

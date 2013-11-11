@@ -6,9 +6,12 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
+#import <ReactiveCocoa/ReactiveCocoa/UIButton+RACCommandSupport.h>
+#import <ReactiveCocoa/ReactiveCocoa/RACCommand.h>
 #import "TLPLevelCreationSizeView.h"
 #import "TLPMiniMap.h"
 #import "TLPLevelCreationPanelView.h"
+#import "RACSignal.h"
 
 @interface TLPLevelCreationSizeView()
 
@@ -44,16 +47,18 @@
     [self addSubview:self.minimap];
     
     [self.levelCreationPanel setWidthTFAsFirstResponder];
-    
+
     CGRect doneButtonFrame = CGRectMake(minimapFrame.size.width + minimapFrame.origin.x + 10, minimapFrame.origin.y, 100, 70);
     UIButton *doneButton = [[UIButton alloc] initWithFrame:doneButtonFrame];
     doneButton.backgroundColor = [UIColor whiteColor];
-    [doneButton addTarget:self action:@selector(doneButtonPressed) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:doneButton];
-}
+    id __weak weakSelf = self;
+    doneButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
+        TLPLevelCreationSizeView *strongSelf = (TLPLevelCreationSizeView *)weakSelf;
+        [strongSelf.levelCreationDelegate donePressed];
+        return [RACSignal empty];
+    }];
 
-- (void)doneButtonPressed
-{
+    [self addSubview:doneButton];
 }
 
 #pragma mark - delegate business
