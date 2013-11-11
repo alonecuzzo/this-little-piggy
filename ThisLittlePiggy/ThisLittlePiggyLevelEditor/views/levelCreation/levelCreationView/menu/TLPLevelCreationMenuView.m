@@ -28,6 +28,8 @@
         CGSize minimapSize = CGSizeMake(200.0f, 100.0f);
         CGRect minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - minimapSize.height - 10.0f, minimapSize.width, minimapSize.height);
         _minimap = [[TLPLevelCreationMenuMinimap alloc] initWithFrame:minimapFrame andLevelSize:levelSize];
+        minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - _minimap.levelView.height - 10.0f, minimapSize.width, minimapSize.height);
+        [_minimap setFrame:minimapFrame];
 
         CGSize sideMenuSize = CGSizeMake(150.0f, self.frame.size.height);
         CGRect sideMenuRect = CGRectMake(-sideMenuSize.width - 5.0f, 0.0f, sideMenuSize.width, sideMenuSize.height);

@@ -12,7 +12,6 @@
 @interface TLPLevelCreationMenuMinimap()
 
 @property(nonatomic) UIView *ipadView;
-@property(nonatomic) UIView *levelView;
 
 @end
 
