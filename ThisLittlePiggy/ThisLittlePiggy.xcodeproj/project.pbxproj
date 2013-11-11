@@ -104,6 +104,7 @@
 		8EFBDC7B182BEA360061C44A /* Raleway-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EFBDC6F182BE4D70061C44A /* Raleway-Thin.otf */; };
 		8EFBDC86182C00120061C44A /* TLPSceneCreationInputTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC85182C00120061C44A /* TLPSceneCreationInputTextFieldView.m */; };
 		944631B90743A3A6E9C33AF9 /* TLPLevelCreationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */; };
+		94463B38873499B323752B04 /* TLPLevelCreationGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */; };
 		94463C7A43991C99945881C3 /* TLPMainMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463A42342685E6FBB20E5C /* TLPMainMenuButton.m */; };
 		C5AB56A59055412CB654A6CE /* libPods-ThisLittlePiggyLevelEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E3F8FCFB7F45D484BA5939 /* libPods-ThisLittlePiggyLevelEditor.a */; };
 		CA153C4FDC8B42F1BD19EEBB /* libPods-ThisLittlePiggy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */; };
@@ -233,6 +234,8 @@
 		94463116D4FCB1D929DF263B /* TLPMainMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMainMenuButton.h; path = views/buttons/TLPMainMenuButton.h; sourceTree = "<group>"; };
 		944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationView.m; path = views/levelCreation/levelCreationView/TLPLevelCreationView.m; sourceTree = "<group>"; };
 		94463A42342685E6FBB20E5C /* TLPMainMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuButton.m; path = views/buttons/TLPMainMenuButton.m; sourceTree = "<group>"; };
+		94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationGridView.m; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.m; sourceTree = "<group>"; };
+		94463E8D06A4E0989ED17B87 /* TLPLevelCreationGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationGridView.h; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.h; sourceTree = "<group>"; };
 		94463FBA18CB957C816EE490 /* TLPLevelCreationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationView.h; path = views/levelCreation/levelCreationView/TLPLevelCreationView.h; sourceTree = "<group>"; };
 		D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA7C4A7E107E421C8FD65338 /* Pods-ThisLittlePiggyLevelEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThisLittlePiggyLevelEditor.xcconfig"; path = "Pods/Pods-ThisLittlePiggyLevelEditor.xcconfig"; sourceTree = "<group>"; };
@@ -768,6 +771,8 @@
 			children = (
 				94463FBA18CB957C816EE490 /* TLPLevelCreationView.h */,
 				944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */,
+				94463E8D06A4E0989ED17B87 /* TLPLevelCreationGridView.h */,
+				94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */,
 			);
 			name = "level creation view";
 			sourceTree = "<group>";
@@ -1027,6 +1032,7 @@
 				8E75DFF91829A5BB00BCCDC1 /* TLPFileHelper.m in Sources */,
 				94463C7A43991C99945881C3 /* TLPMainMenuButton.m in Sources */,
 				944631B90743A3A6E9C33AF9 /* TLPLevelCreationView.m in Sources */,
+				94463B38873499B323752B04 /* TLPLevelCreationGridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

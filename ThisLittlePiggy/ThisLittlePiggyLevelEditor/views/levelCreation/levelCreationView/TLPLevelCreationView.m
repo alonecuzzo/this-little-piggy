@@ -8,11 +8,13 @@
 
 #import "TLPLevelCreationView.h"
 #import "UIColor+ThisLittlePiggy.h"
+#import "TLPLevelCreationGridView.h"
 
 @implementation TLPLevelCreationView
 {
     UIScrollView *_scrollView;
     UIView *_levelView;
+    TLPLevelCreationGridView *_gridView;
 }
 
 - (id)initWithFrame:(CGRect)frame andLevelSize:(CGSize)levelSize
@@ -31,6 +33,9 @@
         _levelView.backgroundColor = [UIColor thisLittlePiggyPaleBlue];
         [_scrollView setContentSize:levelSize];
         [_scrollView addSubview:_levelView];
+        
+        _gridView = [[TLPLevelCreationGridView alloc] initWithFrame:_levelView.frame];
+        [_levelView addSubview:_gridView];
     }
     return self;
 }

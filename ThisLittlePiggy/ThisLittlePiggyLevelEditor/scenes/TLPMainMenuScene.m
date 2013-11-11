@@ -12,7 +12,6 @@
 #import "UIButton+RACCommandSupport.h"
 #import "RACCommand.h"
 #import "RACSignal.h"
-#import "TLPLevelCreationView.h"
 
 @interface TLPMainMenuScene ()
 @property(nonatomic, strong) UIView *parentView;

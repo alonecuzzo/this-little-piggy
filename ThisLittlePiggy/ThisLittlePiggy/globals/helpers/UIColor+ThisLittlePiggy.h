@@ -12,6 +12,7 @@
 
 + (instancetype)thisLittlePiggySkyBlue;
 + (instancetype)thisLittlePiggyPaleBlue;
++ (instancetype)thisLittlePiggyDarkPaleBlue;
 
 + (instancetype)thisLittlePiggySkyDarkPurple;
 

@@ -6,12 +6,9 @@
 //  Copyright (c) 2013 23bit. All rights reserved.
 //
 
-
-
 @interface TLPLevelCreationView : UIView
 
 @property(nonatomic, strong) UIScrollView *scrollView;
-
 @property(nonatomic, strong) UIView *levelView;
 
 - (id)initWithFrame:(CGRect)frame andLevelSize:(CGSize)levelSize;
