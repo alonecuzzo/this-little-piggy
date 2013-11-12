@@ -10,8 +10,9 @@
 #import "UIColor+ThisLittlePiggy.h"
 #import "TLPLevelCreationGridView.h"
 #import "TLPLevelCreationMenuView.h"
-#import "TLPLevelCreationSizeView.h"
 #import "TLPLevelEditorModel.h"
+#import "NSObject+RACPropertySubscribing.h"
+#import "RACSignal.h"
 
 @implementation TLPLevelCreationView
 {
@@ -35,7 +36,9 @@
         _scrollView.backgroundColor = [UIColor thisLittlePiggySkyDarkPurple];
         _scrollView.showsHorizontalScrollIndicator = YES;
         _scrollView.showsVerticalScrollIndicator = YES;
-        _scrollView.delegate = self;
+        [RACObserve(_scrollView, contentOffset) subscribeNext:^(id x) {
+            [[TLPLevelEditorModel sharedInstance] setLevelCoordinate:_scrollView.contentOffset];
+        }];
         [self addSubview:_scrollView];
         
         _levelView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, levelSize.width, levelSize.height)];
@@ -59,12 +62,6 @@
 - (void)toggleMenu
 {
     [_menu toggle];
-}
-
-#pragma mark - delegate stuff
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    [[TLPLevelEditorModel sharedInstance] setLevelCoordinate:_scrollView.contentOffset];
 }
 
 @end
