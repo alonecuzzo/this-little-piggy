@@ -105,7 +105,9 @@
 		8EFBDC86182C00120061C44A /* TLPSceneCreationInputTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFBDC85182C00120061C44A /* TLPSceneCreationInputTextFieldView.m */; };
 		944630537F49E86E22CEEB1D /* TLPLevelCreationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446331939DDDFA9F3793174 /* TLPLevelCreationMenuView.m */; };
 		944631B90743A3A6E9C33AF9 /* TLPLevelCreationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */; };
+		9446342DF27C8A6BE05E2D29 /* TLPLevelEditorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 944635F7F04CA147C35D4BDD /* TLPLevelEditorModel.m */; };
 		9446385952F07B6F88A7BEA3 /* TLPLevelCreationMenuMinimap.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FCD44BA069C16B8D8BB /* TLPLevelCreationMenuMinimap.m */; };
+		94463AF835B277CF6F5A5AEB /* TLPMenuMinimapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944630F16B26FDBF3C60ECD0 /* TLPMenuMinimapController.m */; };
 		94463B38873499B323752B04 /* TLPLevelCreationGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */; };
 		94463C7A43991C99945881C3 /* TLPMainMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463A42342685E6FBB20E5C /* TLPMainMenuButton.m */; };
 		C5AB56A59055412CB654A6CE /* libPods-ThisLittlePiggyLevelEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E3F8FCFB7F45D484BA5939 /* libPods-ThisLittlePiggyLevelEditor.a */; };
@@ -235,12 +237,16 @@
 		8EFBDC85182C00120061C44A /* TLPSceneCreationInputTextFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPSceneCreationInputTextFieldView.m; path = views/textfields/TLPSceneCreationInputTextFieldView.m; sourceTree = "<group>"; };
 		94463043A67FABA5ABEDC93C /* TLPLevelCreationMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationMenuView.h; path = views/levelCreation/levelCreationView/menu/TLPLevelCreationMenuView.h; sourceTree = "<group>"; };
 		944630CCF880B3DEEBD19927 /* TLPLevelCreationMenuMinimap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationMenuMinimap.h; path = views/levelCreation/levelCreationView/menu/TLPLevelCreationMenuMinimap.h; sourceTree = "<group>"; };
+		944630F16B26FDBF3C60ECD0 /* TLPMenuMinimapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMenuMinimapController.m; path = controllers/TLPMenuMinimapController.m; sourceTree = "<group>"; };
 		94463116D4FCB1D929DF263B /* TLPMainMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMainMenuButton.h; path = views/buttons/TLPMainMenuButton.h; sourceTree = "<group>"; };
 		944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationView.m; path = views/levelCreation/levelCreationView/TLPLevelCreationView.m; sourceTree = "<group>"; };
 		9446331939DDDFA9F3793174 /* TLPLevelCreationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationMenuView.m; path = views/levelCreation/levelCreationView/menu/TLPLevelCreationMenuView.m; sourceTree = "<group>"; };
+		944634A64D278966A3D36674 /* TLPLevelEditorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPLevelEditorModel.h; sourceTree = "<group>"; };
+		944635F7F04CA147C35D4BDD /* TLPLevelEditorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPLevelEditorModel.m; sourceTree = "<group>"; };
 		94463A42342685E6FBB20E5C /* TLPMainMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuButton.m; path = views/buttons/TLPMainMenuButton.m; sourceTree = "<group>"; };
 		94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationGridView.m; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.m; sourceTree = "<group>"; };
 		94463E8D06A4E0989ED17B87 /* TLPLevelCreationGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationGridView.h; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.h; sourceTree = "<group>"; };
+		94463EB48694A057B280A841 /* TLPMenuMinimapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPMenuMinimapController.h; path = controllers/TLPMenuMinimapController.h; sourceTree = "<group>"; };
 		94463FBA18CB957C816EE490 /* TLPLevelCreationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationView.h; path = views/levelCreation/levelCreationView/TLPLevelCreationView.h; sourceTree = "<group>"; };
 		94463FCD44BA069C16B8D8BB /* TLPLevelCreationMenuMinimap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationMenuMinimap.m; path = views/levelCreation/levelCreationView/menu/TLPLevelCreationMenuMinimap.m; sourceTree = "<group>"; };
 		D06DF084912E4EA5A3F0F6C6 /* libPods-ThisLittlePiggy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThisLittlePiggy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +326,8 @@
 			children = (
 				8E13D0D9182A938A0018FF62 /* TLPViewController.h */,
 				8E13D0DA182A938A0018FF62 /* TLPViewController.m */,
+				944630F16B26FDBF3C60ECD0 /* TLPMenuMinimapController.m */,
+				94463EB48694A057B280A841 /* TLPMenuMinimapController.h */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -336,6 +344,7 @@
 				8E75DFCF1829A20600BCCDC1 /* Spaceship.png */,
 				8E75DFD11829A20600BCCDC1 /* Images.xcassets */,
 				8E75DFBB1829A20600BCCDC1 /* Supporting Files */,
+				944637D6818E27AB381E4F2B /* model */,
 			);
 			path = ThisLittlePiggyLevelEditor;
 			sourceTree = "<group>";
@@ -772,6 +781,15 @@
 			name = buttons;
 			sourceTree = "<group>";
 		};
+		944637D6818E27AB381E4F2B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				944635F7F04CA147C35D4BDD /* TLPLevelEditorModel.m */,
+				944634A64D278966A3D36674 /* TLPLevelEditorModel.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		94463828C97B2CAE1DBD26EE /* level creation view */ = {
 			isa = PBXGroup;
 			children = (
@@ -1053,6 +1071,8 @@
 				94463B38873499B323752B04 /* TLPLevelCreationGridView.m in Sources */,
 				944630537F49E86E22CEEB1D /* TLPLevelCreationMenuView.m in Sources */,
 				9446385952F07B6F88A7BEA3 /* TLPLevelCreationMenuMinimap.m in Sources */,
+				9446342DF27C8A6BE05E2D29 /* TLPLevelEditorModel.m in Sources */,
+				94463AF835B277CF6F5A5AEB /* TLPMenuMinimapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

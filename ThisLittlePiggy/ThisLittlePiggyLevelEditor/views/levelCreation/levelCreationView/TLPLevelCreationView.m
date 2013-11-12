@@ -10,6 +10,8 @@
 #import "UIColor+ThisLittlePiggy.h"
 #import "TLPLevelCreationGridView.h"
 #import "TLPLevelCreationMenuView.h"
+#import "TLPLevelCreationSizeView.h"
+#import "TLPLevelEditorModel.h"
 
 @implementation TLPLevelCreationView
 {
@@ -62,7 +64,7 @@
 #pragma mark - delegate stuff
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    [_menu scrollIpadViewToPoint:_scrollView.contentOffset];
+    [[TLPLevelEditorModel sharedInstance] setLevelCoordinate:_scrollView.contentOffset];
 }
 
 @end

@@ -10,6 +10,7 @@
 #import "UIView+GCLibrary.h"
 #import "UIColor+ThisLittlePiggy.h"
 #import "TLPLevelCreationMenuMinimap.h"
+#import "TLPMenuMinimapController.h"
 
 @implementation TLPLevelCreationMenuView
 {
@@ -27,6 +28,7 @@
         CGSize minimapSize = CGSizeMake(200.0f, 100.0f);
         CGRect minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - minimapSize.height - 10.0f, minimapSize.width, minimapSize.height);
         _minimap = [[TLPLevelCreationMenuMinimap alloc] initWithFrame:minimapFrame andLevelSize:levelSize];
+        _minimap.controller = [[TLPMenuMinimapController alloc] initWithMenuMinimap:_minimap];
         minimapFrame = CGRectMake(self.frame.size.width + 10.0f, self.frame.size.height - _minimap.levelView.height - 10.0f, minimapSize.width, minimapSize.height);
         [_minimap setFrame:minimapFrame];
 

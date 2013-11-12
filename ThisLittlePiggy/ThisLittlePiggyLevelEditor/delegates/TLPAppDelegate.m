@@ -7,12 +7,14 @@
 //
 
 #import "TLPAppDelegate.h"
+#import "TLPLevelEditorModel.h"
 
 @implementation TLPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    //initialize the model
+    [TLPLevelEditorModel sharedInstance];
     return YES;
 }
 							
