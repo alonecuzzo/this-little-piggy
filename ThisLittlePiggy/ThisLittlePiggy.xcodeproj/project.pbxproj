@@ -106,6 +106,7 @@
 		944630537F49E86E22CEEB1D /* TLPLevelCreationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9446331939DDDFA9F3793174 /* TLPLevelCreationMenuView.m */; };
 		944631B90743A3A6E9C33AF9 /* TLPLevelCreationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 944631C40A8E1B999473EC32 /* TLPLevelCreationView.m */; };
 		9446342DF27C8A6BE05E2D29 /* TLPLevelEditorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 944635F7F04CA147C35D4BDD /* TLPLevelEditorModel.m */; };
+		944636E90D9C45A6743F92F8 /* TLPLevelCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463A39DF15D4D949CE612C /* TLPLevelCreationViewController.m */; };
 		9446385952F07B6F88A7BEA3 /* TLPLevelCreationMenuMinimap.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463FCD44BA069C16B8D8BB /* TLPLevelCreationMenuMinimap.m */; };
 		94463AF835B277CF6F5A5AEB /* TLPMenuMinimapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944630F16B26FDBF3C60ECD0 /* TLPMenuMinimapController.m */; };
 		94463B38873499B323752B04 /* TLPLevelCreationGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */; };
@@ -243,6 +244,8 @@
 		9446331939DDDFA9F3793174 /* TLPLevelCreationMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationMenuView.m; path = views/levelCreation/levelCreationView/menu/TLPLevelCreationMenuView.m; sourceTree = "<group>"; };
 		944634A64D278966A3D36674 /* TLPLevelEditorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLPLevelEditorModel.h; sourceTree = "<group>"; };
 		944635F7F04CA147C35D4BDD /* TLPLevelEditorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLPLevelEditorModel.m; sourceTree = "<group>"; };
+		9446390B1CCC82756FE9FB4B /* TLPLevelCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationViewController.h; path = controllers/TLPLevelCreationViewController.h; sourceTree = "<group>"; };
+		94463A39DF15D4D949CE612C /* TLPLevelCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationViewController.m; path = controllers/TLPLevelCreationViewController.m; sourceTree = "<group>"; };
 		94463A42342685E6FBB20E5C /* TLPMainMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPMainMenuButton.m; path = views/buttons/TLPMainMenuButton.m; sourceTree = "<group>"; };
 		94463DB23E87EBF1947F25B0 /* TLPLevelCreationGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TLPLevelCreationGridView.m; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.m; sourceTree = "<group>"; };
 		94463E8D06A4E0989ED17B87 /* TLPLevelCreationGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TLPLevelCreationGridView.h; path = views/levelCreation/levelCreationView/TLPLevelCreationGridView.h; sourceTree = "<group>"; };
@@ -328,6 +331,8 @@
 				8E13D0DA182A938A0018FF62 /* TLPViewController.m */,
 				944630F16B26FDBF3C60ECD0 /* TLPMenuMinimapController.m */,
 				94463EB48694A057B280A841 /* TLPMenuMinimapController.h */,
+				9446390B1CCC82756FE9FB4B /* TLPLevelCreationViewController.h */,
+				94463A39DF15D4D949CE612C /* TLPLevelCreationViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -1073,6 +1078,7 @@
 				9446385952F07B6F88A7BEA3 /* TLPLevelCreationMenuMinimap.m in Sources */,
 				9446342DF27C8A6BE05E2D29 /* TLPLevelEditorModel.m in Sources */,
 				94463AF835B277CF6F5A5AEB /* TLPMenuMinimapController.m in Sources */,
+				944636E90D9C45A6743F92F8 /* TLPLevelCreationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
