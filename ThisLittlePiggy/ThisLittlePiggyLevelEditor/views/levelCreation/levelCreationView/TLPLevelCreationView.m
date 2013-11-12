@@ -13,6 +13,8 @@
 #import "NSObject+RACPropertySubscribing.h"
 #import "RACSignal.h"
 #import "TLPLevelCreationViewController.h"
+#import "UIGestureRecognizer+RACSignalSupport.h"
+#import "RACCommand.h"
 
 @implementation TLPLevelCreationView
 {
@@ -54,18 +56,15 @@
         _gridView = [[TLPLevelCreationGridView alloc] initWithFrame:_levelView.frame];
         [_levelView addSubview:_gridView];
 
-        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleMenu)];
+        UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] init];
         tapGestureRecognizer.numberOfTapsRequired = 2;
         [_levelView addGestureRecognizer:tapGestureRecognizer];
-
+        [tapGestureRecognizer.rac_gestureSignal subscribeNext:^(id x) {
+            [_menu toggle];
+        }];
         [_menu setupViews];
     }
     return self;
-}
-
-- (void)toggleMenu
-{
-    [_menu toggle];
 }
 
 @end
