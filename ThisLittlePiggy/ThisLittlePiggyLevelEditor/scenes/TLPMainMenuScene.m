@@ -41,7 +41,7 @@
     CGSize buttonSize = CGSizeMake(350.0f, 70.0f);
     CGRect newLevelButtonFrame = CGRectMake(CGRectGetMidX(self.frame) - (buttonSize.width / 2), CGRectGetMidY(self.frame) - 10 - (buttonSize.height / 2), buttonSize.width, buttonSize.height);
     _createNewLevelButton = [[TLPMainMenuButton alloc] initWithFrame:newLevelButtonFrame];
-    [_createNewLevelButton setTitle:@"new level" forState:UIControlStateNormal];
+    [_createNewLevelButton setTitle:NSLocalizedString(@"new level", @"new level button string") forState:UIControlStateNormal];
     [_createNewLevelButton setTitleColor:[UIColor thisLittlePiggySkyBlue] forState:UIControlStateNormal
     ];
 

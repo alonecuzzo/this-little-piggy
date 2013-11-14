@@ -14,7 +14,6 @@
 #import "RACSignal.h"
 #import "TLPLevelCreationViewController.h"
 #import "UIGestureRecognizer+RACSignalSupport.h"
-#import "RACCommand.h"
 
 @implementation TLPLevelCreationView
 {
